@@ -1,0 +1,378 @@
+<html>
+  <head>
+    <title>Room 01 Load Chart</title>
+    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js"></script>
+    <link rel="stylesheet" href="graph2.css">
+    <!-- <style type="text/css">      
+      html, body, #container { 
+        width: 100%; height: 100%; margin: 0; padding: 0; 
+      } 
+    </style> -->
+  </head>
+  <body>  
+    <div id="container"></div>
+    <script>
+
+      fetch('https://script.googleusercontent.com/macros/echo?user_content_key=rqzu8DOIQJ_UEKexicxz4hTlmQAO2BKHetouRJfQxEDl0DPnya0gaR6uVBy41NFm67Wxf2RsW-mInvK_au-14KI6WI6Y2O5lm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnA3T_GSt30zyL0YneHFvWvY2snMNJEpBT3JFKsV_vfCHL8m3W5FucNqweMlTQjf-7MbA39QGgXwatgrlorvwLog-Y8v5YhBwoNz9Jw9Md8uu&lib=MBZZrLyl0-RzsydZWWGdsxxAf73fixrCU')
+          .then(res => res.json())
+          // .then(data => console.log(data[1][1]))
+          .then(data => {
+            // data[]
+           var b = data[1];
+           var b1 = data[1][0];       //date
+           var b2 = data[1][1];       //AC Load
+           var b3 = data[1][2];       //DC Load(Data)
+           var b4 = data[1][3];       //Total Load
+
+           var c = data[2];
+           var c1 = data[2][0];
+           var c2 = data[2][1];
+           var c3 = data[2][2];
+           var c4 = data[2][3];
+
+           var d = data[3];
+           var d1 = data[3][0];
+           var d2 = data[3][1];
+           var d3 = data[3][2];
+           var d4 = data[3][3];
+
+           var e = data[4];
+           var e1 = data[4][0];
+           var e2 = data[4][1];
+           var e3 = data[4][2];
+           var e4 = data[4][3];
+
+           var f = data[5];
+           var f1 = data[5][0];
+           var f2 = data[5][1];
+           var f3 = data[5][2];
+           var f4 = data[5][3];
+
+           var g = data[6];
+           var g1 = data[6][0];
+           var g2 = data[6][1];
+           var g3 = data[6][2];
+           var g4 = data[6][3];
+
+           var h = data[7];
+           var h1 = data[7][0];
+           var h2 = data[7][1];
+           var h3 = data[7][2];
+           var h4 = data[7][3];
+
+           var i = data[8];
+           var i1 = data[8][0];
+           var i2 = data[8][1];
+           var i3 = data[8][2];
+           var i4 = data[8][3];
+
+           var j = data[9];
+           var j1 = data[9][0];
+           var j2 = data[9][1];
+           var j3 = data[9][2];
+           var j4 = data[9][3];
+
+           var k = data[10];
+           var k1 = data[10][0];
+           var k2 = data[10][1];
+           var k3 = data[10][2];
+           var k4 = data[10][3];
+
+           var l = data[11];
+           var l1 = data[11][0];
+           var l2 = data[11][1];
+           var l3 = data[11][2];
+           var l4 = data[11][3];
+
+           var m = data[12];
+           var m1 = data[12][0];
+           var m2 = data[12][1];
+           var m3 = data[12][2];
+           var m4 = data[12][3];
+
+           var n = data[13];
+           var n1 = data[13][0];
+           var n2 = data[13][1];
+           var n3 = data[13][2];
+           var n4 = data[13][3];
+
+           var o = data[14];
+           var o1 = data[14][0];
+           var o2 = data[14][1];
+           var o3 = data[14][2];
+           var o4 = data[14][3];
+
+           var p = data[15];
+           var p1 = data[15][0];
+           var p2 = data[15][1];
+           var p3 = data[15][2];
+           var p4 = data[15][3];
+
+           var q = data[16];
+           var q1 = data[16][0];
+           var q2 = data[16][1];
+           var q3 = data[16][2];
+           var q4 = data[16][3];
+
+           var r = data[17];
+           var r1 = data[17][0];
+           var r2 = data[17][1];
+           var r3 = data[17][2];
+           var r4 = data[17][3];
+
+           var s = data[18];
+           var s1 = data[18][0];
+           var s2 = data[18][1];
+           var s3 = data[18][2];
+           var s4 = data[18][3];
+
+           var t = data[19];
+           var t1 = data[19][0];
+           var t2 = data[19][1];
+           var t3 = data[19][2];
+           var t4 = data[19][3];
+
+           var u = data[20];
+           var u1 = data[20][0];
+           var u2 = data[20][1];
+           var u3 = data[20][2];
+           var u4 = data[20][3];
+
+           var v = data[21];
+           var v1 = data[21][0];
+           var v2 = data[21][1];
+           var v3 = data[21][2];
+           var v4 = data[21][3];
+
+           var w = data[22];
+           var w1 = data[22][0];
+           var w2 = data[22][1];
+           var w3 = data[22][2];
+           var w4 = data[22][3];
+
+           var x = data[23];
+           var x1 = data[23][0];
+           var x2 = data[23][1];
+           var x3 = data[23][2];
+           var x4 = data[23][3];
+
+           var y = data[24];
+           var y1 = data[24][0];
+           var y2 = data[24][1];
+           var y3 = data[24][2];
+           var y4 = data[24][3];
+
+           var z = data[25];
+           var z1 = data[25][0];
+           var z2 = data[25][1];
+           var z3 = data[25][2];
+           var z4 = data[25][3];
+
+           var za = data[26];
+           var za1 = data[26][0];
+           var za2 = data[26][1];
+           var za3 = data[26][2];
+           var za4 = data[26][3];
+
+           var zb = data[27];
+           var zb1 = data[27][0];
+           var zb2 = data[27][1];
+           var zb3 = data[27][2];
+           var zb4 = data[27][3];
+
+           var zc = data[28];
+           var zc1 = data[28][0];
+           var zc2 = data[28][1];
+           var zc3 = data[28][2];
+           var zc4 = data[28][3];
+
+           var zd = data[29];
+           var zd1 = data[29][0];
+           var zd2 = data[29][1];
+           var zd3 = data[29][2];
+           var zd4 = data[29][3];
+
+           var ze = data[30];
+           var ze1 = data[30][0];
+           var ze2 = data[30][1];
+           var ze3 = data[30][2];
+           var ze4 = data[30][3];
+
+          //  var zf = data[31];
+          //  var zf1 = data[31][0];
+          //  var zf2 = data[31][1];
+          //  var zf3 = data[31][2];
+          //  var zf4 = data[31][3];
+
+           var main = data;
+           console.log(data);
+
+           var date1 = new Date(b1);
+           var date2 = new Date(c1);
+           var date3 = new Date(d1);
+           var date4 = new Date(e1);
+           var date5 = new Date(f1);
+           var date6 = new Date(g1);
+           var date7 = new Date(h1);
+           var date8 = new Date(i1);
+           var date9 = new Date(j1);
+           var date10 = new Date(k1);
+           var date11 = new Date(l1);
+           var date12 = new Date(m1);
+           var date13 = new Date(n1);
+           var date14 = new Date(o1);
+           var date15 = new Date(p1);
+           var date16 = new Date(q1);
+           var date17 = new Date(r1);
+           var date18 = new Date(s1);
+           var date19 = new Date(t1);
+           var date20 = new Date(u1);
+           var date21 = new Date(v1);
+           var date22 = new Date(w1);
+           var date23 = new Date(x1);
+           var date24 = new Date(y1);
+           var date25 = new Date(z1);
+           var date26 = new Date(za1);
+           var date27 = new Date(zb1);
+           var date28 = new Date(zc1);
+           var date29 = new Date(zd1);
+           var date30 = new Date(ze1);
+          //  var date31 = new Date(zf1);
+
+           var da1 = date1.toLocaleDateString();
+           var da2 = date2.toLocaleDateString();
+           var da3 = date3.toLocaleDateString();
+           var da4 = date4.toLocaleDateString();
+           var da5 = date5.toLocaleDateString();
+           var da6 = date6.toLocaleDateString();
+           var da7 = date7.toLocaleDateString();
+           var da8 = date8.toLocaleDateString();
+           var da9 = date9.toLocaleDateString();
+           var da10 = date10.toLocaleDateString();
+           var da11 = date11.toLocaleDateString();
+           var da12 = date12.toLocaleDateString();
+           var da13 = date13.toLocaleDateString();
+           var da14 = date14.toLocaleDateString();
+           var da15 = date15.toLocaleDateString();
+           var da16 = date16.toLocaleDateString();
+           var da17 = date17.toLocaleDateString();
+           var da18 = date18.toLocaleDateString();
+           var da19 = date19.toLocaleDateString();
+           var da20 = date20.toLocaleDateString();
+           var da21 = date21.toLocaleDateString();
+           var da22 = date22.toLocaleDateString();
+           var da23 = date23.toLocaleDateString();
+           var da24 = date24.toLocaleDateString();
+           var da25 = date25.toLocaleDateString();
+           var da26 = date26.toLocaleDateString();
+           var da27 = date27.toLocaleDateString();
+           var da28 = date28.toLocaleDateString();
+           var da29 = date29.toLocaleDateString();
+           var da30 = date30.toLocaleDateString();
+          //  var da31 = date31.toLocaleDateString();
+
+
+        anychart.onDocumentReady(function () {
+        
+          var data= [
+
+          [da1,b2,b3,b4],
+          [da2,c2,c3,c4],
+          [da3,d2,d3,d4],
+          [da4,e2,e3,e4],
+          [da5,f2,f3,f4],
+          [da6,g2,g3,g4],
+          [da7,h2,h3,h4],
+          [da8,i2,i3,i4],
+          [da9,j2,j3,j4],
+          [da10,k2,k3,k4],
+          [da11,l2,l3,l4],
+          [da12,m2,m3,m4],
+          [da13,n2,n3,n4],
+          [da14,o2,o3,o4],
+          [da15,p2,p3,p4],
+          [da16,q2,q3,q4],
+          [da17,r2,r3,r4],
+          [da18,s2,s3,s4],
+          [da19,t2,t3,t4],
+          [da20,u2,u3,u4],
+          [da21,v2,v3,v4],
+          [da22,w2,w3,w4],
+          [da23,x2,x3,x4],
+          [da24,y2,y3,y4],
+          [da25,z2,z3,z4],
+          [da26,za2,za3,za4],
+          [da27,zb2,zb3,zb4],
+          [da28,zc2,zc3,zc4],
+          [da29,zd2,zd3,zd4],
+          [da30,ze2,ze3,ze4],
+          // [da31,zf2,zf3,zf4]
+        ];
+  
+        // create a data set
+        var dataSet = anychart.data.set(data);
+
+        // map the data for all series
+        var firstSeriesData = dataSet.mapAs({x: 0, value: 1});
+        var secondSeriesData = dataSet.mapAs({x: 0, value: 2});
+        var thirdSeriesData = dataSet.mapAs({x: 0, value: 3});
+
+        // create a stepped line chart
+        var chart = anychart.line(); 
+
+        // create the series and name them
+        var firstSeries = chart.line(firstSeriesData);
+        firstSeries.name("AC LOAD");
+        var secondSeries = chart.line(secondSeriesData);
+        secondSeries.name("DATA LOAD");
+        var thirdSeries = chart.line(thirdSeriesData);
+        thirdSeries.name("TOTAL LOAD");
+
+        // add a legend and customize it
+        chart.legend().enabled(true).fontSize(14).padding([10, 0, 10, 0]);
+  
+        // add a title and customize it
+        chart
+          .title()
+          .enabled(true)
+          .useHtml(true)
+          .text(
+            '<span style="color: #006331; font-size:20px;">Room 01 Load Variation </span>' +
+              '<br/><span style="font-size: 16px;"></span>'
+          );
+  
+        // name the axes
+        chart.yAxis().title("POWER(kW)");
+        chart.xAxis().title("2023 - DATE");
+  
+        // customize the series markers
+        firstSeries.hovered().markers().type("circle").size(4);
+        secondSeries.hovered().markers().type("circle").size(4);
+        thirdSeries.hovered().markers().type("circle").size(4);
+  
+        // turn on crosshairs and remove the y hair
+        chart.crosshair().enabled(true).yStroke(null).yLabel(true);
+  
+        // change the tooltip position
+        chart.tooltip().positionMode("point");
+        chart.tooltip().position("right").anchor("left-center").offsetX(5).offsetY(5);
+  
+        // customize the series stroke in the normal state
+        firstSeries.normal().stroke("#0000ff", 2.5);
+        secondSeries.normal().stroke("#008000", 2.5);
+        thirdSeries.normal().stroke("#ff0000", 2.5);
+  
+        // specify where to display the chart
+        chart.container("container");
+  
+        // draw the resulting chart
+        chart.draw();
+  
+      });
+          });
+
+      
+    </script>
+
+  </body>
+</html>

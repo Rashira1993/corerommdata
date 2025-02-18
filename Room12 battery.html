@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Battery Room 12
+        </title>
+        <meta charset="utf-8">
+        <meta name="viweport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="room12 battery.css">
+        <script src="autologout.js"></script>
+
+    </head>
+
+    <body id="body1" class="body1">
+        <div id="alredysubmit" class="alredysubmit">
+            <div class="bk">
+                <form method="post" action="" name="contactform" id="contactform" autocomplete="off"> 
+                    <label class="select_the_name" for="room12">Select Your Name:</label>
+                    <div class="choose_name">
+                        <select class="input1" name="Name" required>
+                            <option selected disabled></option>
+                            <option value="Rashira">Rashira</option>
+                            <option value="Ranaveera">Ranaveera</option>
+                            <option value="Duminda">Duminda</option>
+                            <option value="Eranga">Eranga</option>
+                            <option value="Nilesh">Nilesh</option>
+                            <option value="Baratha">Baratha</option>
+                            <option value="Chamara">Chamara</option>
+                            <option value="Sujith">Sujith</option>
+                            <option value="Yasath">Yasath</option>
+                            <option value="Padmasiri">Padmasiri</option>
+                            <option value="Chanaka">Chanaka</option>
+                            <option value="Gayan">Gayan</option>
+                            <option value="Chathuranga">Chathuranga</option>
+                            <option value="Chamath">Chamath</option>
+                        </select>
+                    </div>
+
+                    <div class="choose_name1">
+                        <label class="select_the_name" for="fdate" >Select to the Date :</label>
+                        <div class="x">
+                            <input class="input2" id ="fdate" type="date" name = "date"/>
+                        </div>
+                    </div>
+
+                    <!-- <h3 class="topic">CORE ROOM 12</h3>
+
+                    <div class="panel01">
+                        <div class="">
+                            <label class="select_the_name" for="room12">Inverter 01 AC Voltage:</label>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="0" max="1000000" id="room12" placeholder="(VAC)" value="" name="Inverter 01 AC Voltage" required/>
+                            </div>
+                        </div>
+                        <div class=""> 
+                            <label class="select_the_name" for="room12">Inverter 01 AC Current:</label>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="0" max="1000000" id="room12" placeholder="(AAC)" value="" name="Inverter 01 AC Current" required/>
+                            </div>
+                        </div>
+                        <div class="">
+                            <label class="select_the_name" for="room12">Inverter 02 AC Voltage:</label>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="0" max="1000000" id="room12" placeholder="(VAC)" value="" name="Inverter 02 AC Voltage" required/>
+                            </div>
+                        </div>
+                        <div class=""> 
+                            <label class="select_the_name" for="room12">Inverter 02 AC Current:</label>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="0" max="1000000" id="room12" placeholder="(AAC)" value="" name="Inverter 02 AC Current" required/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="alrm">
+                        <label class="select_the_name" for="room12">High Room Alarm:</label>
+                        <div class = "alram2">
+                            <select class="alrm2-1" name="High Room Alarm">
+                                <option selected disabled>YES/NO</option>
+                                <option value="Yes">YES</option>
+                                <option value="No">NO</option>
+                            </select>
+                        </div>
+                        <div class="y">
+                            <input class="y-01" type="text" id="room12" placeholder="If yes plese remark" name="Comment1">
+                        </div>
+                    </div>
+
+                    <div class="alrm">
+                        <label class="select_the_name" for="room12">Ac Alarm:</label>
+                        <div class = alram2>
+                            <select class = "alrm2-2" name="AC Alarm">
+                                <option selected disabled>YES/NO</option>
+                                <option value="Yes">YES</option>
+                                <option value="No">NO</option>
+                            </select>
+                        </div>
+                        <div class="y">
+                            <input class="y-01" type="text" id="room12" placeholder="If yes plese remark" name="Comment2">
+                        </div>
+                    </div> -->
+
+                    <h3 class="topic">BATTERY ROOM 12</h3>
+
+                    <div class="panel01">
+                        <label class="select_the_name" for="room12">Feeder 1 Total Current A(U/V/W/N):</label>
+                        <div class="panel01-input1">
+                            <input class="inputdetails" type="number" step ="any" min="180" max="450" id="room12" value="" placeholder="U" size="10" name="Feeder 1 Total Current(A) (U)" required>
+                        </div>
+                        <div class="panel01-input1">
+                            <input class="inputdetails" type="number" step ="any" min="180" max="450" id="room12" value=""placeholder="V" size="10" name="Feeder 1 Total Current(A) (V)" required>
+                        </div>
+                        <div class="panel01-input1">
+                            <input class="inputdetails" type="number" step ="any" min="180" max="450" id="room12" value="" placeholder="W" size="10" name="Feeder 1 Total Current(A) (W)" required>
+                        </div>
+                        <div class="panel01-input1">
+                            <input class="inputdetails" type="number" step ="any" min="0" max="100" id="room12" value="" placeholder="N" size="10" name="Feeder 1 Total Current(A) (N)" required>
+                        </div> 
+                    </div>
+
+                    <div class="panel01">
+                        <label class="select_the_name" for="room12">Feeder 2 Total Current A(U/V/W/N):</label>
+                        <div class="panel01-input1">
+                            <input class="inputdetails" type="number" step ="any" min="300" max="700" id="room12" value="" placeholder="U" size="10" name="Feeder 2 Total Current(A) (U)" required>
+                        </div>
+                        <div class="panel01-input1">
+                            <input class="inputdetails" type="number" step ="any" min="300" max="700" id="room12" value=""placeholder="V" size="10" name="Feeder 2 Total Current(A) (V)" required>
+                        </div>
+                        <div class="panel01-input1">
+                            <input class="inputdetails" type="number" step ="any" min="300" max="700" id="room12" value="" placeholder="W" size="10" name="Feeder 2 Total Current(A) (W)" required>
+                        </div>
+                        <div class="panel01-input1">
+                            <input class="inputdetails" type="number" step ="any" min="30" max="150" id="room12" value="" placeholder="N" size="10" name="Feeder 2 Total Current(A) (N)" required>
+                        </div> 
+                    </div>
+
+                    <div class="panel01">
+                        <div class="">
+                            <label class="select_the_name" for="room12">Rectifier 1 DC Voltage (VDC):</label>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="37" max="76" id="room12" placeholder="(VDC)" value="" name="Rectifier 1 DC Voltage (VDC)" required/>
+                            </div>
+                        </div>
+                        <div class=""> 
+                            <label class="select_the_name" for="room12">Rectifier 1 Total Load Current (ADC):</label>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="1250" max="2600" id="room12" placeholder="(ADC)" value="" name="Rectifier 1 Total Load Current (ADC)" required/>
+                            </div>
+                        </div>
+                        <div class="">
+                            <label class="select_the_name" for="room12">Rectifier 2 DC Voltage (VDC):</label>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="37" max="76" id="room12" placeholder="(VDC)" value="" name="Rectifier 2 DC Voltage (VDC)" required/>
+                            </div>
+                        </div>
+                        <div class=""> 
+                            <label class="select_the_name" for="room12">Rectifier 2 Total Load Current (ADC):</label>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="1450" max="2600" id="room12" placeholder="(ADC)" value="" name="Rectifier 2 Total Load Current (ADC)" required/>
+                            </div>
+                        </div>
+
+                        <div class="">
+                            <label class="select_the_name" for="room12">SRF panel 01 Total Power (kW):</label>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="50" max="230" id="room12" placeholder="(kW)" value="" name="SRF panel 01 Total Power (kW)" required/>
+                            </div>
+                        </div>
+                        <div class=""> 
+                            <label class="select_the_name" for="room12">SRF panel 02 Total Power (kW):</label>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="50" max="230" id="room12" placeholder="(kW)" value="" name="SRF panel 02 Total Power (kW)" required/>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="alrm">
+                        <label class="select_the_name" for="room12">High Room Alarm:</label>
+                        <div class = "alram2">
+                            <select class="alrm2-1" name="B-High Room Alarm">
+                                <option selected disabled>YES/NO</option>
+                                <option value="Yes">YES</option>
+                                <option value="No">NO</option>
+                            </select>
+                        </div>
+                        <div class="y">
+                            <input class="y-01" type="text" id="room12" placeholder="If yes plese remark" name="Comment3">
+                        </div>
+                    </div>
+
+                    <div class="alrm">
+                        <label class="select_the_name" for="room12">Ac Alarm:</label>
+                        <div class = alram2>
+                            <select class = "alrm2-2" name="B-AC Alarm">
+                                <option selected disabled>YES/NO</option>
+                                <option value="Yes">YES</option>
+                                <option value="No">NO</option>
+                            </select>
+                        </div>
+                        <div class="y">
+                            <input class="y-01" type="text" id="room12" placeholder="If yes plese remark" name="Comment4">
+                        </div>
+                    </div>
+
+                    <!-- <div class="panel01">
+                        <div class="">
+                            <label class="select_the_name" for="room12">Ground Floor ACDB Total Power(kW):</label>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="0" max="1000000" id="room12" placeholder="(kW)" value="" name="ACDB Ground floor Total Power(kW)" required/>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="select_the_name">
+                        <a href="menu2.html">
+                            <input type="button" class="button" value="Back"/>
+                        </a>
+                        <input type="submit" class="submit" onclick="submited()" id="submit" value="Submit"/>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+        <script>
+
+            function preback(){window.history.forward();}
+            setTimeout("preback()",0);
+            window.onunload=function(){null};
+
+			const scriptURL = 'https://script.google.com/macros/s/AKfycbyoVBWdpBEPKVXqVWp3LilJuRrJDafw5zXfmFrT0z9MOVcPuxuPYMOiTp9Uo00bu5EO/exec'
+			const form = document.forms['contactform']
+		  
+			form.addEventListener('submit', e => {
+			  e.preventDefault()
+			  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+				.then(response => alert("Thank you! your form is submitted successfully." ))
+				.then(() => {  window.location = "menu2.html"; })
+				.catch(error => console.error('Error!', error.message))
+                alredysubmit.classList.add("popup");
+			})
+
+    
+		</script>
+        
+
+    </body>
+
+</html>

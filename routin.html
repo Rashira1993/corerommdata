@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Routine Maintenance Page</title>
+
+        <link rel = "stylesheet" href="routin.css"/>
+        <meta charset="utf-8">
+        <meta name="viweport" content="width=device-width, initial-scale=1.0">
+
+
+    </head>
+
+    <body class ="bk" id="snow">
+        
+        <h3 class="abb">Routine Maintenance</h3>
+
+        <div class="container">
+            <ul>
+
+                <li class="l01" id="l01"> <div class="bottom"><a class="u1" id="u1" href = "battery/battery testing routine.html" target="">Battery Testing</a></div><div class="su1" id="su1">Total Number Of Testing <div class="output">4</div></div> <div class="topic2">Total Number Of Pending <div class="output2">2</div></div><div class="topic3">Total Number Of Complete <div class="output3">2</div></div> </li>
+
+                <li class="l02" id="l02"> <div class="bottom"><a class="u2" id="u2" href = "ac/Ac Service.html" target="">AC Service</a></div><div class="su1" id="su1">Number Of Service <div class="output">6</div></div> <div class="topic2">Number Of Pending <div class="output2" id="output2"></div></div><div class="topic3">Number Of Complete <div class="output3" id="output3"></div></div></li>
+
+                <li class="l03" id="l03"> <div class="bottom"><a class="u3" id="u3"  href = "Fire Service.html" target="">Fire Service</a></div><div class="su1" id="su1">Number Of Service <div class="output4">2</div></div> <div class="topic2">Number Of Pending <div class="output5" id="output5"></div></div><div class="topic3">Number Of Complete <div class="output6" id="output6"></div></div></li>
+
+                <li class="l04" id="l04"> <div class="bottom"><a class="u4" id="u4"  href = "Genarator Service.html" target="">Genarator Service</a></div><div class="su1" id="su1">Number Of Service <div class="output7">1</div></div> <div class="topic2">Number Of Pending <div class="output8" id="output8"></div></div><div class="topic3">Number Of Complete <div class="output9" id="output9"></div></div></li>
+
+                <li class="l05" id="l05"> <div class="bottom"><a class="u5" id="u5" href = "Ups Service.html" target="">UPS Service</a></div><div class="su1" id="su1">Number Of Service <div class="output10">2</div></div> <div class="topic2">Number Of Pending <div class="output11" id="output11"></div></div><div class="topic3">Number Of Complete <div class="output12" id="output12"></div></div></li>
+
+                <li class="l06" id="l06"> <div class="bottom"><a class="u6" id="u6" href = "Rectifier Service.html" target="">Rectifier Service</a></div><div class="su1" id="su1">Number Of Service <div class="output13">2</div></div> <div class="topic2">Number Of Pending <div class="output14" id="output14"></div></div><div class="topic3">Number Of Complete <div class="output15" id="output15"></div></div></li>
+
+                <li class="l07" id="l07"> <div class="bottom"><a class="u7" id="u7" href = "Inverter Service.html" target="">Inverter Service</a></div><div class="su1" id="su1">Number Of Service <div class="output16">2</div></div> <div class="topic2">Number Of Pending <div class="output17" id="output17"></div></div><div class="topic3">Number Of Complete <div class="output18" id="output18"></div></div></li>
+                
+                <li class="l07" id="l07"> <div class="bottom"><a class="u7" id="u7" href = "panel service/panel Service.html" target="">Panel Service</a></div><div class="su1" id="su1">Number Of Service <div class="output16">2</div></div> <div class="topic2">Number Of Pending <div class="output17" id="output17">2</div></div><div class="topic3">Number Of Complete <div class="output18" id="output21">0</div></div></li>
+
+                
+            </ul>
+        </div>
+
+        <div class="button">
+
+            <input type="button" class="button1" onclick="back()" value="Main Page"/>
+  
+        </div>
+        <script src="snow.js"></script>
+        <script>
+
+            // function preback(){window.history.forward();}
+            // setTimeout("preback()",0);
+            // window.onunload=function(){null};
+
+
+            function back(){
+                window.location = "Main page.html"
+            }
+
+
+            document.addEventListener('DOMContentLoaded', function() {
+            new Snow('#snow',{
+                number:100,// number of particles
+                r: 3.5,// with this You can Adjust Size of Snow Particles
+                v: 2.0,// its Speed
+            });
+            });
+
+
+
+            {const url0001='https://script.googleusercontent.com/macros/echo?user_content_key=_ylTrtdZB8bAq0hWkLd_JQ5cFnaU6Zm9Z4WESEgT1W2TIqkIaGihlF4SLdrcfW-uYUbEhVhKYWs_JAFv2a8NK-q0n4seS_yam5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnJKHkvT0aAhK7ZOZ9WYDpWAZpUrF8Tk9_DcRmbo44YnLePio4hB0ZZRgui_1PseaaPJuUuhT7_cTDmObJNSEilNvkXGADvti8Q&lib=MW-Xi36NjHqDFEAqmq60-HaY_2WQSWQ1z'
+               
+               loadData();
+               function loadData(){
+                   fetch(url0001).then(rep=> rep.json())
+                   .then((data)=>{
+                       console.log(data);
+
+                        const container = document.getElementById("output3");
+                        const element = document.createElement("div");
+                        element.innerText = `${data}`;
+                        container.appendChild(element);
+
+                        const container01 = document.getElementById("output2");
+                        const element01 = document.createElement("div");
+                        element01.innerText = `${6-data}`;
+                        container01.appendChild(element01);
+
+                })
+                .catch(error => console.error(error));
+            
+               }
+            }
+
+            {const url0002='https://script.googleusercontent.com/macros/echo?user_content_key=HAm6gCMqdBAVk6_lSaJcw5FgT__OqmBXCo9cuVpjgRh1_2OGT03pxJIGL0RpRlCpt2aQXoERRDJuxlolQQR9EhKQPcmeQhVtm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnPiEB-9XZFOYAHwo2NP4AHf68t5YX9oxDy-GcBtKHybu0LAsrCzSwCjYEQ26ncE8AzEBuchsrTNYafUBLd9lvEQRO1QGzlR8i9z9Jw9Md8uu&lib=Mgr1UoIESPWLF76Fmdxa67xAf73fixrCU'
+               
+               loadData02();
+               function loadData02(){
+                   fetch(url0002).then(rep=> rep.json())
+                   .then((data)=>{
+                       console.log(data);
+
+                        const container02 = document.getElementById("output15");
+                        const element02 = document.createElement("div");
+                        element02.innerText = `${data}`;
+                        container02.appendChild(element02);
+
+                        const container03 = document.getElementById("output14");
+                        const element03 = document.createElement("div");
+                        element03.innerText = `${2-data}`;
+                        container03.appendChild(element03);
+
+                })
+                .catch(error => console.error(error));
+            
+               }
+            }
+
+            {const url0003='https://script.googleusercontent.com/macros/echo?user_content_key=oIWTBOLNdYPd2JlEW_FmbA7FlmDIRMXfI2_tIOYNsZsdkHUCF5qJVZgodksNqrKJJzHxjBmf198n_DZ3hvLJWOj55bLpoV9Dm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnFnljpSS6QmLfdbFRGQPEzlUkkNwcS2sjl-JUpWC2yALFBOoZAFYybaucSGZ_vtVFWLmoqnex0cxMbhjNnuASXi8ixMuhBqOUtz9Jw9Md8uu&lib=MJgGKSe1xvKDCcl_3zPhstBAf73fixrCU'
+               
+               loadData03();
+               function loadData03(){
+                   fetch(url0003).then(rep=> rep.json())
+                   .then((data)=>{
+                       console.log(data);
+
+                        const container04 = document.getElementById("output6");
+                        const element04 = document.createElement("div");
+                        element04.innerText = `${data}`;
+                        container04.appendChild(element04);
+
+                        const container05 = document.getElementById("output5");
+                        const element05 = document.createElement("div");
+                        element05.innerText = `${2-data}`;
+                        container05.appendChild(element05);
+
+                })
+                .catch(error => console.error(error));
+            
+               }
+            }
+
+            {const url0004='https://script.googleusercontent.com/macros/echo?user_content_key=3egPXAzEJwuWCse1UrJzFqYiI7L7RSvuNqs7ty6WVQrLvkcCJpQm9tZBdDz6qrhjyPVXCz548ADLWzzxhiq3z4MbU5WFDbY7m5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnEZiRXZ9TW82PimnxN98ZcfPZw4miwn1-JVMsAg7sV0wIWye876HhyiAIo2LJHh1Zqr7AmqC_cfbdPvRdpKT4udyU4VR4CuJJA&lib=M3tPRd_-RJ7MdK5haW7jsqqY_2WQSWQ1z'
+               
+               loadData04();
+               function loadData04(){
+                   fetch(url0004).then(rep=> rep.json())
+                   .then((data)=>{
+                       console.log(data);
+
+                        const container06 = document.getElementById("output12");
+                        const element06 = document.createElement("div");
+                        element06.innerText = `${data}`;
+                        container06.appendChild(element06);
+
+                        const container07 = document.getElementById("output11");
+                        const element07 = document.createElement("div");
+                        element07.innerText = `${2-data}`;
+                        container07.appendChild(element07);
+
+                })
+                .catch(error => console.error(error));
+            
+               }
+            }
+
+            {const url0005='https://script.googleusercontent.com/macros/echo?user_content_key=6748A2U2arJGmxPbhb3Vy11h7mppKVCsDbHbmmDb-e8PXz47w5iprQ0ry1o3tTJtZdRZ3mAyFgwaYu2S1EmHjKwMqZraWVVim5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnDKhkXivcxdKelZURRHge0bZ5-TEmRTmIBWoUBZ22NZ7fw3ra8OyzaMQetJtz5_A9EEjFfjvzOETu-_lQ6cXpAWM22yHuSwXD9z9Jw9Md8uu&lib=M9bM5D6ssZ-KoMMurDGYWxRAf73fixrCU'
+               
+               loadData5();
+               function loadData5(){
+                   fetch(url0005).then(rep=> rep.json())
+                   .then((data)=>{
+                       console.log(data);
+
+                        const container8 = document.getElementById("output9");
+                        const element8 = document.createElement("div");
+                        element8.innerText = `${data}`;
+                        container8.appendChild(element8);
+
+                        const container09 = document.getElementById("output8");
+                        const element09 = document.createElement("div");
+                        element09.innerText = `${1-data}`;
+                        container09.appendChild(element09);
+
+                })
+                .catch(error => console.error(error));
+            
+               }
+            }
+
+
+            {const url0006='https://script.googleusercontent.com/macros/echo?user_content_key=Gv64Ibfxiq0cfc0vLegbnA5Na9LRutGgmYekzgS0pGdR7YOSFA3mhKU2TaspovZEJgxAWlEUPYY74mQ4-8RVKHptbIPPkCipm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnHjzMJP9y1xdIJic_SGhQPuR3vB2Bcp8V9phTF8ip_ly_C_hgKbO1QiX29fOtYHr7XKtbkHMG9zSSRgPZyg6H2JVNKt4CLfDS9z9Jw9Md8uu&lib=MuOJ8mkZPHCixfzOtSXeoxBAf73fixrCU'
+               
+               loadData6();
+               function loadData6(){
+                   fetch(url0006).then(rep=> rep.json())
+                   .then((data)=>{
+                       console.log(data);
+
+                        const container9 = document.getElementById("output18");
+                        const element9 = document.createElement("div");
+                        element9.innerText = `${data}`;
+                        container9.appendChild(element9);
+
+                        const container10 = document.getElementById("output17");
+                        const element10 = document.createElement("div");
+                        element10.innerText = `${2-data}`;
+                        container10.appendChild(element10);
+
+                })
+                .catch(error => console.error(error));
+            
+               }
+            }
+
+
+        </script>
+    
+            
+    </body>
+</html>

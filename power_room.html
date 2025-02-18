@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Power Room</title>
+
+        <link rel = "stylesheet" href="power_room1.css"/>
+        <meta charset="utf-8">
+        <meta name="viweport" content="width=device-width, initial-scale=1.0">
+        <script src="autologout.js"></script>
+
+
+    </head>
+
+    <body class ="bk" id="snow">
+        
+        <h3 class="topic">Power Room</h3>
+
+        <div class="container">
+            <ul>
+                <li class="l01" id="l01"> <div class="bottom"><a class="u1" id="u1" href = "genarator_room.html" target="">Generator Room</a></div><div class="su1" id="su1">SUBMITED</div> </li>
+
+                <li class="l02" id="l02"> <div class="bottom"><a class="u2" id="u2" href = "MV-1_Incommer_Panel.html" target="">MV Room Main Panel 01</a></div><div class="su2" id="su2">SUBMITED</div> </li>
+
+                <li class="l03" id="l03"> <div class="bottom"><a class="u3" id="u3"  href = "MV-2_Incommer_Panel.html" target="">MV Room Main Panel 02</a></div><div class="su3" id="su3">STANDBY MODE</div> </li>
+
+                <li class="l04" id="l04"> <div class="bottom"><a class="u4" id="u4"  href = "transformer_room.html" target="">Transformer Room</a></div><div class="su4" id="su4">SUBMITED</div> </li>
+
+                <li class="l05" id="l05"> <div class="bottom"><a class="u5" id="u5" href = "Lv_room.html" target="">Low Voltage Room</a></div><div class="su5" id="su5">SUBMITED</div> </li>
+
+                <li class="l06" id="l06"> <div class="bottom"><a class="u6" id="u6" href = "ceb_sub_room.html" target="">CEB Sub Room</a></div><div class="su6" id="su6">SUBMITED</div> </li>
+
+                <li class="l07" id="l07"> <div class="bottom"><a class="u7" id="u7" href = "col200.html" target="">COL 200 Tower</a></div><div class="su7" id="su7">SUBMITED</div> </li>
+
+                
+            </ul>
+        </div>
+
+                <div class="button">
+
+                    <input type="button" class="button1" onclick="back()" value="Back"/>
+  
+                </div>
+
+        <script src="snow.js"></script>
+        <script>
+            function preback(){window.history.forward();}
+            setTimeout("preback()",0);
+            window.onunload=function(){null};
+
+            function back(){
+                window.location = "menu2.html"
+            }
+
+
+            document.addEventListener('DOMContentLoaded', function() {
+                new Snow('#snow',{
+                    number:100,// number of particles
+                    r: 3.5,// with this You can Adjust Size of Snow Particles
+                    v: 2.0,// its Speed
+                });
+            });
+
+
+            { const url11='https://script.googleusercontent.com/macros/echo?user_content_key=IFvHswqPc4F6oIoBi7WSP59ccxov2t1npvKX4JdFxk_n70rMswt2Za4ony3b20o8XTuabN6jQfD8kl5uMMprm_Q7ymSUE8vZm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnASrgO22MxQRmszQjxU3fnkl1UBqtxFAPWSKpkLEYiO1TD9G8WXASk1PV1lpDrDIrRw1UseN1R3ru8TF_rnvBgvMJHFq7GgJuA&lib=Mw9af8s9xO9xYXPYqJai8DKY_2WQSWQ1z'
+           
+           loadData();
+           function loadData(){
+               fetch(url11).then(rep=> rep.json())
+               .then((data)=>{
+                   console.log(data);
+                   if (data == "correct"){
+                        l01.classList.add("ulul");
+                        u1.classList.add("uddd");
+                        su1.classList.add("suu");  
+                   }
+                   else if(data == ""){
+
+                   }
+                   else if(data == "Incorrect"){
+                   }
+               })              
+           }
+        }
+
+
+        {const url12='https://script.googleusercontent.com/macros/echo?user_content_key=gKkvbDQ5YcFAos3YQCVgxc-IdcSh9qQxf1KjmX6_pW4KLc2BS3k1ebJcHBClXipQ5B1HbTEBZbZqEagZR_QY9ggdFSsLQZGBm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnEjMn82es3jE9ZNChqgB45Lgug56UXlVg0PkzetxJp14cKaSfsds8ra9Tf_EHEPcJ-Tcc2oWpxyoL27FGADR9hQOZ08bU3fYmdz9Jw9Md8uu&lib=MKFypYTTMO8o-xmrDeMoMxhAf73fixrCU'
+           
+           loadData();
+           function loadData(){
+               fetch(url12).then(rep=> rep.json())
+               .then((data)=>{
+                   console.log(data);
+                   if (data == "correct"){
+                        l02.classList.add("ulul");
+                        u2.classList.add("uddd");
+                        su2.classList.add("suu");   
+                   }
+                   else if(data == ""){
+
+                   }
+                   else if(data == "Incorrect"){
+
+                   }
+               })              
+           }
+
+        }
+
+        {const url13='https://script.googleusercontent.com/macros/echo?user_content_key=cJvgDSqSeaDH86ELA4SH6lgm35vlakCk-X6UejxPTMFHYRZJCLK57RNA6aiItHGlaf3f2P4K2muvmMS1cJlNq62IV0JKqyxZm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnHzb5jriZfNW2PpZScU_vTw13EIHCh5OgRSLelaQ3WWyfd0a3acdYbA8fhAf2IjpyUBbsQQWgNvpHEKm4D3lIANt4cp2iSB4kw&lib=MeVdHSRt8DVWmwcFUOOh05aY_2WQSWQ1z'
+           
+           loadData();
+           function loadData(){
+               fetch(url13).then(rep=> rep.json())
+               .then((data)=>{
+                   console.log(data);
+                   if (data == "correct"){
+                        l03.classList.add("ulul");
+                        u3.classList.add("uddd");
+                        su3.classList.add("suu");  
+                   }
+                   else if(data == ""){
+
+                   }
+                   else if(data == "Incorrect"){
+
+                   }
+               })              
+           }
+
+        }
+
+        {const url14='https://script.googleusercontent.com/macros/echo?user_content_key=iBVhR2uA8CWsD2c7lIhAdMmkdcBFpUxrYMNNIE0PkveLrQ5echp7HWysd9MCJt5VWpuiVHbSrPZOvR1QdwqL6X3u2NXS8sGgm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnPgZQOau_clCwjT7Mpl-RDCP09VN-dwB0xz54FX2juEYRpIUv8heP8Rq1iSHX4wx5-bt7RSanCEUnXI2D6L5bny93BqeKCt9Otz9Jw9Md8uu&lib=MOILVSrHmurmRzEBZEhsDbxAf73fixrCU'
+           
+           loadData();
+           function loadData(){
+               fetch(url14).then(rep=> rep.json())
+               .then((data)=>{
+                   console.log(data);
+                   if (data == "correct"){
+                        l04.classList.add("ulul");
+                        u4.classList.add("uddd");
+                        su4.classList.add("suu");   
+                   }
+                   else if(data == ""){
+                       // document.write("pending")
+                   }
+                   else if(data == "Incorrect"){
+                       // document.write("balukiri")
+                   }
+               })              
+           }
+
+        }
+
+        {const url15='https://script.googleusercontent.com/macros/echo?user_content_key=xwPFXyA6T6WAc1EXdBpz-tlGqb-bEhc-IKU3-V-qxYiFEDBTFfpgc5GCqo-teFfRbTCuF8abtb0hgRfE00amSt1vrWoqwh9Um5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnP_XjhQoXFTox5cWsRfuatcdtmeSbBQHZycZQwDL68arkJzwFmC8z-T3oSdPlgee8DZJd73z19oXECghLeFzlsdsHrAT-2cSx9z9Jw9Md8uu&lib=Mm1siFVlbLa-HP8nGadUG8RAf73fixrCU'
+           
+           loadData();
+           function loadData(){
+               fetch(url15).then(rep=> rep.json())
+               .then((data)=>{
+                   console.log(data);
+                   if (data == "correct"){
+                        l05.classList.add("ulul");
+                        u5.classList.add("uddd");
+                        su5.classList.add("suu");  
+                   }
+                   else if(data == ""){
+
+                   }
+                   else if(data == "Incorrect"){
+
+                   }
+               })              
+           }
+
+        }
+
+        {const url16='https://script.googleusercontent.com/macros/echo?user_content_key=l-oJGNk4PSA3IWWXEMYH95jqE9qGbwriSftmjPcF_zVKzhQJ2twrCYPEmB-jrJ9DT-X3DHoagI_pzK_XRLGCNqMWfviRij8im5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnDLMrYKEk15uNhNJ16dt4WlV__ZP11dCDF2V-zaEVqVphfA-72SvpUAVnen2VU5r59bSqk3ol3n6OXzsD0_Ohg_aLfpwOeNV29z9Jw9Md8uu&lib=MgyJbF8ysyaP0KQjwcGL6khAf73fixrCU'
+           
+           loadData();
+           function loadData(){
+               fetch(url16).then(rep=> rep.json())
+               .then((data)=>{
+                   console.log(data);
+                   if (data == "correct"){
+                        l06.classList.add("ulul");
+                        u6.classList.add("uddd");
+                        su6.classList.add("suu"); 
+
+                   }
+                   else if(data == ""){
+
+                   }
+                   else if(data == "Incorrect"){
+
+                   }
+               })              
+           }
+
+        }
+
+        {const url17='https://script.googleusercontent.com/macros/echo?user_content_key=-lid-m87KmLg1Fq-hGgmg5RT9Za0ThxhB3aCOOOuE2mzMLAQdNrXXQoKTVITBlr4kaCvuyomv8exUTeKKaqwtiahbgwz0y-jm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnHH8Rg9JtNzyyF8cW0P6LCWbVWV394cjClNMd098cMlNybVWDabvM9p70TVb74ke-4So3PtsVEoyuuiMfadaP_GiY2Od0OkIuQ&lib=M9bUhPkYo5LFWU9fUhZUKfKY_2WQSWQ1z'
+           
+           loadData();
+           function loadData(){
+               fetch(url17).then(rep=> rep.json())
+               .then((data)=>{
+                   console.log(data);
+                   if (data == "correct"){
+                        l07.classList.add("ulul");
+                        u7.classList.add("uddd");
+                        su7.classList.add("suu"); 
+
+                   }
+                   else if(data == ""){
+
+                   }
+                   else if(data == "Incorrect"){
+
+                   }
+               })              
+           }
+
+        }
+
+        
+
+        </script>
+
+    </body>
+
+
+</html>

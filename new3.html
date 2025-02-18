@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Core Room 02
+        </title>
+        <meta charset="utf-8">
+        <meta name="viweport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="new3.css">
+        <script src="autologout.js"></script>
+
+    </head>
+
+    <body id="body1" class="body1">
+        <div id="alredysubmit" class="alredysubmit">
+            <div class="bk">
+                <form method="post" action="" name="contactform" id="contactform" autocomplete="off"> 
+                    <label class="select_the_name" for="room2">Select Your Name:</label>
+                    <div class="choose_name">
+                        <select class="input1" name="Name" required>
+                            <option selected disabled></option>
+                            <option value="Rashira">Rashira</option>
+                            <option value="Ranaveera">Ranaveera</option>
+                            <option value="Duminda">Duminda</option>
+                            <option value="Eranga">Eranga</option>
+                            <option value="Nilesh">Nilesh</option>
+                            <option value="Baratha">Baratha</option>
+                            <option value="Chamara">Chamara</option>
+                            <option value="Sujith">Sujith</option>
+                            <option value="Yasath">Yasath</option>
+                            <option value="Padmasiri">Padmasiri</option>
+                            <option value="Chanaka">Chanaka</option>
+                            <option value="Gayan">Gayan</option>
+                            <option value="Chathuranga">Chathuranga</option>
+                            <option value="Chamath">Chamath</option>
+                        </select>
+                    </div>
+
+                    <div class="choose_name1">
+                        <label class="select_the_name" for="fdate" >Select to the Date :</label>
+                        <div class="x">
+                            <input class="input2" id ="fdate" type="date" name = "date"/>
+                        </div>
+                    </div>
+
+                    <h3 class="topic">CORE ROOM 02</h3>
+    <!-- panel1 -->
+                    <div class="panel01">
+                        <label class="select_the_name" for="room2">AC Main Pannel Current(A) (U,V,W):</label>
+                        <div class="panel01-input1">
+                            <input class="inputdetails" type="number" step ="any" min="80" max="250" id="room2" value="" placeholder="U" size="10" name="AC Main Pannel Current(A) (U)" required>
+                        </div>
+                        <div class="panel01-input1">
+                            <input class="inputdetails" type="number" step ="any" min="80" max="250" id="room2" value=""placeholder="V" size="10" name="AC Main Pannel Current(A) (V)" required>
+                        </div>
+                        <div class="panel01-input1">
+                            <input class="inputdetails" type="number" step ="any" min="80" max="250" id="room2" value="" placeholder="W" size="10" name="AC Main Pannel Current(A) (W)" required>
+                        </div> 
+                    </div> 
+
+                    <div class="panel01">
+                        <label class="select_the_name" for="room2">UPS 21 Load %(U,V,W) :</label>
+                        <div class="panel01-input1">
+                            <input class="inputdetails" type="number" step ="any" min="3" max="35" id="room2" value="" placeholder="(L1-N/L2)%" size="10" name="UPS 21 Load (L1-N/L2)%" required/>
+                        </div>
+                        <div class="panel01-input1">
+                            <input class="inputdetails" type="number" step ="any" min="3" max="35" id="room2" value="" placeholder="(L2-N/L3)%" size="10" name="UPS 21 Load (L2-N/L3)%" required/>
+                        </div>
+                        <div class="panel01-input1">
+                            <input class="inputdetails" type="number" step ="any" min="3" max="35" id="room2" value="" placeholder="(L3-N/L1)%" size="10" name="UPS 21 Load (L3-N/L1)%" required/>
+                        </div>
+                    </div>
+
+                    <div class="panel01">
+                        <label class="select_the_name" for="room2">UPS 22 Load %(L1/L2/L3) :</label>
+                        <div class="panel01-input1">
+                            <input class="inputdetails" type="number" step ="any"  min="3" max="35" id="room2" value="" placeholder="(L1-N/L2)%" size="10" name="UPS 22 Load (L1-N/L2)%" required/>
+                        </div>
+                        <div class="panel01-input1">
+                            <input class="inputdetails" type="number" step ="any" min="3" max="35" id="room2" value="" placeholder="(L2-N/L3)%" size="10" name="UPS 22 Load (L2-N/L3)%" required/>
+                        </div>
+                        <div class="panel01-input1">
+                            <input class="inputdetails" type="number" step ="any" min="3" max="35" id="room2" value="" placeholder="(L3-N/L1)%" size="10" name="UPS 22 Load (L3-N/L1)%" required/>
+                        </div>
+                    </div>
+
+                    <div class="panel01">
+                        <div class="">
+                            <label class="select_the_name" for="room2">Rectifier 22 DC Voltage (VDC)  :</label>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="45" max="65" id="room2" placeholder="(VDC)" value="" name="Rectifier 22 DC Voltage (VDC)" required/>
+                            </div>
+                        </div>
+                        <div class=""> 
+                            <label class="select_the_name" for="room2">Rectifier 22 DC Current (ADC) :</label>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="150" max="750" id="room2" placeholder="(ADC)" value="" name="Rectifier 22 DC Current (ADC)" required/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="alrm">
+                        <label class="select_the_name" for="room2">High Room Alarm:</label>
+                        <div class = "alram2">
+                            <select class="alrm2-1" name="High Room Alarm">
+                                <option selected disabled>YES/NO</option>
+                                <option value="Yes">YES</option>
+                                <option value="No">NO</option>
+                            </select>
+                        </div>
+                        <div class="y">
+                            <input class="y-01" type="text" id="room2" placeholder="If yes plese remark" name="Comment1">
+                        </div>
+                    </div>
+
+                    <div class="alrm">
+                        <label class="select_the_name" for="room2">Ac Alarm:</label>
+                        <div class = alram2>
+                            <select class = "alrm2-2" name="AC Alarm">
+                                <option selected disabled>YES/NO</option>
+                                <option value="Yes">YES</option>
+                                <option value="No">NO</option>
+                            </select>
+                        </div>
+                        <div class="y">
+                            <input class="y-01" type="text" id="room2" placeholder="If yes plese remark" name="Comment2">
+                        </div>
+                    </div>
+
+                    <!-- <h3 class="topic">CORE ROOM 02 BATTERY ROOM (1st Floor)</h3>
+
+                    <div class="panel01">
+                        <label class="select_the_name" for="room2">AC Main Pannel Current(A) (U,V,W):</label>
+                        <div class="panel01-input1">
+                            <input class="inputdetails" type="number" step ="any" min="25" max="115" id="room2" value="" placeholder="U" size="10" name="Bat 01-AC Main Pannel Current(A) (U)" required>
+                        </div>
+                        <div class="panel01-input1">
+                            <input class="inputdetails" type="number" step ="any" min="25" max="115" id="room2" value=""placeholder="V" size="10" name="Bat 01-AC Main Pannel Current(A) (V)" required>
+                        </div>
+                        <div class="panel01-input1">
+                            <input class="inputdetails" type="number" step ="any" min="25" max="115" id="room2" value="" placeholder="W" size="10" name="Bat 01-AC Main Pannel Current(A) (W)" required>
+                        </div> 
+                    </div> 
+                    
+                    <div class="alrm">
+                        <label class="select_the_name" for="room2">High Room Alarm:</label>
+                        <div class = "alram2">
+                            <select class="alrm2-1" name="Bat 01-High Room Alarm">
+                                <option selected disabled>YES/NO</option>
+                                <option value="Yes">YES</option>
+                                <option value="No">NO</option>
+                            </select>
+                        </div>
+                        <div class="y">
+                            <input class="y-01" type="text" id="room2" placeholder="If yes plese remark" name="Comment3">
+                        </div>
+                    </div>
+
+                    <h3 class="topic">CORE ROOM 02 BATTERY ROOM (2nd Floor)</h3>
+
+                    <div class="panel01">
+                        <div class="">
+                            <label class="select_the_name" for="room2">ACPD 1 AC Current (AAC) :</label>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="15" max="45" id="room2" placeholder="(AAC)" value="" name="ACPD 1 AC Current (AAC)" required/>
+                            </div>
+                        </div>
+                        <div class=""> 
+                            <label class="select_the_name" for="room2">ACPD 2 AC Voltage (VAC) :</label>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="300" max="520" id="room2" placeholder="(VAC)" value="" name="ACPD 2 AC Voltage (VAC)" required/>
+                            </div>
+                        </div>
+                        <div class="">
+                            <label class="select_the_name" for="room2">Rectifier 1 DC Voltage (VDC) :</label>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="40" max="67" id="room2" placeholder="(VDC)" value="" name="Rectifier 1 DC Voltage (VDC)" required/>
+                            </div>
+                        </div>
+                        <div class=""> 
+                            <label class="select_the_name" for="room2">Rectifier 1 Total Load Current (ADC) :</label>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="150" max="500" id="room2" placeholder="(ADC)" value="" name="Rectifier 1 Total Load Current (ADC)" required/>
+                            </div>
+                        </div>
+                        <div class="">
+                            <label class="select_the_name" for="room2">Rectifier 2 DC Voltage (VDC) :</label>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="40" max="67" id="room2" placeholder="(VDC)" value="" name="Rectifier 2 DC Voltage (VDC)" required/>
+                            </div>
+                        </div>
+                        <div class=""> 
+                            <label class="select_the_name" for="room2">Rectifier 2 Total Load Current (ADC) :</label>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="150" max="500" id="room2" placeholder="(ADC)" value="" name="Rectifier 2 Total Load Current (ADC)" required/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="topic">Genarator - 04(635 KVA)</h3>
+
+                    <div class="panel01">
+                        <div class="">
+                            <label class="select_the_name" for="room2">GEN 04 Batt Voltage (VDC):</label>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="23" max="30" id="room2" placeholder="(VDC)" value="" name="GEN 04 Batt Voltage (VDC)" required/>
+                            </div>
+                        </div>
+                        <div class=""> 
+                            <label class="select_the_name" for="room2">GEN 04 Hours Meters:</label>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="280" max="1000" id="room2" placeholder="(hm)" value="" name="GEN 04 Hours Meters" required/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="alrm">
+                        <label class="select_the_name" for="room2">GEN 04 Fuel level:</label>
+                        <div class = alram2>
+                            <select class = "alrm2-2" name="GEN 04 Fuel level">
+                                <option selected disabled>FULL/LOW</option>
+                                <option value="Full">FULL</option>
+                                <option value="Low">LOW</option>
+                            </select>
+                        </div>
+                        <div class="y">
+                            <input class="y-01" type="text" id="room2" placeholder="Remark" name="Comment4">
+                        </div>
+                    </div> -->
+
+                    <div class="select_the_name">
+                        <a href="menu2.html">
+                            <input type="button" class="button" value="Back"/>
+                        </a>
+                        <input type="submit" class="submit" onclick="submited()" id="submit" value="Submit"/>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+        <script>
+
+                function preback(){window.history.forward();}
+                setTimeout("preback()",0);
+                window.onunload=function(){null};
+
+			const scriptURL = 'https://script.google.com/macros/s/AKfycbynsV2rI74Qu3DpibYOhK9zkduYAXfuYTjCY4otyc9v5eeCMwUVHxIS2OjNqmGQOwyp/exec'
+			const form = document.forms['contactform']
+		  
+			form.addEventListener('submit', e => {
+			  e.preventDefault()
+			  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+				.then(response => alert("Thank you! your form is submitted successfully." ))
+				.then(() => {  window.location = "menu2.html"; })
+				.catch(error => console.error('Error!', error.message))
+                alredysubmit.classList.add("popup");
+			})    
+
+		</script>
+        
+
+    </body>
+
+</html>

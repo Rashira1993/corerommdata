@@ -1,0 +1,245 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('server2.jpg') no-repeat center center/cover;
+    font-family: 'Poppins', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: auto;
+    color: rgb(168, 236, 10);
+}
+
+.main-container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    height: 80%;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    /* overflow: hidden; */
+    background-color:rgb(168, 236, 10);
+}
+
+.left-panel {
+    flex: 1;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+    url('ser3.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: rgb(168, 236, 10);
+    padding: 3rem;
+}
+
+.left-panel h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.left-panel p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    line-height: 1.8;
+}
+
+.right-panel {
+    flex: 1;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(135deg, #53514e 30%, #6971e2 100%);
+    color: rgb(168, 236, 10);;
+    border-left: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.right-panel h2 {
+    color: rgb(168, 236, 10);;
+    margin-bottom: 2rem;
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: rgb(168, 236, 10);;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.8rem;
+    padding-right: 2.5rem;
+    border: 1px solid #e0f7ff;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: rgb(168, 236, 10);;
+}
+
+.input-group input:focus {
+    border-color: rgb(168, 236, 10);;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 65%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #e0f7ff;
+}
+
+.btn-login {
+    background-color: rgb(216, 240, 161);;
+    color: #007BFF;
+    font-size: 1rem;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.options a {
+    color: rgb(168, 236, 10);;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+
+.sign-up {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    text-align: center;
+    color: rgb(168, 236, 10);;
+}
+
+.sign-up a {
+    color: rgb(168, 236, 10);;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sign-up a:hover {
+    text-decoration: underline;
+}
+/* Styling for the loading spinner */
+.loading-spinner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none; /* Hidden by default */
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    color: rgb(168, 236, 10);;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 9999;
+}
+
+.spinner {
+    border: 4px solid #f3f3f3; /* Light gray */
+    border-top: 4px solid #3498db; /* Blue color */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+footer {
+    width: 100%;
+    background-color: #020d33;
+    color: white;
+    text-align: center;
+    padding: 2px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+/* Styling for the error message */
+
+/* Keyframes for the spinner animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    }
+
+    .left-panel {
+        padding: 2rem;
+        text-align: center;
+        align-items: center;
+    }
+
+    .right-panel {
+        padding: 2rem;
+    }
+
+    .left-panel h1 {
+        font-size: 2rem;
+    }
+
+    .left-panel p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .right-panel h2 {
+        font-size: 1.8rem;
+    }
+
+    .btn-login {
+        font-size: 0.9rem;
+    }
+}

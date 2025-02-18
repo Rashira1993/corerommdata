@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.background{
+    background-image: url("server2.jpg");
+    background-blend-mode: darken;
+    background: rgba(0, 0, 0, 0.7) url("server2.jpg");
+}
+.outerborder{
+    /* border: 1px solid red; */
+    width: 100%;
+    padding: 40px 0px 0px;
+}
+.innerborder{
+    padding: 40px 0px;
+    /* border: 1px solid red; */
+    width: 100%;
+}
+
+.outerborder > .container > .headTopic,.detailssheet{
+    /* border: 1px solid red; */
+    text-align: center;
+    justify-content: center;
+}
+
+.outerborder > .container > .row  h2{
+    color: rgb(255, 136, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+}
+.innerborder > .container > .row form .choose_name1{
+    margin-bottom: 30px;
+}
+.innerborder > .container > .row form .choose_name1 > .select_the_name{
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    color: rgb(9, 180, 248);
+}
+.innerborder > .container > .row form .choose_name1 >.form-select,.form-control{
+    border-color: blue!important;
+}
+.innerborder > .container > .row form .btn{
+    width: 20%;
+    margin-top: 30px;
+    margin-right: 10px;
+}

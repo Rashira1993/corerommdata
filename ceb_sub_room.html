@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            CEB Sub Room
+        </title>
+        <meta charset="utf-8">
+        <meta name="viweport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="mceb_sub_room.css">
+        <script src="autologout.js"></script>
+
+    </head>
+
+    <body id="body1" class="body1">
+
+        <div id="alredysubmit" class="alredysubmit">
+            <div class="bk">
+                <form method="post" action="" name="contactform" id="contactform" autocomplete="off"> 
+                    <label class="select_the_name" for="ceb_subroom">Select Your Name:</label>
+                    <div class="choose_name">
+                        <select class="input1" name="Name" required>
+                            <option selected disabled></option>
+                            <option value="Rashira">Rashira</option>
+                            <option value="Ranaveera">Ranaveera</option>
+                            <option value="Duminda">Duminda</option>
+                            <option value="Eranga">Eranga</option>
+                            <option value="Nilesh">Nilesh</option>
+                            <option value="Baratha">Baratha</option>
+                            <option value="Chamara">Chamara</option>
+                            <option value="Sujith">Sujith</option>
+                            <option value="Yasath">Yasath</option>
+                            <option value="Padmasiri">Padmasiri</option>
+                            <option value="Chanaka">Chanaka</option>
+                            <option value="Gayan">Gayan</option>
+                            <option value="Chathuranga">Chathuranga</option>
+                            <option value="Chamath">Chamath</option>
+                        </select>
+                    </div>
+
+                    <div class="choose_name1">
+                        <label class="select_the_name" for="fdate" >Select to the Date :</label>
+                        <div class="x">
+                            <input class="input2" id ="fdate" type="date" name = "date"/>
+                        </div>
+                    </div>
+
+                    <h3 class="topic">MAIN I/C PANEL</h3>
+    <!-- panel1 -->
+                    <div class="panel01">
+                        <label class="select_the_name" for="ceb_subroom">MAIN I/C PANEL Current(A) (U,V,W):</label>
+                        <div class="panel01-input1">
+                            <input class="inputdetails" type="number" step ="any" min="0" max="1000000" id="ceb_subroom" value="" placeholder="U" size="10" name="MAIN I/C PANEL Current(A) (U)" required>
+                        </div>
+                        <div class="panel01-input1">
+                            <input class="inputdetails" type="number" step ="any" min="0" max="1000000" id="ceb_subroom" value=""placeholder="V" size="10" name="MAIN I/C PANEL Current(A) (V)" required>
+                        </div>
+                        <div class="panel01-input1">
+                            <input class="inputdetails" type="number" step ="any" min="0" max="1000000" id="ceb_subroom" value="" placeholder="W" size="10" name="MAIN I/C PANEL Current(A) (W)" required>
+                        </div> 
+                    </div> 
+
+                    <div class="panel01">
+                        <div class="">
+                            <label class="select_the_name" for="ceb_subroom">Energy (MWh):</label>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="0" max="1000000" id="ceb_subroom" placeholder="(MWh)" value="" name="MAIN I/C Energy (MWh)" required/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="alrm">
+                        <label class="select_the_name" for="ceb_subroom">Numerical Relay - Protection Healthy:</label>
+                        <div class = "alram2">
+                            <select class="alrm2-1" name="MAIN I/C Relay - Protection Healthy">
+                                <option selected disabled>-------</option>
+                                <option value="Healthy">HEALTHY</option>
+                                <option value="Faulty">FAULTY</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="alrm">
+                        <label class="select_the_name" for="ceb_subroom">CB - On / Off:</label>
+                        <div class = alram2>
+                            <select class = "alrm2-2" name="MAIN I/C CB - On / Off">
+                                <option selected disabled>-------</option>
+                                <option value="On">ON</option>
+                                <option value="Off">OFF</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="alrm">
+                        <label class="select_the_name" for="ceb_subroom">CB Spring Charged:</label>
+                        <div class = "alram2">
+                            <select class="alrm2-1" name="MAIN I/C CB Spring Charged">
+                                <option selected disabled>--------</option>
+                                <option value="Yes">YES</option>
+                                <option value="No">NO</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="alrm">
+                        <label class="select_the_name" for="ceb_subroom">CB Trip Check Healthy:</label>
+                        <div class = alram2>
+                            <select class = "alrm2-2" name="MAIN I/C CB Trip Check Healthy">
+                                <option selected disabled>-------</option>
+                                <option value="Healthy">HEALTHY</option>
+                                <option value="Faulty">FAULTY</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <h3 class="topic">MV-1 O/G PANEL</h3>
+
+                    <div class="panel01">
+                        <label class="select_the_name" for="ceb_subroom">MV-1 O/G PANEL Current(A) (U,V,W):</label>
+                        <div class="panel01-input1">
+                            <input class="inputdetails" type="number" step ="any" min="0" max="1000000" id="ceb_subroom" value="" placeholder="U" size="10" name="MV-1 O/G PANEL Current(A) (U)" required>
+                        </div>
+                        <div class="panel01-input1">
+                            <input class="inputdetails" type="number" step ="any" min="0" max="1000000" id="ceb_subroom" value=""placeholder="V" size="10" name="MV-1 O/G PANEL Current(A) (V)" required>
+                        </div>
+                        <div class="panel01-input1">
+                            <input class="inputdetails" type="number" step ="any" min="0" max="1000000" id="ceb_subroom" value="" placeholder="W" size="10" name="MV-1 O/G PANEL Current(A) (W)" required>
+                        </div> 
+                    </div> 
+
+                    <div class="panel01">
+                        <div class="">
+                            <label class="select_the_name" for="ceb_subroom">Energy (MWh):</label>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="0" max="1000000" id="ceb_subroom" placeholder="(MWh)" value="" name="MV-1 Energy (MWh)" required/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="alrm">
+                        <label class="select_the_name" for="ceb_subroom">Numerical Relay - Protection Healthy:</label>
+                        <div class = "alram2">
+                            <select class="alrm2-1" name="MV-1 Relay - Protection Healthy">
+                                <option selected disabled>-------</option>
+                                <option value="Healthy">HEALTHY</option>
+                                <option value="Faulty">FAULTY</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="alrm">
+                        <label class="select_the_name" for="ceb_subroom">CB - On / Off:</label>
+                        <div class = alram2>
+                            <select class = "alrm2-2" name="MV-1 CB - On / Off">
+                                <option selected disabled>-------</option>
+                                <option value="On">ON</option>
+                                <option value="Off">OFF</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="alrm">
+                        <label class="select_the_name" for="ceb_subroom">CB Spring Charged:</label>
+                        <div class = "alram2">
+                            <select class="alrm2-1" name="MV-1 CB Spring Charged">
+                                <option selected disabled>--------</option>
+                                <option value="Yes">YES</option>
+                                <option value="No">NO</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="alrm">
+                        <label class="select_the_name" for="ceb_subroom">CB Trip Check Healthy:</label>
+                        <div class = alram2>
+                            <select class = "alrm2-2" name="MV-1 CB Trip Check Healthy">
+                                <option selected disabled>-------</option>
+                                <option value="Healthy">HEALTHY</option>
+                                <option value="Faulty">FAULTY</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <h3 class="topic">MV-2 O/G O/G Panel</h3>
+
+                    <div class="panel01">
+                        <label class="select_the_name" for="ceb_subroom">MV-2 O/G O/G Panel Current(A) (U,V,W):</label>
+                        <div class="panel01-input1">
+                            <input class="inputdetails" type="number" step ="any" min="0" max="1000000" id="ceb_subroom" value="" placeholder="U" size="10" name="MV-2 O/G O/G Panel Current(A) (U)" required>
+                        </div>
+                        <div class="panel01-input1">
+                            <input class="inputdetails" type="number" step ="any" min="0" max="1000000" id="ceb_subroom" value=""placeholder="V" size="10" name="MV-2 O/G O/G Panel Current(A) (V)" required>
+                        </div>
+                        <div class="panel01-input1">
+                            <input class="inputdetails" type="number" step ="any" min="0" max="1000000" id="ceb_subroom" value="" placeholder="W" size="10" name="MV-2 O/G O/G Panel Current(A) (W)" required>
+                        </div> 
+                    </div> 
+
+                    <div class="panel01">
+                        <div class="">
+                            <label class="select_the_name" for="ceb_subroom">Energy (MWh):</label>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="0" max="1000000" id="ceb_subroom" placeholder="(MWh)" value="" name="MV-2 Energy (MWh)" required/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="alrm">
+                        <label class="select_the_name" for="ceb_subroom">Numerical Relay - Protection Healthy:</label>
+                        <div class = "alram2">
+                            <select class="alrm2-1" name="MV-2 Relay - Protection Healthy">
+                                <option selected disabled>-------</option>
+                                <option value="Healthy">HEALTHY</option>
+                                <option value="Faulty">FAULTY</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="alrm">
+                        <label class="select_the_name" for="ceb_subroom">CB - On / Off:</label>
+                        <div class = alram2>
+                            <select class = "alrm2-2" name="MV-2 CB - On / Off">
+                                <option selected disabled>-------</option>
+                                <option value="On">ON</option>
+                                <option value="Off">OFF</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="alrm">
+                        <label class="select_the_name" for="ceb_subroom">CB Spring Charged:</label>
+                        <div class = "alram2">
+                            <select class="alrm2-1" name="MV-2CB Spring Charged">
+                                <option selected disabled>--------</option>
+                                <option value="Yes">YES</option>
+                                <option value="No">NO</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="alrm">
+                        <label class="select_the_name" for="ceb_subroom">CB Trip Check Healthy:</label>
+                        <div class = alram2>
+                            <select class = "alrm2-2" name="MV-2 CB Trip Check Healthy">
+                                <option selected disabled>-------</option>
+                                <option value="Healthy">HEALTHY</option>
+                                <option value="Faulty">FAULTY</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="select_the_name">
+                        <a href="power_room.html">
+                            <input type="button" class="button" value="Back"/>
+                        </a>
+                        <input type="submit" class="submit" onclick="submited()" onclick="" id="submit" value="Submit"/>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+        <script>
+            
+			const scriptURL = 'https://script.google.com/macros/s/AKfycbz97keaYpW7CBqfjszsn9-01-xxwCfUsOj3axTFw3EVGd9_dyt23ns1q8lUmBiYLtPjZg/exec'
+			const form = document.forms['contactform']
+		  
+			form.addEventListener('submit', e => {
+			  e.preventDefault()
+			  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+				.then(response => alert("Thank you! your form is submitted successfully." ))
+				.then(() => {  window.location = "power_room.html"; })
+				.catch(error => console.error('Error!', error.message))
+                alredysubmit.classList.add("popup");
+			})
+            
+
+		</script>
+        
+
+    </body>
+
+</html>

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            LV Room
+        </title>
+        <meta charset="utf-8">
+        <meta name="viweport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Lv_room.css">
+        <script src="autologout.js"></script>
+
+    </head>
+
+    <body id="body1" class="body1">
+
+        <div id="alredysubmit" class="alredysubmit">
+            <div class="bk">
+                <form method="post" action="" name="contactform" id="contactform" autocomplete="off"> 
+                    <label class="select_the_name" for="Lv_room">Select Your Name:</label>
+                    <div class="choose_name">
+                        <select class="input1" name="Name" required>
+                            <option selected disabled></option>
+                            <option value="Rashira">Rashira</option>
+                            <option value="Ranaveera">Ranaveera</option>
+                            <option value="Duminda">Duminda</option>
+                            <option value="Eranga">Eranga</option>
+                            <option value="Nilesh">Nilesh</option>
+                            <option value="Baratha">Baratha</option>
+                            <option value="Chamara">Chamara</option>
+                            <option value="Sujith">Sujith</option>
+                            <option value="Yasath">Yasath</option>
+                            <option value="Padmasiri">Padmasiri</option>
+                            <option value="Chanaka">Chanaka</option>
+                            <option value="Gayan">Gayan</option>
+                            <option value="Chathuranga">Chathuranga</option>
+                            <option value="Chamath">Chamath</option>
+                        </select>
+                    </div>
+
+                    <div class="choose_name1">
+                        <label class="select_the_name" for="fdate" >Select to the Date :</label>
+                        <div class="x">
+                            <input class="input2" id ="fdate" type="date" name = "date"/>
+                        </div>
+                    </div>
+
+                    <label class="select_the_name" for="Lv_room">Select The Active Panel</label>
+                    <div class="choose_name">
+                        <select class="input1" id="selection" name="Active Panel" onchange="selectPanel(this)" required>
+                            <option selected disabled></option>
+                            <option value="Panel 01(KIK)">Panel 01 (KIK)</option>
+                            <option value="Panel 02(Pubudu)">Panel 02 (PUBUDU)</option>
+                            <option value="Both Panel">Both Pnael</option>
+                        </select>
+                    </div>
+
+                    <div class="new section">
+
+                        <h3 class="topic">LV PANEL - 01 (KIK Panel)</h3>
+        <!-- panel1 -->
+                        <div class="panel01">
+                            <label class="select_the_name" for="Lv_room">T/F-1 Current(A) (U,V,W):</label>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="1250" max="2800" id="Lv_room20" value="" placeholder="U" size="10" name="T/F-1 Current(A) (U)" disabled="" required>
+                            </div>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="1250" max="2800" id="Lv_room21" value=""placeholder="V" size="10" name="T/F-1 Current(A) (V)" disabled="" required>
+                            </div>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="1250" max="2800" id="Lv_room22" value="" placeholder="W" size="10" name="T/F-1 Current(A) (W)" disabled="" required>
+                            </div> 
+                        </div> 
+
+                        <div class="panel01">
+                            <div class="">
+                                <label class="select_the_name" for="Lv_room">Energy (KWh):</label>
+                                <div class="panel01-input1">
+                                    <input class="inputdetails" type="number" step ="any" min="0" max="100000000" id="Lv_room23" placeholder="(MWh)" value="" name="T/F-1 Energy (KWh)" disabled="" required/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="Lv_room">ATS-1 Switch Position (A/O/M):</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" id="Lv_room24" name="ATS-1 Switch Position (A/O/M)" disabled="">
+                                    <option selected disabled>-------</option>
+                                    <option value="Auto">AUTO</option>
+                                    <option value="Manual">MANUAL</option>
+                                    <option value="Off">OFF</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="Lv_room">EFR Status:</label>
+                            <div class = alram2>
+                                <select class = "alrm2-2" id="Lv_room25" name="ATS-1 EFR Status" disabled="">
+                                    <option selected disabled>-------</option>
+                                    <option value="Normal">NORMAL</option>
+                                    <option value="Abnormal">ABNORMAL</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="Lv_room">Bus Coupler CB:</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" id="Lv_room26" name="Bus Coupler 01 CB" disabled="">
+                                    <option selected disabled>--------</option>
+                                    <option value="On">ON</option>
+                                    <option value="Off">OFF</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="Lv_room">Bus Coupler Switch Position (A/O/M):</label>
+                            <div class = alram2>
+                                <select class = "alrm2-2" id="Lv_room27" name="Bus Coupler 01 Switch Position (A/O/M)" disabled="">
+                                    <option selected disabled>-------</option>
+                                    <option value="Auto">AUTO</option>
+                                    <option value="Manual">MANUAL</option>
+                                    <option value="Off">OFF</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="panel01">
+                            <label class="select_the_name" for="Lv_room">T/F-2 Current(A) (U,V,W):</label>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="0" max="2800" id="Lv_room28" value="" placeholder="U" size="10" name="T/F-2 Current(A) (U)" disabled="" required>
+                            </div>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="0" max="2800" id="Lv_room29" value=""placeholder="V" size="10" name="T/F-2 Current(A) (V)" disabled="" required>
+                            </div>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="0" max="2800" id="Lv_room30" value="" placeholder="W" size="10" name="T/F-2 Current(A) (W)" disabled="" required>
+                            </div> 
+                        </div> 
+
+                        <div class="panel01">
+                            <div class="">
+                                <label class="select_the_name" for="Lv_room">Energy (KWh):</label>
+                                <div class="panel01-input1">
+                                    <input class="inputdetails" type="number" step ="any" min="0" max="100000000" id="Lv_room31" placeholder="(MWh)" value="" name="T/F-2 Energy (KWh)" disabled="" required/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="Lv_room">ATS-2 Switch Position (A/O/M):</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" id="Lv_room32" name="ATS-2 Switch Position (A/O/M)" disabled="">
+                                    <option selected disabled>-------</option>
+                                    <option value="Auto">AUTO</option>
+                                    <option value="Manual">MANUAL</option>
+                                    <option value="Off">OFF</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="Lv_room">EFR Status:</label>
+                            <div class = alram2>
+                                <select class = "alrm2-2" id="Lv_room33" name="ATS-2 EFR Status" disabled="">
+                                    <option selected disabled>-------</option>
+                                    <option value="Normal">NORMAL</option>
+                                    <option value="Abnormal">ABNORMAL</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="Lv_room">Synchronous Panel Mode - (Auto / Manual):</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" id="Lv_room34" name="Synchronous Panel Mode-01 (Auto / Manual)" disabled="">
+                                    <option selected disabled>--------</option>
+                                    <option value="Auto">AUTO</option>
+                                    <option value="Manual">MANUAL</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="alrm">
+                            <label class="select_the_name" for="Lv_room">KIK Panel Battery Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" id="Lv_room35" name="KIK Panel Battery Status" disabled="">
+                                    <option selected disabled>-------</option>
+                                    <option value="Green">Green(Healthy)</option>
+                                    <option value="White">White(Need charge/Faulty)</option>
+                                    <option value="Red">Red(Low filled Contact,Service agent)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- ----------------------------------------------------------------------------------------------- -->
+                    <div class="select_new_01" id="select_new_01" >
+                        <h3 class="topic">LV PANEL - 02 (Pubudu Panel)</h3>
+
+                        <div class="panel01">
+                            <label class="select_the_name" for="Lv_room">T/F-3 Current(A) (U,V,W):</label>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="0" max="2800" id="Lv_room1" value="" placeholder="U" size="10" name="T/F-3 Current(A) (U)" disabled="" required>
+                            </div>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="0" max="2800" id="Lv_room2" value=""placeholder="V" size="10" name="T/F-3 Current(A) (V)" disabled="" required>
+                            </div>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="0" max="2800" id="Lv_room3" value="" placeholder="W" size="10" name="T/F-3 Current(A) (W)" disabled="" required>
+                            </div> 
+                        </div> 
+
+                        <div class="panel01">
+                            <div class="">
+                                <label class="select_the_name" for="Lv_room">Energy (KWh):</label>
+                                <div class="panel01-input1">
+                                    <input class="inputdetails" type="number" step ="any" min="0" max="100000000" id="Lv_room4" placeholder="(MWh)" value="" name="T/F-3 Energy (KWh)" disabled="" required/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="Lv_room">ATS-3 Switch Position (A/O/M):</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" id="Lv_room5" name="ATS-3 Switch Position (A/O/M)" disabled="">
+                                    <option selected disabled>-------</option>
+                                    <option value="Auto">AUTO</option>
+                                    <option value="Manual">MANUAL</option>
+                                    <option value="Off">OFF</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="Lv_room">EFR Status:</label>
+                            <div class = alram2>
+                                <select class = "alrm2-2" id="Lv_room6" name="ATS-3 EFR Status" disabled="">
+                                    <option selected disabled>-------</option>
+                                    <option value="Normal">NORMAL</option>
+                                    <option value="Abnormal">ABNORMAL</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="Lv_room">Bus Coupler CB:</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" id="Lv_room7" name="Bus Coupler 02 CB" disabled="">
+                                    <option selected disabled>--------</option>
+                                    <option value="On">ON</option>
+                                    <option value="Off">OFF</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="Lv_room">Bus Coupler Switch Position (A/O/M):</label>
+                            <div class = alram2>
+                                <select class = "alrm2-2" id="Lv_room8" name="Bus Coupler 02 Switch Position (A/O/M)" disabled="">
+                                    <option selected disabled>-------</option>
+                                    <option value="Auto">AUTO</option>
+                                    <option value="Manual">MANUAL</option>
+                                    <option value="Off">OFF</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="panel01">
+                            <label class="select_the_name" for="Lv_room">T/F-4 Current(A) (U,V,W):</label>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="0" max="2800" id="Lv_room9" value="" placeholder="U" size="10" name="T/F-4 Current(A) (U)" disabled="" required>
+                            </div>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="0" max="2800" id="Lv_room10" value=""placeholder="V" size="10" name="T/F-4 Current(A) (V)" disabled="" required>
+                            </div>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="0" max="2800" id="Lv_room11" value="" placeholder="W" size="10" name="T/F-4 Current(A) (W)" disabled="" required>
+                            </div> 
+                        </div> 
+
+                        <div class="panel01">
+                            <div class="">
+                                <label class="select_the_name" for="Lv_room">Energy (KWh):</label>
+                                <div class="panel01-input1">
+                                    <input class="inputdetails" type="number" step ="any" min="0" max="10000000" id="Lv_room12" placeholder="(MWh)" value="" name="T/F-4 Energy (KWh)" disabled="" required/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="Lv_room">ATS-4 Switch Position (A/O/M):</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" id="Lv_room13" name="ATS-4 Switch Position (A/O/M)" disabled="">
+                                    <option selected disabled>-------</option>
+                                    <option value="Auto">AUTO</option>
+                                    <option value="Manual">MANUAL</option>
+                                    <option value="Off">OFF</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="Lv_room">EFR Status:</label>
+                            <div class = alram2>
+                                <select class = "alrm2-2" id="Lv_room14" name="ATS-4 EFR Status" disabled="">
+                                    <option selected disabled>-------</option>
+                                    <option value="Normal">NORMAL</option>
+                                    <option value="Abnormal">ABNORMAL</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="Lv_room">Synchronous Panel-02 Mode - (Auto / Manual):</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" id="Lv_room15" name="Synchronous Panel Mode 02 - (Auto / Manual)" disabled="">
+                                    <option selected disabled>--------</option>
+                                    <option value="Auto">AUTO</option>
+                                    <option value="Manual">MANUAL</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="select_the_name">
+                        <a href="power_room.html">
+                            <input type="button" class="button" value="Back"/>
+                        </a>
+                        <input type="submit" class="submit" onclick="submited()" onclick="" id="submit" value="Submit"/>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+
+        <script>
+
+            function selectPanel(panel){
+                console.log(panel.value)
+                if (panel.value == "Panel 01(KIK)"){
+
+                    document.getElementById('Lv_room20').disabled = false
+                    document.getElementById('Lv_room21').disabled = false
+                    document.getElementById('Lv_room22').disabled = false
+                    document.getElementById('Lv_room23').disabled = false
+                    document.getElementById('Lv_room24').disabled = false
+                    document.getElementById('Lv_room25').disabled = false
+                    document.getElementById('Lv_room26').disabled = false
+                    document.getElementById('Lv_room27').disabled = false
+                    document.getElementById('Lv_room28').disabled = false
+                    document.getElementById('Lv_room29').disabled = false
+                    document.getElementById('Lv_room30').disabled = false
+                    document.getElementById('Lv_room31').disabled = false
+                    document.getElementById('Lv_room32').disabled = false
+                    document.getElementById('Lv_room33').disabled = false
+                    document.getElementById('Lv_room34').disabled = false
+                    document.getElementById('Lv_room35').disabled = false
+
+                    document.getElementById('Lv_room1').disabled = true
+                    document.getElementById('Lv_room2').disabled = true
+                    document.getElementById('Lv_room3').disabled = true
+                    document.getElementById('Lv_room4').disabled = true
+                    document.getElementById('Lv_room5').disabled = true
+                    document.getElementById('Lv_room6').disabled = true
+                    document.getElementById('Lv_room7').disabled = true
+                    document.getElementById('Lv_room8').disabled = true
+                    document.getElementById('Lv_room9').disabled = true
+                    document.getElementById('Lv_room10').disabled = true
+                    document.getElementById('Lv_room11').disabled = true
+                    document.getElementById('Lv_room12').disabled = true
+                    document.getElementById('Lv_room13').disabled = true
+                    document.getElementById('Lv_room14').disabled = true
+                    document.getElementById('Lv_room15').disabled = true
+
+                }else if(panel.value == "Panel 02(Pubudu)"){
+
+                    document.getElementById('Lv_room1').disabled = false
+                    document.getElementById('Lv_room2').disabled = false
+                    document.getElementById('Lv_room3').disabled = false
+                    document.getElementById('Lv_room4').disabled = false
+                    document.getElementById('Lv_room5').disabled = false
+                    document.getElementById('Lv_room6').disabled = false
+                    document.getElementById('Lv_room7').disabled = false
+                    document.getElementById('Lv_room8').disabled = false
+                    document.getElementById('Lv_room9').disabled = false
+                    document.getElementById('Lv_room10').disabled = false
+                    document.getElementById('Lv_room11').disabled = false
+                    document.getElementById('Lv_room12').disabled = false
+                    document.getElementById('Lv_room13').disabled = false
+                    document.getElementById('Lv_room14').disabled = false
+                    document.getElementById('Lv_room15').disabled = false
+
+                    document.getElementById('Lv_room20').disabled = true
+                    document.getElementById('Lv_room21').disabled = true
+                    document.getElementById('Lv_room22').disabled = true
+                    document.getElementById('Lv_room23').disabled = true
+                    document.getElementById('Lv_room24').disabled = true
+                    document.getElementById('Lv_room25').disabled = true
+                    document.getElementById('Lv_room26').disabled = true
+                    document.getElementById('Lv_room27').disabled = true
+                    document.getElementById('Lv_room28').disabled = true
+                    document.getElementById('Lv_room29').disabled = true
+                    document.getElementById('Lv_room30').disabled = true
+                    document.getElementById('Lv_room31').disabled = true
+                    document.getElementById('Lv_room32').disabled = true
+                    document.getElementById('Lv_room33').disabled = true
+                    document.getElementById('Lv_room34').disabled = true
+                    document.getElementById('Lv_room35').disabled = true
+
+                }else if(panel.value == "Both Panel"){
+                    document.getElementById('Lv_room1').disabled = false
+                    document.getElementById('Lv_room2').disabled = false
+                    document.getElementById('Lv_room3').disabled = false
+                    document.getElementById('Lv_room4').disabled = false
+                    document.getElementById('Lv_room5').disabled = false
+                    document.getElementById('Lv_room6').disabled = false
+                    document.getElementById('Lv_room7').disabled = false
+                    document.getElementById('Lv_room8').disabled = false
+                    document.getElementById('Lv_room9').disabled = false
+                    document.getElementById('Lv_room10').disabled = false
+                    document.getElementById('Lv_room11').disabled = false
+                    document.getElementById('Lv_room12').disabled = false
+                    document.getElementById('Lv_room13').disabled = false
+                    document.getElementById('Lv_room14').disabled = false
+                    document.getElementById('Lv_room15').disabled = false
+
+                    document.getElementById('Lv_room20').disabled = false
+                    document.getElementById('Lv_room21').disabled = false
+                    document.getElementById('Lv_room22').disabled = false
+                    document.getElementById('Lv_room23').disabled = false
+                    document.getElementById('Lv_room24').disabled = false
+                    document.getElementById('Lv_room25').disabled = false
+                    document.getElementById('Lv_room26').disabled = false
+                    document.getElementById('Lv_room27').disabled = false
+                    document.getElementById('Lv_room28').disabled = false
+                    document.getElementById('Lv_room29').disabled = false
+                    document.getElementById('Lv_room30').disabled = false
+                    document.getElementById('Lv_room31').disabled = false
+                    document.getElementById('Lv_room32').disabled = false
+                    document.getElementById('Lv_room33').disabled = false
+                    document.getElementById('Lv_room34').disabled = false
+                    document.getElementById('Lv_room35').disabled = false
+                }
+            }
+
+
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzUEhEoJiyYBqyngqqfgEbz6brqsR3fZkFqlT79PtfSoUhhPokmnqAuvWPlTt4sKrAZcg/exec'
+			const form = document.forms['contactform']
+		  
+			form.addEventListener('submit', e => {
+			  e.preventDefault()
+			  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+				.then(response => alert("Thank you! your form is submitted successfully." ))
+				.then(() => { window.location = "power_room.html"; })
+				.catch(error => console.error('Error!', error.message))
+                alredysubmit.classList.add("popup");
+			})
+
+
+        </script>
+        
+
+    </body>
+
+</html>

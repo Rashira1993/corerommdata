@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="left-panel">
+            <h1>Core Room Checklist Login Form</h1>
+            <p>This was created to analyze data from all core rooms, identify changes in power, and find solutions.</p>
+        </div>
+        <div class="right-panel">
+            <h2 id="panel-title">Welcome</h2>
+            <form id="login-form">
+                <div id="form-content">
+                    <div class="input-group">
+                        <label for="email">Email ID</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter your password" required>
+                        <span class="toggle-password" id="toggle-password">👁</span>
+                    </div>
+                    <div class="options">
+                        <label><input type="checkbox"> Remember me</label>
+                        <a id="forgot-password">Forgot your password?</a>
+                    </div>
+                    <button class="btn-login" type="button" id="login-button">Login</button>
+                </div>
+            </form>
+            <div class="sign-up">
+                Don’t have an account? <a href="#" id="register-link">Register Now</a>
+            </div>
+        </div>
+        <div id="loading" class="loading-spinner">
+            <div class="spinner"></div>
+            Loading...
+        </div>
+        
+    </div>
+
+    <script src="loginpage.js"></script>
+    <footer>
+        <p>Powered by Mobitel Pvt Ltd</p>
+    </footer>
+</body>
+</html>

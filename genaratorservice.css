@@ -1,0 +1,265 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.image{
+    /* background-image: url(server2.jpg); */
+    background-blend-mode: darken;
+    background: rgba(0, 0, 0, 0.7) url("server2.jpg");
+    /* background-position: center; */
+    background-size: cover;
+}
+
+.enableEdit{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 2%;
+    color: #f80c0c;
+    font-weight: bold;
+}
+.checbox{
+    margin-left: 20px;
+    margin-top: 15px;
+    border: 10px red;
+    width: 20px;
+}
+
+.mainTopic{
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(3, 157, 247);
+}
+
+.summary{
+    margin-top: 50px;
+    display: flex;
+    margin-left: 130px;
+    margin-bottom: 20px;
+}
+.label{
+    display: flex;
+    margin-left: 10px;
+    margin-right: 30px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: rgb(231, 155, 12);
+}
+.output1,.output2,.output3{
+    display: flex;
+    margin-left: 20px;
+    color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+th, td {
+    font-weight: bold;
+    color: rgb(231, 155, 12);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #3a04fd;
+    text-align: center;
+}
+
+th {
+    /* background-color: #110f0f; */
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+}
+
+table{
+    margin-top: 10px;
+    margin-left: 2%;
+    width: 95%;
+    margin-bottom: 60px;
+}
+.mainhead{
+    color: rgb(3, 59, 245);
+    text-align: left;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.input{
+    font-size: 25px;
+    text-align: center;
+    border: none;
+    width: 90%;
+    padding: 10px 0px 10px 0px;
+}
+.input01,.input02,.input03,.input04,.input30,.input31{
+    margin-left: 10px;
+    font-size: 25px;
+    border: none;
+    width: 30%;
+}
+.input05,.input06,.input07,.input08,.input32,.input33{
+    margin-left: 10px;
+    font-size: 25px;
+    border: none;
+    width: 30%;
+}
+.input09,.input10,.input11,.input12,.input34,.input35{
+    margin-left: 10px;
+    font-size: 25px;
+    border: none;
+    width: 30%;
+}
+.input13,.input14,.input15,.input16,.input36,.input37{
+    margin-left: 10px;
+    font-size: 25px;
+    border: none;
+    width: 30%;
+}
+.input17,.input18,.input19,.input20,.input38,.input39{
+    margin-left: 10px;
+    font-size: 25px;
+    border: none;
+    width: 30%;
+}
+.input21,.input22,.input23,.input24,.input40,.input41{
+    margin-left: 10px;
+    font-size: 25px;
+    border: none;
+    width: 30%;
+}
+.input25,.input26,.input27,.input28,.input42,.input43{
+    margin-left: 10px;
+    font-size: 25px;
+    border: none;
+    width: 30%;
+}
+
+.complete{
+    margin-left: 60px;
+    display: flex;
+    margin-bottom: 10px;
+    color: rgb(255, 125, 4);
+}
+.op01,.op02,.op03,.op04,.op05,.op06,.op07,.op08,.op31,.op32,.op33,.op34,.op35,.op36,.op37,.op38{
+    margin-left: 10px;
+    color: rgb(11, 245, 3);
+}
+.op09,.op10,.op11,.op12,.op13,.op14,.op15,.op16,.op39,.op40,.op41,.op42,.op43,.op30{
+    margin-left: 10px;
+    color: rgb(11, 245, 3);
+}
+.op17,.op18,.op19,.op20,.op21,.op22,.op23,.op24,.op25,.op26,.op27,.op28{
+    margin-left: 10px;
+    color: rgb(11, 245, 3);
+}
+
+.submit01{
+    width: 70%;
+    padding: 5px 10px 5px 10px;
+    background-color: rgb(15, 183, 235);
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;  
+}
+.submit02{
+    width: 70%;
+    padding: 5px 10px 5px 10px;
+    background-color: rgb(15, 183, 235);
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;  
+}
+.submit03{
+    width: 70%;
+    padding: 5px 10px 5px 10px;
+    background-color: rgb(15, 183, 235);
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;  
+}
+.submit04{
+    width: 70%;
+    padding: 5px 10px 5px 10px;
+    background-color: rgb(15, 183, 235);
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;  
+}
+.submit05{
+    width: 70%;
+    padding: 5px 10px 5px 10px;
+    background-color: rgb(15, 183, 235);
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;  
+}
+.submit06{
+    width: 70%;
+    padding: 5px 10px 5px 10px;
+    background-color: rgb(15, 183, 235);
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;  
+}
+.submit07{
+    width: 70%;
+    padding: 5px 10px 5px 10px;
+    background-color: rgb(15, 183, 235);
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;  
+}
+
+.submit01:hover{
+    background-color: rgb(11, 245, 3);
+    transform: scale(1.1);
+    z-index: 2;
+}
+.submit02:hover{
+    background-color: rgb(11, 245, 3);
+    transform: scale(1.1);
+    z-index: 2;
+}
+.submit03:hover{
+    background-color: rgb(11, 245, 3);
+    transform: scale(1.1);
+    z-index: 2;
+}
+.submit04:hover{
+    background-color: rgb(11, 245, 3);
+    transform: scale(1.1);
+    z-index: 2;
+}
+.submit05:hover{
+    background-color: rgb(11, 245, 3);
+    transform: scale(1.1);
+    z-index: 2;
+}
+.submit06:hover{
+    background-color: rgb(11, 245, 3);
+    transform: scale(1.1);
+    z-index: 2;
+}
+.submit07:hover{
+    background-color: rgb(11, 245, 3);
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.com{
+    color: #f80c0c;
+    /* visibility: visible; */
+}
+.sub{
+    pointer-events: none;
+    background-color: rgb(2, 248, 43);
+}
+.after{
+    pointer-events: none;
+}
+.before{
+    pointer-events: fill;
+}

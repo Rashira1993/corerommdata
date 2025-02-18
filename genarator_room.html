@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Genarator Room
+        </title>
+        <meta charset="utf-8">
+        <meta name="viweport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="genarator_room.css">
+        <script src="autologout.js"></script>
+
+    </head>
+
+    <body id="body1" class="body1">
+
+        <div id="alredysubmit" class="alredysubmit">
+            <div class="bk">
+                <form method="post" action="" name="contactform" id="contactform" autocomplete="off"> 
+                    <label class="select_the_name" for="genarator_room">Select Your Name:</label>
+                    <div class="choose_name">
+                        <select class="input1" name="Name" required>
+                            <option selected disabled></option>
+                            <option value="Rashira">Rashira</option>
+                            <option value="Ranaveera">Ranaveera</option>
+                            <option value="Duminda">Duminda</option>
+                            <option value="Eranga">Eranga</option>
+                            <option value="Nilesh">Nilesh</option>
+                            <option value="Baratha">Baratha</option>
+                            <option value="Chamara">Chamara</option>
+                            <option value="Sujith">Sujith</option>
+                            <option value="Yasath">Yasath</option>
+                            <option value="Padmasiri">Padmasiri</option>
+                            <option value="Chanaka">Chanaka</option>
+                            <option value="Gayan">Gayan</option>
+                            <option value="Chathuranga">Chathuranga</option>
+                            <option value="Chamath">Chamath</option>
+                        </select>
+                    </div>
+
+                    <div class="choose_name1">
+                        <label class="select_the_name" for="fdate" >Select to the Date :</label>
+                        <div class="x">
+                            <input class="input2" id ="fdate" type="date" name = "date"/>
+                        </div>
+                    </div>
+
+                    <h3 class="topic">GEN-01(2MVA)</h3>
+    <!-- panel1 -->
+                    <div class="panel01">
+                        <div class="">
+                            <label class="select_the_name" for="room1">Batt Voltage (VDC):</label>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="23" max="30" id="room1" placeholder="(VDC)" value="" name="GEN-01-Batt Voltage (VDC)" required/>
+                            </div>
+                        </div>
+                        <div class=""> 
+                            <label class="select_the_name" for="room1">Hour Meter:</label>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="0" max="1000000" id="room1" placeholder="(ADC)" value="" name="GEN-01-Hour Meter"required/>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="alrm">
+                        <label class="select_the_name" for="genarator_room">Genarator Function:</label>
+                        <div class = alram2>
+                            <select class = "alrm2-2" name="GEN-01-Genarator Function" required>
+                                <option selected disabled></option>
+                                <option value="Auto">AUTO</option>
+                                <option value="Manual">MANUAL</option>
+                                <option value="Off">OFF</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="alrm">
+                        <label class="select_the_name" for="genarator_room">Battery Acid Level:</label>
+                        <div class = "alram2">
+                            <select class="alrm2-1" name="GEN-01-Battery Acid Level">
+                                <option selected disabled>------</option>
+                                <option value="Full">FULL</option>
+                                <option value="Low">LOW</option>
+                                <option value="Medium">MEDIUM</option>     
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="alrm">
+                        <label class="select_the_name" for="genarator_room">Genarator No Load Test:</label>
+                        <div class = alram2>
+                            <select class = "alrm2-2" name="GEN-01-Genarator No Load Test">
+                                <option selected disabled>------</option>
+                                <option value="Yes">YES</option>
+                                <option value="No">NO</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <h3 class="topic">GEN-02(2MVA)</h3>
+
+                    <div class="panel01">
+                        <div class="">
+                            <label class="select_the_name" for="room1">Batt Voltage (VDC):</label>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="23" max="30" id="room1" placeholder="(VDC)" value="" name="GEN-02-Batt Voltage (VDC)" required/>
+                            </div>
+                        </div>
+                        <div class=""> 
+                            <label class="select_the_name" for="room1">Hour Meter:</label>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="0" max="1000000" id="room1" placeholder="(Hm)" value="" name="GEN-02-Hour Meter" required/>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="alrm">
+                        <label class="select_the_name" for="genarator_room">Genarator Function:</label>
+                        <div class = alram2>
+                            <select class = "alrm2-2" name="GEN-02-Genarator Function" required>
+                                <option selected disabled></option>
+                                <option value="Auto">AUTO</option>
+                                <option value="Manual">MANUAL</option>
+                                <option value="Off">OFF</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="alrm">
+                        <label class="select_the_name" for="genarator_room">Battery Acid Level:</label>
+                        <div class = "alram2">
+                            <select class="alrm2-1" name="GEN-02-Battery Acid Level">
+                                <option selected disabled>------</option>
+                                <option value="Full">FULL</option>
+                                <option value="Low">LOW</option>
+                                <option value="Medium">MEDIUM</option>     
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="alrm">
+                        <label class="select_the_name" for="genarator_room">Genarator No Load Test:</label>
+                        <div class = alram2>
+                            <select class = "alrm2-2" name="GEN-02-Genarator No Load Test">
+                                <option selected disabled>------</option>
+                                <option value="Yes">YES</option>
+                                <option value="No">NO</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <h3 class="topic">GEN-03(1MVA)</h3>
+
+                    <div class="panel01">
+                        <div class="">
+                            <label class="select_the_name" for="room1">Batt Voltage (VDC):</label>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="23" max="30" id="room1" placeholder="(VDC)" value="" name="GEN-03-Batt Voltage (VDC)" required/>
+                            </div>
+                        </div>
+                        <div class=""> 
+                            <label class="select_the_name" for="room1">Hour Meter:</label>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="0" max="1000000" id="room1" placeholder="(Hm)" value="" name="GEN-03-Hour Meter" required/>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="alrm">
+                        <label class="select_the_name" for="genarator_room">Genarator Function:</label>
+                        <div class = alram2>
+                            <select class = "alrm2-2" name="GEN-03-Genarator Function" required>
+                                <option selected disabled></option>
+                                <option value="Auto">AUTO</option>
+                                <option value="Manual">MANUAL</option>
+                                <option value="Off">OFF</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="alrm">
+                        <label class="select_the_name" for="genarator_room">Battery Acid Level:</label>
+                        <div class = "alram2">
+                            <select class="alrm2-1" name="GEN-03-Battery Acid Level">
+                                <option selected disabled>------</option>
+                                <option value="Full">FULL</option>
+                                <option value="Low">LOW</option>
+                                <option value="Medium">MEDIUM</option>     
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="alrm">
+                        <label class="select_the_name" for="genarator_room">Genarator No Load Test:</label>
+                        <div class = alram2>
+                            <select class = "alrm2-2" name="GEN-03-Genarator No Load Test">
+                                <option selected disabled>------</option>
+                                <option value="Yes">YES</option>
+                                <option value="No">NO</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <h3 class="topic">FUEL LEVELS</h3>
+
+                    <div class="alrm">
+                        <label class="select_the_name" for="genarator_room">Fuel Level - Fuel Sump:</label>
+                        <div class = "alram2">
+                            <select class="alrm2-1" name="Fuel Level - Fuel Sump">
+                                <option selected disabled>------</option>
+                                <option value="Full">FULL</option>
+                                <option value="Low">LOW</option>
+                                <option value="Medium">MEDIUM</option>     
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="alrm">
+                        <label class="select_the_name" for="genarator_room">Fuel Level - Tank - 01:</label>
+                        <div class = "alram2">
+                            <select class="alrm2-1" name="Fuel Level - Tank - 01">
+                                <option selected disabled>------</option>
+                                <option value="Full">FULL</option>
+                                <option value="Low">LOW</option>
+                                <option value="Medium">MEDIUM</option>    
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="alrm">
+                        <label class="select_the_name" for="genarator_room">Fuel Level - Tank - 02:</label>
+                        <div class = "alram2">
+                            <select class="alrm2-1" name="Fuel Level - Tank - 02">
+                                <option selected disabled>------</option>
+                                <option value="Full">FULL</option>
+                                <option value="Low">LOW</option>
+                                <option value="Medium">MEDIUM</option>    
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <div class="select_the_name">
+                        <a href="power_room.html">
+                            <input type="button" class="button" value="Back"/>
+                        </a>
+                        <input type="submit" class="submit" onclick="submited()" onclick="" id="submit" value="Submit"/>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+        <script>
+
+            
+			const scriptURL = 'https://script.google.com/macros/s/AKfycbwIaRLZyJknmd-wXolAumw2vg-dyz0h5btMaPttMwECOK9CzCzcetD2ThCxGqCPRhTw/exec'
+			const form = document.forms['contactform']
+		  
+			form.addEventListener('submit', e => {
+			  e.preventDefault()
+			  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+				.then(response => alert("Thank you! your form is submitted successfully." ))
+				.then(() => {  window.location = "power_room.html"; })
+				.catch(error => console.error('Error!', error.message))
+                alredysubmit.classList.add("popup");
+			})
+
+		</script>
+        
+
+    </body>
+
+</html>

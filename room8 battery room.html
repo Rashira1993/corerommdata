@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Core Room 08 Battery Room
+        </title>
+        <meta charset="utf-8">
+        <meta name="viweport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="room8 batery.css">
+        <script src="autologout.js"></script>
+
+    </head>
+
+    <body id="body1" class="body1">
+        <div id="alredysubmit" class="alredysubmit">
+            <div class="bk">
+                <form method="post" action="" name="contactform" id="contactform" autocomplete="off"> 
+
+                    <div class="choose_name1">
+                        <label class="select_the_name" for="fdate" >Select to the Date :</label>
+                        <div class="x">
+                            <input class="input2" id ="fdate" type="date" name = "date"/>
+                        </div>
+                    </div>
+
+                    <h3 class="topic">CORE ROOM 08 BATTERY ROOM</h3>
+
+                    <div class="panel01">
+                        <div class="">
+                            <label class="select_the_name" for="room8">Rectifier 81 DC Voltage (VDC):</label>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="30" max="75" id="room8" placeholder="(VDC)" value="" name="Rectifier 81 DC Voltage (VDC)" required/>
+                            </div>
+                        </div>
+                        <div class=""> 
+                            <label class="select_the_name" for="room8">Rectifier 81 DC Current (ADC):</label>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="100" max="450" id="room8" placeholder="(ADC)" value="" name="Rectifier 81 DC Current (ADC)" required/>
+                            </div>
+                        </div>
+                        <div class="">
+                            <label class="select_the_name" for="room8">Rectifier 82 DC Voltage (VDC):</label>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="30" max="75" id="room8" placeholder="(VDC)" value="" name="Rectifier 82 DC Voltage (VDC)" required/>
+                            </div>
+                        </div>
+                        <div class=""> 
+                            <label class="select_the_name" for="room8">Rectifier 82 DC Current (ADC):</label>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="100" max="630" id="room8" placeholder="(ADC)" value="" name="Rectifier 82 DC Current (ADC)" required/>
+                            </div>
+                        </div>
+<!-- ----------------------------------------------------------------------------------------------------------------- -->
+                        <!-- <div class="">
+                            <label class="select_the_name" for="room8">Room 8 DB Power (kW):</label>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="0" max="1000000" id="room8" placeholder="(kW)" value="" name="Room 8 DB Power(kW)" required/>
+                            </div>
+                        </div> -->
+                        <div class=""> 
+                            <label class="select_the_name" for="room8">Room 8 SRF Panel Power (kW):</label>
+                            <div class="panel01-input1">
+                                <input class="inputdetails" type="number" step ="any" min="20" max="80" id="room8" placeholder="(kW)" value="" name="Room 8 SRF Panel Power(kW)" required/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="alrm">
+                        <label class="select_the_name" for="room8">High Room Alarm:</label>
+                        <div class = "alram2">
+                            <select class="alrm2-1" name="High Room Alarm">
+                                <option selected disabled>YES/NO</option>
+                                <option value="Yes">YES</option>
+                                <option value="No">NO</option>
+                            </select>
+                        </div>
+                        <div class="y">
+                            <input class="y-01" type="text" id="room8" placeholder="If yes plese remark" name="Comment1">
+                        </div>
+                    </div>
+
+                    <div class="alrm">
+                        <label class="select_the_name" for="room8">Ac Alarm:</label>
+                        <div class = alram2>
+                            <select class = "alrm2-2" name="AC Alarm">
+                                <option selected disabled>YES/NO</option>
+                                <option value="Yes">YES</option>
+                                <option value="No">NO</option>
+                            </select>
+                        </div>
+                        <div class="y">
+                            <input class="y-01" type="text" id="room8" placeholder="If yes plese remark" name="Comment2">
+                        </div>
+                    </div>
+
+                    <div class="select_the_name">
+                        <a href="new battery room.html">
+                            <input type="button" class="button" value="Back"/>
+                        </a>
+                        <input type="submit" class="submit" onclick="submited()" id="submit" value="Submit"/>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+        <script>
+
+            function preback(){window.history.forward();}
+            setTimeout("preback()",0);
+            window.onunload=function(){null};
+
+			const scriptURL = 'https://script.google.com/macros/s/AKfycbxKCyjJwEgUO18gxh7T_5GoQWIo_sdLvsix0A_gYx8Gwaow9tUzbthP0SU1-HL4MQhweA/exec'
+			const form = document.forms['contactform']
+		  
+			form.addEventListener('submit', e => {
+			  e.preventDefault()
+			  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+				.then(response => alert("Thank you! your form is submitted successfully." ))
+				.then(() => {  window.location = "new battery room.html"; })
+				.catch(error => console.error('Error!', error.message))
+                alredysubmit.classList.add("popup");
+			})
+    
+
+		</script>
+        
+
+    </body>
+
+</html>

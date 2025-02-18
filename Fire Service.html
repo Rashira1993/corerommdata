@@ -1,0 +1,1740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fireservice.css"/>
+    <title>Fire Service Routine</title>
+    <style>
+        a{
+            text-decoration: none;
+            color: rgb(231, 155, 12);
+            cursor: pointer;
+
+        }
+    </style>
+    <script>
+
+            {const url0001='https://script.googleusercontent.com/macros/echo?user_content_key=oIWTBOLNdYPd2JlEW_FmbA7FlmDIRMXfI2_tIOYNsZsdkHUCF5qJVZgodksNqrKJJzHxjBmf198n_DZ3hvLJWOj55bLpoV9Dm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnFnljpSS6QmLfdbFRGQPEzlUkkNwcS2sjl-JUpWC2yALFBOoZAFYybaucSGZ_vtVFWLmoqnex0cxMbhjNnuASXi8ixMuhBqOUtz9Jw9Md8uu&lib=MJgGKSe1xvKDCcl_3zPhstBAf73fixrCU'
+               
+               loadData();
+               function loadData(){
+                   fetch(url0001).then(rep=> rep.json())
+                   .then((data)=>{
+                       console.log(data);
+
+                        const container = document.getElementById("output3");
+                        const element = document.createElement("div");
+                        element.innerText = `${data}`;
+                        container.appendChild(element);
+
+                        const container01 = document.getElementById("output2");
+                        const element01 = document.createElement("div");
+                        element01.innerText = `${2-data}`;
+                        container01.appendChild(element01);
+
+                })
+                .catch(error => console.error(error));
+            
+               }
+            }
+
+            {const url01='https://script.googleusercontent.com/macros/echo?user_content_key=t_dztkM7_jiCf-GKVDl5Mzky7ogX5CQFCzDKpUL8asu4fmlpUyrkOpTXhwTMQrvUGPIVGfTGQZ94NLyU6sihA7K9gEi5HqJzm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnBwJZpCYLi3ggmqaVTibCibrxTzw-AW2NUzLKMFNrg11nvij1POdVWAOix9-K5GW50vCQuJaYaeHzfbWghSOXtV_7XZ_E7reEtz9Jw9Md8uu&lib=MjcnvlA-1D_tNePvjGVwYnRAf73fixrCU'
+               
+               loadData();
+               function loadData(){
+                   fetch(url01).then(rep=> rep.json())
+                   .then((data)=>{
+                       console.log(data);
+
+                        const container = document.getElementById("op01");
+                        const element = document.createElement("div");
+                        element.innerText = `${data[1]}`;
+                        container.appendChild(element);
+
+                        const container01 = document.getElementById("op02");
+                        const element01 = document.createElement("div");
+                        element01.innerText = `${data[2]}`;
+                        container01.appendChild(element01);
+
+                        // const container02 = document.getElementById("op03");
+                        // const element02 = document.createElement("div");
+                        // element02.innerText = `${data[3]}`;
+                        // container02.appendChild(element02);
+
+                        // const container03 = document.getElementById("op04");
+                        // const element03 = document.createElement("div");
+                        // element03.innerText = `${data[4]}`;
+                        // container03.appendChild(element03);
+
+                        // const container04 = document.getElementById("op30");
+                        // const element04 = document.createElement("div");
+                        // element04.innerText = `${data[5]}`;
+                        // container04.appendChild(element04);
+
+                        // const container05 = document.getElementById("op31");
+                        // const element05 = document.createElement("div");
+                        // element05.innerText = `${data[6]}`;
+                        // container05.appendChild(element05);
+
+                       if (data[1] == "Completed"){
+                            input01.classList.add("after")
+                       }else{
+                            op01.classList.add("com");
+                            input01.classList.add("before")
+                       }
+
+                       if (data[2] == "Completed"){
+                            input02.classList.add("after")
+                       }else{
+                            op02.classList.add("com");
+                            input02.classList.add("before")
+                       }
+
+                    //    if (data[3] == "Completed"){
+                    //         input03.classList.add("after")
+                    //    }else{
+                    //         op03.classList.add("com");
+                    //         input03.classList.add("before")
+                    //    }
+
+                    //    if (data[4] == "Completed"){
+                    //         input04.classList.add("after")
+                    //    }else{
+                    //         op04.classList.add("com");
+                    //         input04.classList.add("before")
+                    //    }
+
+                    //    if (data[5] == "Completed"){
+                    //         input30.classList.add("after")
+                    //    }else{
+                    //         op30.classList.add("com");
+                    //         input30.classList.add("before")
+                    //    }
+
+                    //    if (data[6] == "Completed"){
+                    //         input31.classList.add("after")
+                    //    }else{
+                    //         op31.classList.add("com");
+                    //         input31.classList.add("before")
+                    //    }
+
+
+                       if(data[1]=="Completed"&&data[2]=="Completed"){
+                            submit01.classList.add("after")
+                       }
+
+                })
+                .catch(error => console.error(error));
+            
+               }
+            }
+
+            window.addEventListener('load',function() {
+                const url01 = 'https://script.googleusercontent.com/macros/echo?user_content_key=t_dztkM7_jiCf-GKVDl5Mzky7ogX5CQFCzDKpUL8asu4fmlpUyrkOpTXhwTMQrvUGPIVGfTGQZ94NLyU6sihA7K9gEi5HqJzm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnBwJZpCYLi3ggmqaVTibCibrxTzw-AW2NUzLKMFNrg11nvij1POdVWAOix9-K5GW50vCQuJaYaeHzfbWghSOXtV_7XZ_E7reEtz9Jw9Md8uu&lib=MjcnvlA-1D_tNePvjGVwYnRAf73fixrCU';
+
+                fetch(url01)
+                .then(response => response.json())
+                .then(data => {
+                    {const select08 = document.getElementById("input01");
+                    selectedValue08 = data[1]; 
+                    select08.value = selectedValue08;
+                      
+                    // Disable option if value has already been selected
+                    const option08 = select08.querySelector(`option08[value="${selectedValue08}"]`);
+                    if (option08) {
+                        option08.selected = true;
+                    }}
+
+                    {const select01 = document.getElementById("input02");
+                    selectedValue01 = data[2]; 
+                    select01.value = selectedValue01;
+                      
+                    // Disable option if value has already been selected
+                    const option01 = select01.querySelector(`option01[value="${selectedValue01}"]`);
+                    if (option01) {
+                        option01.selected = true;
+                    }}
+
+                    // {const select02 = document.getElementById("input03");
+                    // selectedValue02 = data[3]; 
+                    // select02.value = selectedValue02;
+                      
+                    // // Disable option if value has already been selected
+                    // const option02 = select02.querySelector(`option02[value="${selectedValue02}"]`);
+                    // if (option02) {
+                    //     option02.selected = true;
+                    // }}
+
+                    // {const select03 = document.getElementById("input04");
+                    // selectedValue03 = data[4]; 
+                    // select03.value = selectedValue03;
+                      
+                    // // Disable option if value has already been selected
+                    // const option03 = select03.querySelector(`option03[value="${selectedValue03}"]`);
+                    // if (option03) {
+                    //     option03.selected = true;
+                    // }}
+
+                    // {const select04 = document.getElementById("input30");
+                    // selectedValue04 = data[5]; 
+                    // select04.value = selectedValue04;
+                      
+                    // // Disable option if value has already been selected
+                    // const option04 = select04.querySelector(`option04[value="${selectedValue04}"]`);
+                    // if (option04) {
+                    //     option04.selected = true;
+                    // }}
+
+                    // {const select05 = document.getElementById("input31");
+                    // selectedValue05 = data[6]; 
+                    // select05.value = selectedValue05;
+                      
+                    // // Disable option if value has already been selected
+                    // const option05 = select05.querySelector(`option05[value="${selectedValue05}"]`);
+                    // if (option05) {
+                    //     option05.selected = true;
+                    // }}
+
+                    })
+                
+                    .catch(error => console.error(error));
+                })
+                
+// ------------------------------------------------------------------------------------------------------------------------           
+
+            {const url02='https://script.googleusercontent.com/macros/echo?user_content_key=4W0zfTjotlYBfDDlULs0qqbWMlI2dU4ZMV3Qg2CCvGohXClxIcOReQYRLt1vKy4F0gWNyo-RbtQvSlLJ9mU7SIZFADg3KJpTm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnLDULtc_UDCyz4JWebwKO6lHavM50xngPGoFYR8eWQ4-wE89QVSo1QdFT0vbZVgYNv_UVLh6z0AAdkKZWnGrdNEUS24aOg0aqQ&lib=MOm3iTC2qAPWSThh_MvvFIKY_2WQSWQ1z'
+               
+               loadData();
+               function loadData(){
+                   fetch(url02).then(rep=> rep.json())
+                   .then((data)=>{
+                       console.log(data);
+
+                       const container = document.getElementById("op05");
+                        const element = document.createElement("div");
+                        element.innerText = `${data[1]}`;
+                        container.appendChild(element);
+
+                        const container01 = document.getElementById("op06");
+                        const element01 = document.createElement("div");
+                        element01.innerText = `${data[2]}`;
+                        container01.appendChild(element01);
+
+                        // const container02 = document.getElementById("op07");
+                        // const element02 = document.createElement("div");
+                        // element02.innerText = `${data[3]}`;
+                        // container02.appendChild(element02);
+
+                        // const container03 = document.getElementById("op08");
+                        // const element03 = document.createElement("div");
+                        // element03.innerText = `${data[4]}`;
+                        // container03.appendChild(element03);
+
+                        // const container04 = document.getElementById("op32");
+                        // const element04 = document.createElement("div");
+                        // element04.innerText = `${data[5]}`;
+                        // container04.appendChild(element04);
+
+                        // const container05 = document.getElementById("op33");
+                        // const element05 = document.createElement("div");
+                        // element05.innerText = `${data[6]}`;
+                        // container05.appendChild(element05);
+
+                       if (data[1] == "Completed"){
+                            input05.classList.add("after")
+                       }else{
+                            op05.classList.add("com");
+                            input05.classList.add("before")
+                       }
+
+                       if (data[2] == "Completed"){
+                            input06.classList.add("after")
+                       }else{
+                            op06.classList.add("com");
+                            input06.classList.add("before")
+                       }
+
+                    //    if (data[3] == "Completed"){
+                    //         input07.classList.add("after")
+                    //    }else{
+                    //         op07.classList.add("com");
+                    //         input07.classList.add("before")
+                    //    }
+
+                    //    if (data[4] == "Completed"){
+                    //         input08.classList.add("after")
+                    //    }else{
+                    //         op08.classList.add("com");
+                    //         input08.classList.add("before")
+                    //    }
+
+                    //    if (data[5] == "Completed"){
+                    //         input32.classList.add("after")
+                    //    }else{
+                    //         op32.classList.add("com");
+                    //         input32.classList.add("before")
+                    //    }
+
+                    //    if (data[6] == "Completed"){
+                    //         input33.classList.add("after")
+                    //    }else{
+                    //         op33.classList.add("com");
+                    //         input33.classList.add("before")
+                    //    }
+
+
+                       if(data[1]=="Completed"&&data[2]=="Completed"){
+                            submit02.classList.add("after")
+                       }
+                   }) 
+                   .catch(error => console.error(error));           
+               }
+    
+            }
+
+            window.addEventListener('load',function() {
+                const url02 = 'https://script.googleusercontent.com/macros/echo?user_content_key=4W0zfTjotlYBfDDlULs0qqbWMlI2dU4ZMV3Qg2CCvGohXClxIcOReQYRLt1vKy4F0gWNyo-RbtQvSlLJ9mU7SIZFADg3KJpTm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnLDULtc_UDCyz4JWebwKO6lHavM50xngPGoFYR8eWQ4-wE89QVSo1QdFT0vbZVgYNv_UVLh6z0AAdkKZWnGrdNEUS24aOg0aqQ&lib=MOm3iTC2qAPWSThh_MvvFIKY_2WQSWQ1z';
+
+                fetch(url02)
+                .then(response => response.json())
+                .then(data => {
+                    {const select04 = document.getElementById("input05");
+                    selectedValue04 = data[1]; 
+                    select04.value = selectedValue04;
+                      
+                    // Disable option if value has already been selected
+                    const option04 = select04.querySelector(`option04[value="${selectedValue04}"]`);
+                    if (option04) {
+                        option04.selected = true;
+                    }}
+
+                    {const select05 = document.getElementById("input06");
+                    selectedValue05 = data[2]; 
+                    select05.value = selectedValue05;
+                      
+                    // Disable option if value has already been selected
+                    const option05 = select05.querySelector(`option05[value="${selectedValue05}"]`);
+                    if (option05) {
+                        option05.selected = true;
+                    }}
+
+                    // {const select06 = document.getElementById("input07");
+                    // selectedValue06 = data[3]; 
+                    // select06.value = selectedValue06;
+                      
+                    // // Disable option if value has already been selected
+                    // const option06 = select06.querySelector(`option06[value="${selectedValue06}"]`);
+                    // if (option06) {
+                    //     option06.selected = true;
+                    // }}
+
+                    // {const select07 = document.getElementById("input08");
+                    // selectedValue07 = data[4]; 
+                    // select07.value = selectedValue07;
+                      
+                    // // Disable option if value has already been selected
+                    // const option07 = select07.querySelector(`option07[value="${selectedValue07}"]`);
+                    // if (option07) {
+                    //     option07.selected = true;
+                    // }}
+
+                    // {const select08 = document.getElementById("input32");
+                    // selectedValue08 = data[5]; 
+                    // select08.value = selectedValue08;
+                      
+                    // // Disable option if value has already been selected
+                    // const option08 = select08.querySelector(`option08[value="${selectedValue08}"]`);
+                    // if (option08) {
+                    //     option08.selected = true;
+                    // }}
+
+                    // {const select09 = document.getElementById("input33");
+                    // selectedValue09 = data[6]; 
+                    // select09.value = selectedValue09;
+                      
+                    // // Disable option if value has already been selected
+                    // const option09 = select09.querySelector(`option09[value="${selectedValue09}"]`);
+                    // if (option09) {
+                    //     option09.selected = true;
+                    // }}
+
+                    })
+                
+                    .catch(error => console.error(error));
+                })
+// ----------------------------------------------------------------------------------------------------------------------
+
+            {const url03='https://script.googleusercontent.com/macros/echo?user_content_key=GF2pEAF5s0956Em3VqPhiAar3fGtkgjHrk93ZxtyoQOniAt04A_2KnHJ_h6eYmuXaIacNROXwEO5r5fT18PDcfQUJmZH-UJvm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnFRXo3Lf9CtnjdHGIReY5QOqZ9q-XKVOdYtJAh1SGuQO6KdQzVrtd9U9bhbiT9gGP-wO7nv7YPFh5Foluxafqf2pUN94BL_OuQ&lib=MTQAgMfL4A-FqGZf7IaFGz6Y_2WQSWQ1z'
+               
+               loadData();
+               function loadData(){
+                   fetch(url03).then(rep=> rep.json())
+                   .then((data)=>{
+                       console.log(data);
+
+                       const container = document.getElementById("op09");
+                        const element = document.createElement("div");
+                        element.innerText = `${data[1]}`;
+                        container.appendChild(element);
+
+                        const container01 = document.getElementById("op10");
+                        const element01 = document.createElement("div");
+                        element01.innerText = `${data[2]}`;
+                        container01.appendChild(element01);
+
+                        // const container02 = document.getElementById("op11");
+                        // const element02 = document.createElement("div");
+                        // element02.innerText = `${data[3]}`;
+                        // container02.appendChild(element02);
+
+                        // const container03 = document.getElementById("op12");
+                        // const element03 = document.createElement("div");
+                        // element03.innerText = `${data[4]}`;
+                        // container03.appendChild(element03);
+
+                        // const container04 = document.getElementById("op34");
+                        // const element04 = document.createElement("div");
+                        // element04.innerText = `${data[5]}`;
+                        // container04.appendChild(element04);
+
+                        // const container05 = document.getElementById("op35");
+                        // const element05 = document.createElement("div");
+                        // element05.innerText = `${data[6]}`;
+                        // container05.appendChild(element05);
+
+                       if (data[1] == "Completed"){
+                            input09.classList.add("after")
+                       }else{
+                            op09.classList.add("com");
+                            input09.classList.add("before")
+                       }
+
+                       if (data[2] == "Completed"){
+                            input10.classList.add("after")
+                       }else{
+                            op10.classList.add("com");
+                            input10.classList.add("before")
+                       }
+
+                    //    if (data[3] == "Completed"){
+                    //         input11.classList.add("after")
+                    //    }else{
+                    //         op11.classList.add("com");
+                    //         input11.classList.add("before")
+                    //    }
+
+                    //    if (data[4] == "Completed"){
+                    //         input12.classList.add("after")
+                    //    }else{
+                    //         op12.classList.add("com");
+                    //         input12.classList.add("before")
+                    //    }
+
+                    //    if (data[5] == "Completed"){
+                    //         input34.classList.add("after")
+                    //    }else{
+                    //         op34.classList.add("com");
+                    //         input34.classList.add("before")
+                    //    }
+
+                    //    if (data[6] == "Completed"){
+                    //         input35.classList.add("after")
+                    //    }else{
+                    //         op35.classList.add("com");
+                    //         input35.classList.add("before")
+                    //    }
+
+
+                       if(data[1]=="Completed"&&data[2]=="Completed"){
+                            submit03.classList.add("after")
+                       }
+                   }) 
+                   .catch(error => console.error(error));               
+               }
+    
+            }
+
+            window.addEventListener('load',function() {
+                const url03 = 'https://script.googleusercontent.com/macros/echo?user_content_key=GF2pEAF5s0956Em3VqPhiAar3fGtkgjHrk93ZxtyoQOniAt04A_2KnHJ_h6eYmuXaIacNROXwEO5r5fT18PDcfQUJmZH-UJvm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnFRXo3Lf9CtnjdHGIReY5QOqZ9q-XKVOdYtJAh1SGuQO6KdQzVrtd9U9bhbiT9gGP-wO7nv7YPFh5Foluxafqf2pUN94BL_OuQ&lib=MTQAgMfL4A-FqGZf7IaFGz6Y_2WQSWQ1z';
+
+                fetch(url03)
+                .then(response => response.json())
+                .then(data => {
+                    {const select = document.getElementById("input09");
+                    selectedValue = data[1]; 
+                    select.value = selectedValue;
+                      
+                    // Disable option if value has already been selected
+                    const option = select.querySelector(`option[value="${selectedValue}"]`);
+                    if (option) {
+                        option.selected = true;
+                    }}
+
+                    {const select01 = document.getElementById("input10");
+                    selectedValue01 = data[2]; 
+                    select01.value = selectedValue01;
+                      
+                    // Disable option if value has already been selected
+                    const option01 = select01.querySelector(`option[value="${selectedValue01}"]`);
+                    if (option01) {
+                        option01.selected = true;
+                    }}
+
+                    // {const select02 = document.getElementById("input11");
+                    // selectedValue02 = data[3]; 
+                    // select02.value = selectedValue02;
+                      
+                    // // Disable option if value has already been selected
+                    // const option02 = select02.querySelector(`option[value="${selectedValue02}"]`);
+                    // if (option02) {
+                    //     option02.selected = true;
+                    // }}
+
+                    // {const select03 = document.getElementById("input12");
+                    // selectedValue03 = data[4]; 
+                    // select03.value = selectedValue03;
+                      
+                    // // Disable option if value has already been selected
+                    // const option03 = select03.querySelector(`option[value="${selectedValue03}"]`);
+                    // if (option03) {
+                    //     option03.selected = true;
+                    // }}
+
+                    // {const select04 = document.getElementById("input34");
+                    // selectedValue04 = data[5]; 
+                    // select04.value = selectedValue04;
+                      
+                    // // Disable option if value has already been selected
+                    // const option04 = select04.querySelector(`option[value="${selectedValue04}"]`);
+                    // if (option04) {
+                    //     option04.selected = true;
+                    // }}
+
+                    // {const select05 = document.getElementById("input35");
+                    // selectedValue05 = data[6]; 
+                    // select05.value = selectedValue05;
+                      
+                    // // Disable option if value has already been selected
+                    // const option05 = select05.querySelector(`option[value="${selectedValue05}"]`);
+                    // if (option05) {
+                    //     option05.selected = true;
+                    // }}
+
+                    })
+                
+                    .catch(error => console.error(error));
+                })
+
+// ---------------------------------------------------------------------------------------------------------------------
+
+            {const url04='https://script.googleusercontent.com/macros/echo?user_content_key=rqd7lUXwjtWiT4K_KWxDIP1HcIjJDr3l9kwNm_tQ9HSJOb-EGubOwBwilJl-T_nbMorWEaRcvb87-dsAw2DbPm4NY2r33-m3m5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnEabWOBpuZiP3OMax-LYqIkMPwDPyZ-a0waMVw8QWa7W3jeOItfNGJQr8ux-aJqlWRiZgbftBr8StqLwTVXnTDG14wGlXMXz8dz9Jw9Md8uu&lib=MY9ku4MzW6XApRgpvI-AosxAf73fixrCU'
+               
+               loadData();
+               function loadData(){
+                   fetch(url04).then(rep=> rep.json())
+                   .then((data)=>{
+                       console.log(data);
+
+                       const container = document.getElementById("op13");
+                        const element = document.createElement("div");
+                        element.innerText = `${data[1]}`;
+                        container.appendChild(element);
+
+                        const container01 = document.getElementById("op14");
+                        const element01 = document.createElement("div");
+                        element01.innerText = `${data[2]}`;
+                        container01.appendChild(element01);
+
+                        // const container02 = document.getElementById("op15");
+                        // const element02 = document.createElement("div");
+                        // element02.innerText = `${data[3]}`;
+                        // container02.appendChild(element02);
+
+                        // const container03 = document.getElementById("op16");
+                        // const element03 = document.createElement("div");
+                        // element03.innerText = `${data[4]}`;
+                        // container03.appendChild(element03);
+
+                        // const container04 = document.getElementById("op36");
+                        // const element04 = document.createElement("div");
+                        // element04.innerText = `${data[5]}`;
+                        // container04.appendChild(element04);
+
+                        // const container05 = document.getElementById("op37");
+                        // const element05 = document.createElement("div");
+                        // element05.innerText = `${data[6]}`;
+                        // container05.appendChild(element05);
+
+                       if (data[1] == "Completed"){
+                            input13.classList.add("after")
+                       }else{
+                            op13.classList.add("com");
+                            input13.classList.add("before")
+                       }
+
+                       if (data[2] == "Completed"){
+                            input14.classList.add("after")
+                       }else{
+                            op14.classList.add("com");
+                            input14.classList.add("before")
+                       }
+
+                    //    if (data[3] == "Completed"){
+                    //         input15.classList.add("after")
+                    //    }else{
+                    //         op15.classList.add("com");
+                    //         input15.classList.add("before")
+                    //    }
+
+                    //    if (data[4] == "Completed"){
+                    //         input16.classList.add("after")
+                    //    }else{
+                    //         op16.classList.add("com");
+                    //         input16.classList.add("before")
+                    //    }
+
+                    //    if (data[5] == "Completed"){
+                    //         input36.classList.add("after")
+                    //    }else{
+                    //         op36.classList.add("com");
+                    //         input36.classList.add("before")
+                    //    }
+
+                    //    if (data[6] == "Completed"){
+                    //         input37.classList.add("after")
+                    //    }else{
+                    //         op37.classList.add("com");
+                    //         input37.classList.add("before")
+                    //    }
+
+
+                       if(data[1]=="Completed"&&data[2]=="Completed"){
+                            submit04.classList.add("after")
+                       }
+                   }) 
+                   .catch(error => console.error(error));              
+               }
+    
+            }
+
+            window.addEventListener('load',function() {
+                const url04 = 'https://script.googleusercontent.com/macros/echo?user_content_key=rqd7lUXwjtWiT4K_KWxDIP1HcIjJDr3l9kwNm_tQ9HSJOb-EGubOwBwilJl-T_nbMorWEaRcvb87-dsAw2DbPm4NY2r33-m3m5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnEabWOBpuZiP3OMax-LYqIkMPwDPyZ-a0waMVw8QWa7W3jeOItfNGJQr8ux-aJqlWRiZgbftBr8StqLwTVXnTDG14wGlXMXz8dz9Jw9Md8uu&lib=MY9ku4MzW6XApRgpvI-AosxAf73fixrCU';
+
+                fetch(url04)
+                .then(response => response.json())
+                .then(data => {
+                    {const select = document.getElementById("input13");
+                    selectedValue = data[1]; 
+                    select.value = selectedValue;
+                      
+                    // Disable option if value has already been selected
+                    const option = select.querySelector(`option[value="${selectedValue}"]`);
+                    if (option) {
+                        option.selected = true;
+                    }}
+
+                    {const select01 = document.getElementById("input14");
+                    selectedValue01 = data[2]; 
+                    select01.value = selectedValue01;
+                      
+                    // Disable option if value has already been selected
+                    const option01 = select01.querySelector(`option[value="${selectedValue01}"]`);
+                    if (option01) {
+                        option01.selected = true;
+                    }}
+
+                    // {const select02 = document.getElementById("input15");
+                    // selectedValue02 = data[3]; 
+                    // select02.value = selectedValue02;
+                      
+                    // // Disable option if value has already been selected
+                    // const option02 = select02.querySelector(`option[value="${selectedValue02}"]`);
+                    // if (option02) {
+                    //     option02.selected = true;
+                    // }}
+
+                    // {const select03 = document.getElementById("input16");
+                    // selectedValue03 = data[4]; 
+                    // select03.value = selectedValue03;
+                      
+                    // // Disable option if value has already been selected
+                    // const option03 = select03.querySelector(`option[value="${selectedValue03}"]`);
+                    // if (option03) {
+                    //     option03.selected = true;
+                    // }}
+
+                    // {const select04 = document.getElementById("input36");
+                    // selectedValue04 = data[5]; 
+                    // select04.value = selectedValue04;
+                      
+                    // // Disable option if value has already been selected
+                    // const option04 = select04.querySelector(`option[value="${selectedValue04}"]`);
+                    // if (option04) {
+                    //     option04.selected = true;
+                    // }}
+
+                    // {const select05 = document.getElementById("input37");
+                    // selectedValue05 = data[6]; 
+                    // select05.value = selectedValue05;
+                      
+                    // // Disable option if value has already been selected
+                    // const option05 = select05.querySelector(`option[value="${selectedValue05}"]`);
+                    // if (option05) {
+                    //     option05.selected = true;
+                    // }}
+
+                    })
+                
+                    .catch(error => console.error(error));
+                })
+
+// ---------------------------------------------------------------------------------------------------------
+
+            {const url05='https://script.googleusercontent.com/macros/echo?user_content_key=v40TA8OpWhjdWDRyTzg7tOINjvOfxdLOLaA5RfhzJn7pYwW0Nd_lO28hRj-fJu_NVZmfvDc7HJhDzGiF4z61lZn8qsD_bR3zm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnJKsacOHsNkYzmb3gK98n0ywpyJ8MRpgJTEkdIqWtrXIbPPEWKl13Dk6ngy6nC6-TOCmQuMmX4f-pNDCyK4FWZ0N_qvP6CvpAw&lib=M4m86Jia52R4Aa5wpGImp7qY_2WQSWQ1z'
+               
+               loadData();
+               function loadData(){
+                   fetch(url05).then(rep=> rep.json())
+                   .then((data)=>{
+                       console.log(data);
+
+                       const container = document.getElementById("op17");
+                        const element = document.createElement("div");
+                        element.innerText = `${data[1]}`;
+                        container.appendChild(element);
+
+                        const container01 = document.getElementById("op18");
+                        const element01 = document.createElement("div");
+                        element01.innerText = `${data[2]}`;
+                        container01.appendChild(element01);
+
+                        // const container02 = document.getElementById("op19");
+                        // const element02 = document.createElement("div");
+                        // element02.innerText = `${data[3]}`;
+                        // container02.appendChild(element02);
+
+                        // const container03 = document.getElementById("op20");
+                        // const element03 = document.createElement("div");
+                        // element03.innerText = `${data[4]}`;
+                        // container03.appendChild(element03);
+
+                        // const container04 = document.getElementById("op38");
+                        // const element04 = document.createElement("div");
+                        // element04.innerText = `${data[5]}`;
+                        // container04.appendChild(element04);
+
+                        // const container05 = document.getElementById("op39");
+                        // const element05 = document.createElement("div");
+                        // element05.innerText = `${data[6]}`;
+                        // container05.appendChild(element05);
+
+                       if (data[1] == "Completed"){
+                            input17.classList.add("after")
+                       }else{
+                            op17.classList.add("com");
+                            input17.classList.add("before")
+                       }
+
+                       if (data[2] == "Completed"){
+                            input18.classList.add("after")
+                       }else{
+                            op18.classList.add("com");
+                            input18.classList.add("before")
+                       }
+
+                    //    if (data[3] == "Completed"){
+                    //         input19.classList.add("after")
+                    //    }else{
+                    //         op19.classList.add("com");
+                    //         input19.classList.add("before")
+                    //    }
+
+                    //    if (data[4] == "Completed"){
+                    //         input20.classList.add("after")
+                    //    }else{
+                    //         op20.classList.add("com");
+                    //         input20.classList.add("before")
+                    //    }
+
+                    //    if (data[5] == "Completed"){
+                    //         input38.classList.add("after")
+                    //    }else{
+                    //         op38.classList.add("com");
+                    //         input38.classList.add("before")
+                    //    }
+
+                    //    if (data[6] == "Completed"){
+                    //         input39.classList.add("after")
+                    //    }else{
+                    //         op39.classList.add("com");
+                    //         input39.classList.add("before")
+                    //    }
+
+
+                       if(data[1]=="Completed"&&data[2]=="Completed"){
+                            submit05.classList.add("after")
+                       }
+                   }) 
+                   .catch(error => console.error(error));               
+               }
+    
+            }
+
+            window.addEventListener('load',function(){
+                const url05 = 'https://script.googleusercontent.com/macros/echo?user_content_key=v40TA8OpWhjdWDRyTzg7tOINjvOfxdLOLaA5RfhzJn7pYwW0Nd_lO28hRj-fJu_NVZmfvDc7HJhDzGiF4z61lZn8qsD_bR3zm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnJKsacOHsNkYzmb3gK98n0ywpyJ8MRpgJTEkdIqWtrXIbPPEWKl13Dk6ngy6nC6-TOCmQuMmX4f-pNDCyK4FWZ0N_qvP6CvpAw&lib=M4m86Jia52R4Aa5wpGImp7qY_2WQSWQ1z';
+
+                fetch(url05)
+                .then(response => response.json())
+                .then(data => {
+                    {const select = document.getElementById("input17");
+                    selectedValue = data[1]; 
+                    select.value = selectedValue;
+                      
+                    // Disable option if value has already been selected
+                    const option = select.querySelector(`option[value="${selectedValue}"]`);
+                    if (option) {
+                        option.selected = true;
+                    }}
+
+                    {const select01 = document.getElementById("input18");
+                    selectedValue01 = data[2]; 
+                    select01.value = selectedValue01;
+                      
+                    // Disable option if value has already been selected
+                    const option01 = select01.querySelector(`option[value="${selectedValue01}"]`);
+                    if (option01) {
+                        option01.selected = true;
+                    }}
+
+                    // {const select02 = document.getElementById("input19");
+                    // selectedValue02 = data[3]; 
+                    // select02.value = selectedValue02;
+                      
+                    // // Disable option if value has already been selected
+                    // const option02 = select02.querySelector(`option[value="${selectedValue02}"]`);
+                    // if (option02) {
+                    //     option02.selected = true;
+                    // }}
+
+                    // {const select03 = document.getElementById("input20");
+                    // selectedValue03 = data[4]; 
+                    // select03.value = selectedValue03;
+                      
+                    // // Disable option if value has already been selected
+                    // const option03 = select03.querySelector(`option[value="${selectedValue03}"]`);
+                    // if (option03) {
+                    //     option03.selected = true;
+                    // }}
+
+                    // {const select04 = document.getElementById("input38");
+                    // selectedValue04 = data[5]; 
+                    // select04.value = selectedValue04;
+                      
+                    // // Disable option if value has already been selected
+                    // const option04 = select04.querySelector(`option[value="${selectedValue04}"]`);
+                    // if (option04) {
+                    //     option04.selected = true;
+                    // }}
+
+                    // {const select05 = document.getElementById("input39");
+                    // selectedValue05 = data[6]; 
+                    // select05.value = selectedValue05;
+                      
+                    // // Disable option if value has already been selected
+                    // const option05 = select05.querySelector(`option[value="${selectedValue05}"]`);
+                    // if (option05) {
+                    //     option05.selected = true;
+                    // }}
+
+                    })
+                
+                    .catch(error => console.error(error));
+                })
+
+// ---------------------------------------------------------------------------------------------------------
+
+            {const url06='https://script.googleusercontent.com/macros/echo?user_content_key=Kj2-r2CtaJ0rFRYLEQPCwDsPWiMsX1Nt97547Tr98HnRReMKFVU4AXV7oVtevdhbzVDXVCittM-syv2-BUJQhqnj44EBKYHDm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnJoAZmUwstHWa57EdW4PpFlZpcs2NTFU0zG66lA4TT3jIL0Zmnmj8Zy3slHHnFtopbt4kcp6nEo2TrM8arjABYQCncvM8PWK7g&lib=M9wroS9AcvDZHM_qSjjwzlKY_2WQSWQ1z'
+               
+               loadData();
+               function loadData(){
+                   fetch(url06).then(rep=> rep.json())
+                   .then((data)=>{
+                       console.log(data);
+
+                       const container = document.getElementById("op21");
+                        const element = document.createElement("div");
+                        element.innerText = `${data[1]}`;
+                        container.appendChild(element);
+
+                        const container01 = document.getElementById("op22");
+                        const element01 = document.createElement("div");
+                        element01.innerText = `${data[2]}`;
+                        container01.appendChild(element01);
+
+                        // const container02 = document.getElementById("op23");
+                        // const element02 = document.createElement("div");
+                        // element02.innerText = `${data[3]}`;
+                        // container02.appendChild(element02);
+
+                        // const container03 = document.getElementById("op24");
+                        // const element03 = document.createElement("div");
+                        // element03.innerText = `${data[4]}`;
+                        // container03.appendChild(element03);
+
+                        // const container04 = document.getElementById("op40");
+                        // const element04 = document.createElement("div");
+                        // element04.innerText = `${data[5]}`;
+                        // container04.appendChild(element04);
+
+                        // const container05 = document.getElementById("op41");
+                        // const element05 = document.createElement("div");
+                        // element05.innerText = `${data[6]}`;
+                        // container05.appendChild(element05);
+
+                       if (data[1] == "Completed"){
+                            input21.classList.add("after")
+                       }else{
+                            op21.classList.add("com");
+                            input21.classList.add("before")
+                       }
+
+                       if (data[2] == "Completed"){
+                            input22.classList.add("after")
+                       }else{
+                            op22.classList.add("com");
+                            input22.classList.add("before")
+                       }
+
+                    //    if (data[3] == "Completed"){
+                    //         input23.classList.add("after")
+                    //    }else{
+                    //         op23.classList.add("com");
+                    //         input23.classList.add("before")
+                    //    }
+
+                    //    if (data[4] == "Completed"){
+                    //         input24.classList.add("after")
+                    //    }else{
+                    //         op24.classList.add("com");
+                    //         input24.classList.add("before")
+                    //    }
+
+                    //    if (data[5] == "Completed"){
+                    //         input40.classList.add("after")
+                    //    }else{
+                    //         op40.classList.add("com");
+                    //         input40.classList.add("before")
+                    //    }
+
+                    //    if (data[6] == "Completed"){
+                    //         input41.classList.add("after")
+                    //    }else{
+                    //         op41.classList.add("com");
+                    //         input41.classList.add("before")
+                    //    }
+
+
+                       if(data[1]=="Completed"&&data[2]=="Completed"){
+                            submit06.classList.add("after")
+                       }
+                   }) 
+                   .catch(error => console.error(error));              
+               }
+    
+            }
+
+            window.addEventListener('load',function() {
+                const url06 = 'https://script.googleusercontent.com/macros/echo?user_content_key=Kj2-r2CtaJ0rFRYLEQPCwDsPWiMsX1Nt97547Tr98HnRReMKFVU4AXV7oVtevdhbzVDXVCittM-syv2-BUJQhqnj44EBKYHDm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnJoAZmUwstHWa57EdW4PpFlZpcs2NTFU0zG66lA4TT3jIL0Zmnmj8Zy3slHHnFtopbt4kcp6nEo2TrM8arjABYQCncvM8PWK7g&lib=M9wroS9AcvDZHM_qSjjwzlKY_2WQSWQ1z';
+
+                fetch(url06)
+                .then(response => response.json())
+                .then(data => {
+                    {const select = document.getElementById("input21");
+                    selectedValue = data[1]; 
+                    select.value = selectedValue;
+                      
+                    // Disable option if value has already been selected
+                    const option = select.querySelector(`option[value="${selectedValue}"]`);
+                    if (option) {
+                        option.selected = true;
+                    }}
+
+                    {const select01 = document.getElementById("input22");
+                    selectedValue01 = data[2]; 
+                    select01.value = selectedValue01;
+                      
+                    // Disable option if value has already been selected
+                    const option01 = select01.querySelector(`option[value="${selectedValue01}"]`);
+                    if (option01) {
+                        option01.selected = true;
+                    }}
+
+                    // {const select02 = document.getElementById("input23");
+                    // selectedValue02 = data[3]; 
+                    // select02.value = selectedValue02;
+                      
+                    // // Disable option if value has already been selected
+                    // const option02 = select02.querySelector(`option[value="${selectedValue02}"]`);
+                    // if (option02) {
+                    //     option02.selected = true;
+                    // }}
+
+                    // {const select03 = document.getElementById("input24");
+                    // selectedValue03 = data[4]; 
+                    // select03.value = selectedValue03;
+                      
+                    // // Disable option if value has already been selected
+                    // const option03 = select03.querySelector(`option[value="${selectedValue03}"]`);
+                    // if (option03) {
+                    //     option03.selected = true;
+                    // }}
+
+                    // {const select04 = document.getElementById("input40");
+                    // selectedValue04 = data[5]; 
+                    // select04.value = selectedValue04;
+                      
+                    // // Disable option if value has already been selected
+                    // const option04 = select04.querySelector(`option[value="${selectedValue04}"]`);
+                    // if (option04) {
+                    //     option04.selected = true;
+                    // }}
+
+                    // {const select05 = document.getElementById("input41");
+                    // selectedValue05 = data[6]; 
+                    // select05.value = selectedValue05;
+                      
+                    // // Disable option if value has already been selected
+                    // const option05 = select05.querySelector(`option[value="${selectedValue05}"]`);
+                    // if (option05) {
+                    //     option05.selected = true;
+                    // }}
+
+                    })
+                
+                    .catch(error => console.error(error));
+                })
+
+// -----------------------------------------------------------------------------------------------------
+
+            {const url07='https://script.googleusercontent.com/macros/echo?user_content_key=nMjEwuUxY_eoDL1_T-yVHcI_JrhJguaTntKCWzgT68DHXlRrnvR0pu-wi_93B91lMPm0-Q8HpTLylyBezfMOdcSNpE5_nN6Cm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnO-OradTD-MSUbpHFI1Oef26MOc9apHYJh4FRoyzTDNSBs5vev_HxOVpe2zCy3g_uE9ykE0HSPe4aMK4pYuGcP0qR35KyUIwy9z9Jw9Md8uu&lib=MRFTHYkWJLUu6v0RDJ-7zDRAf73fixrCU'
+               
+               loadData();
+               function loadData(){
+                   fetch(url07).then(rep=> rep.json())
+                   .then((data)=>{
+                       console.log(data);
+
+                       const container = document.getElementById("op25");
+                        const element = document.createElement("div");
+                        element.innerText = `${data[1]}`;
+                        container.appendChild(element);
+
+                        const container01 = document.getElementById("op26");
+                        const element01 = document.createElement("div");
+                        element01.innerText = `${data[2]}`;
+                        container01.appendChild(element01);
+
+                        // const container02 = document.getElementById("op27");
+                        // const element02 = document.createElement("div");
+                        // element02.innerText = `${data[3]}`;
+                        // container02.appendChild(element02);
+
+                        // const container03 = document.getElementById("op28");
+                        // const element03 = document.createElement("div");
+                        // element03.innerText = `${data[4]}`;
+                        // container03.appendChild(element03);
+
+                        // const container04 = document.getElementById("op42");
+                        // const element04 = document.createElement("div");
+                        // element04.innerText = `${data[5]}`;
+                        // container04.appendChild(element04);
+
+                        // const container05 = document.getElementById("op43");
+                        // const element05 = document.createElement("div");
+                        // element05.innerText = `${data[6]}`;
+                        // container05.appendChild(element05);
+
+                       if (data[1] == "Completed"){
+                            input25.classList.add("after")
+                       }else{
+                            op25.classList.add("com");
+                            input25.classList.add("before")
+                       }
+
+                       if (data[2] == "Completed"){
+                            input26.classList.add("after")
+                       }else{
+                            op26.classList.add("com");
+                            input26.classList.add("before")
+                       }
+
+                    //    if (data[3] == "Completed"){
+                    //         input27.classList.add("after")
+                    //    }else{
+                    //         op27.classList.add("com");
+                    //         input27.classList.add("before")
+                    //    }
+
+                    //    if (data[4] == "Completed"){
+                    //         input28.classList.add("after")
+                    //    }else{
+                    //         op28.classList.add("com");
+                    //         input28.classList.add("before")
+                    //    }
+
+                    //    if (data[5] == "Completed"){
+                    //         input42.classList.add("after")
+                    //    }else{
+                    //         op42.classList.add("com");
+                    //         input42.classList.add("before")
+                    //    }
+
+                    //    if (data[6] == "Completed"){
+                    //         input43.classList.add("after")
+                    //    }else{
+                    //         op43.classList.add("com");
+                    //         input43.classList.add("before")
+                    //    }
+
+
+                       if(data[1]=="Completed"&&data[2]=="Completed"){
+                            submit07.classList.add("after")
+                       }
+                   }) 
+                   .catch(error => console.error(error))             
+               }
+    
+            }
+
+            window.addEventListener('load',function() {
+                const url07 = 'https://script.googleusercontent.com/macros/echo?user_content_key=nMjEwuUxY_eoDL1_T-yVHcI_JrhJguaTntKCWzgT68DHXlRrnvR0pu-wi_93B91lMPm0-Q8HpTLylyBezfMOdcSNpE5_nN6Cm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnO-OradTD-MSUbpHFI1Oef26MOc9apHYJh4FRoyzTDNSBs5vev_HxOVpe2zCy3g_uE9ykE0HSPe4aMK4pYuGcP0qR35KyUIwy9z9Jw9Md8uu&lib=MRFTHYkWJLUu6v0RDJ-7zDRAf73fixrCU';
+
+                fetch(url07)
+                .then(response => response.json())
+                .then(data => {
+                    {const select = document.getElementById("input25");
+                    selectedValue = data[1]; 
+                    select.value = selectedValue;
+                      
+                    // Disable option if value has already been selected
+                    const option = select.querySelector(`option[value="${selectedValue}"]`);
+                    if (option) {
+                        option.selected = true;
+                    }}
+
+                    {const select01 = document.getElementById("input26");
+                    selectedValue01 = data[2]; 
+                    select01.value = selectedValue01;
+                      
+                    // Disable option if value has already been selected
+                    const option01 = select01.querySelector(`option[value="${selectedValue01}"]`);
+                    if (option01) {
+                        option01.selected = true;
+                    }}
+
+                    // {const select02 = document.getElementById("input27");
+                    // selectedValue02 = data[3]; 
+                    // select02.value = selectedValue02;
+                      
+                    // // Disable option if value has already been selected
+                    // const option02 = select02.querySelector(`option[value="${selectedValue02}"]`);
+                    // if (option02) {
+                    //     option02.selected = true;
+                    // }}
+
+                    // {const select03 = document.getElementById("input28");
+                    // selectedValue03 = data[4]; 
+                    // select03.value = selectedValue03;
+                      
+                    // // Disable option if value has already been selected
+                    // const option03 = select03.querySelector(`option[value="${selectedValue03}"]`);
+                    // if (option03) {
+                    //     option03.selected = true;
+                    // }}
+
+                    // {const select04 = document.getElementById("input42");
+                    // selectedValue04 = data[5]; 
+                    // select04.value = selectedValue04;
+                      
+                    // // Disable option if value has already been selected
+                    // const option04 = select04.querySelector(`option[value="${selectedValue04}"]`);
+                    // if (option04) {
+                    //     option04.selected = true;
+                    // }}
+
+                    // {const select05 = document.getElementById("input43");
+                    // selectedValue05 = data[6]; 
+                    // select05.value = selectedValue05;
+                      
+                    // // Disable option if value has already been selected
+                    // const option05 = select05.querySelector(`option[value="${selectedValue05}"]`);
+                    // if (option05) {
+                    //     option05.selected = true;
+                    // }}
+
+                    })
+                
+                    .catch(error => console.error(error));
+                })
+
+
+    </script>
+</head>
+<body class="image">
+    <h2 class="mainTopic">Fire Routine Service</h2>
+
+    <div class="summary">
+        <label class="label">Total Fire Service Per year  <div class="output1" id="output1">2</div></label>
+        <label class="label">Pending Fire Service Per year  <div class="output2" id="output2"></div></label>
+        <label class="label">Completed Fire Service Per year  <div class="output3" id="output3"></div></label>
+    </div>
+
+    <hr class="hr">
+
+
+    <div class="enableEdit" id="enableEdit">
+        Enable Edit <input type="checkbox" id="checbox" class="checbox">
+    </div>
+
+        <div class="room01" id="room01">
+
+            <table>
+                <thead>
+                    <th>Core Rooms</th>
+                    <th>Service Done</th>
+                    <th>Service Date</th>
+                    <th>Update</th>
+                    <th>Complete Status</th>
+                </thead>
+
+                    <tbody>
+                        <form method="post" action="" name="contactform01" id="contactform01" autocomplete="off">
+                            <tr>
+                                <td><a href="https://docs.google.com/spreadsheets/d/1SNkXX5VJ0MpZ41rUgqvLg0evMYa3MY-pnhYQPtJWDwc/edit?usp=sharing" target="_blank">Core Room 01 <br> & Battery Room</a></td>
+                                <td><div class="mainhead">Service 01 : <select class="input01" id="input01" name="Complete Status01" >
+                                    <!-- <option selected disabled></option> -->
+                                    <option value="Not Completed">No</option>
+                                    <option value="Completed">Yes</option>                                   
+                                    </select></div>
+
+                                    <div class="mainhead">Service 02 : <select class="input02" id="input02" name="Complete Status02" required>
+                                        <!-- <option selected disabled></option> -->
+                                        <option value="Not Completed">No</option>
+                                        <option value="Completed">Yes</option> 
+                                        </select></div>
+
+                                    <!-- <div class="mainhead">Service 03 : <select class="input03" id="input03" name="Complete Status03" required>
+                                       
+                                        <option value="Not Completed">No</option>
+                                        <option value="Completed">Yes</option>
+                                        </select></div> -->
+
+                                    <!-- <div class="mainhead">Service 04 : <select class="input04" id="input04" name="Complete Status04" required>
+                                        
+                                        <option value="Not Completed">No</option>
+                                        <option value="Completed">Yes</option>
+                                        </select></div>
+
+                                    <div class="mainhead">Service 05 : <select class="input30" id="input30" name="Complete Status05" required>
+                                            
+                                            <option value="Not Completed">No</option>
+                                            <option value="Completed">Yes</option>
+                                        </select></div>
+
+                                    <div class="mainhead">Service 06 : <select class="input31" id="input31" name="Complete Status06" required>
+                                            
+                                            <option value="Not Completed">No</option>
+                                            <option value="Completed">Yes</option>
+                                        </select></div>                                     -->
+
+                                </td>
+
+                                <td><input type="date" id="fdate" name="Date" class="input"/></td>
+
+                                <td><input type="submit" class="submit01" id="submit01" value="Enter"></td>
+
+                                <td><div class="complete" id="complete">Service 01 :<div id="op01" class="op01"></div></div>
+                                    <div class="complete" id="complete20">Service 02 :<div id="op02" class="op02"></div> </div>
+                                    <!-- <div class="complete" id="complete21">Service 03 :<div id="op03" class="op03"></div> </div> -->
+                                    <!-- <div class="complete" id="complete22">Service 04 :<div id="op04" class="op04"></div> </div>
+                                    <div class="complete" id="complete23">Service 05 :<div id="op30" class="op30"></div> </div>
+                                    <div class="complete" id="complete24">Service 06 :<div id="op31" class="op31"></div> </div> -->
+                                </td>
+
+                            </tr> 
+                        </form>
+
+<!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+
+                        <form method="post" action="" name="contactform02" id="contactform02" autocomplete="off">
+                            <tr>
+                                <td><a href="https://docs.google.com/spreadsheets/d/14eU_1TsLrfKVIfCjlM_mgxPXg4UNdbLYLT2b7Ra-LU0/edit?usp=sharing" target="_blank">Core Room 02 <br> & Battery Room</a></td>
+
+                                <td><div class="mainhead">Service 01 : <select class="input05" id="input05" name="Complete Status01" >
+                                    <!-- <option selected disabled></option> -->
+                                    <option value="Not Completed">No</option>
+                                    <option value="Completed">Yes</option>                                   
+                                    </select></div>
+
+                                    <div class="mainhead">Service 02 : <select class="input06" id="input06" name="Complete Status02" required>
+                                        <!-- <option selected disabled></option> -->
+                                        <option value="Not Completed">No</option>
+                                        <option value="Completed">Yes</option> 
+                                        </select></div>
+
+                                    <!-- <div class="mainhead">Service 03 : <select class="input07" id="input07" name="Complete Status03" required>
+                                      
+                                        <option value="Not Completed">No</option>
+                                        <option value="Completed">Yes</option>
+                                        </select></div> -->
+
+                                    <!-- <div class="mainhead">Service 04 : <select class="input08" id="input08" name="Complete Status04" required>
+                                        
+                                        <option value="Not Completed">No</option>
+                                        <option value="Completed">Yes</option>
+                                        </select></div>
+
+                                    <div class="mainhead">Service 05 : <select class="input32" id="input32" name="Complete Status05" required>
+                                            
+                                            <option value="Not Completed">No</option>
+                                            <option value="Completed">Yes</option>
+                                        </select></div>
+
+                                    <div class="mainhead">Service 06 : <select class="input33" id="input33" name="Complete Status06" required>
+                                            
+                                            <option value="Not Completed">No</option>
+                                            <option value="Completed">Yes</option>
+                                        </select></div> -->
+                                </td>
+
+                                <td><input type="date" id="fdate" name="Date" class="input"/></td>
+
+                                <td><input type="submit" class="submit02" id="submit02" value="Enter"></td>
+
+                                <td><div class="complete" id="complete33">Service 01 :<div id="op05" class="op05"></div></div>
+                                    <div class="complete" id="complete30">Service 02 :<div id="op06" class="op06"></div> </div>
+                                    <!-- <div class="complete" id="complete31">Service 03 :<div id="op07" class="op07"></div> </div> -->
+                                    <!-- <div class="complete" id="complete32">Service 04 :<div id="op08" class="op08"></div> </div>
+                                    <div class="complete" id="complete34">Service 05 :<div id="op32" class="op32"></div> </div>
+                                    <div class="complete" id="complete35">Service 06 :<div id="op33" class="op33"></div> </div> -->
+                                </td>
+
+                            </tr>
+                        </form>
+
+   <!-- ------------------------------------------------------------------------------------------------------------               -->
+
+                        <form method="post" action="" name="contactform03" id="contactform03" autocomplete="off">
+                            <tr>
+                                <td><a href="https://docs.google.com/spreadsheets/d/17-6i28YQp5voIlnkGgT7wdBZ0TkiHf78J6UohhuxDl0/edit?usp=sharing" target="_blank">Core Room 04 <br> & Battery Room</a></td>
+                                <td><div class="mainhead">Service 01 : <select class="input09" id="input09" name="Complete Status01" >
+                                    <!-- <option selected disabled></option> -->
+                                    <option value="Not Completed">No</option>
+                                    <option value="Completed">Yes</option>                                   
+                                    </select></div>
+
+                                    <div class="mainhead">Service 02 : <select class="input10" id="input10" name="Complete Status02" required>
+                                        <!-- <option selected disabled></option> -->
+                                        <option value="Not Completed">No</option>
+                                        <option value="Completed">Yes</option> 
+                                        </select></div>
+
+                                    <!-- <div class="mainhead">Service 03 : <select class="input11" id="input11" name="Complete Status03" required>
+                                        
+                                        <option value="Not Completed">No</option>
+                                        <option value="Completed">Yes</option>
+                                        </select></div> -->
+
+                                    <!-- <div class="mainhead">Service 04 : <select class="input12" id="input12" name="Complete Status04" required>
+                                        
+                                        <option value="Not Completed">No</option>
+                                        <option value="Completed">Yes</option>
+                                        </select></div>
+
+                                    <div class="mainhead">Service 05 : <select class="input34" id="input34" name="Complete Status05" required>
+                                           
+                                            <option value="Not Completed">No</option>
+                                            <option value="Completed">Yes</option>
+                                        </select></div>
+
+                                    <div class="mainhead">Service 06 : <select class="input35" id="input35" name="Complete Status06" required>
+                                           
+                                            <option value="Not Completed">No</option>
+                                            <option value="Completed">Yes</option>
+                                        </select></div> -->
+
+                                </td>
+
+                                <td><input type="date" id="fdate" name="Date" class="input"/></td>
+
+                                <td><input type="submit" class="submit03" id="submit03" value="Enter"></td>
+
+                                <td><div class="complete" id="complete43">Service 01 :<div id="op09" class="op09"></div></div>
+                                    <div class="complete" id="complete40">Service 02 :<div id="op10" class="op10"></div> </div>
+                                    <!-- <div class="complete" id="complete41">Service 03 :<div id="op11" class="op11"></div> </div> -->
+                                    <!-- <div class="complete" id="complete42">Service 04 :<div id="op12" class="op12"></div> </div>
+                                    <div class="complete" id="complete44">Service 05 :<div id="op34" class="op34"></div> </div>
+                                    <div class="complete" id="complete45">Service 06 :<div id="op35" class="op35"></div> </div> -->
+                                </td>
+
+                            </tr>
+                        </form>
+
+<!-- ----------------------------------------------------------------------------------------------------------------- -->
+
+                        <form method="post" action="" name="contactform04" id="contactform04" autocomplete="off">
+                            <tr>
+                                <td><a href="https://docs.google.com/spreadsheets/d/1LYAFbbe_aC0bbzrLGrLa7qJsVSODA_FC-gTwoTqaSwc/edit?usp=sharing" target="_blank">Core Room 08</a></td>
+                                <td><div class="mainhead">Service 01 : <select class="input13" id="input13" name="Complete Status01" >
+                                    <!-- <option selected disabled></option> -->
+                                    <option value="Not Completed">No</option>
+                                    <option value="Completed">Yes</option>                                   
+                                    </select></div>
+
+                                    <div class="mainhead">Service 02 : <select class="input14" id="input14" name="Complete Status02" required>
+                                        <!-- <option selected disabled></option> -->
+                                        <option value="Not Completed">No</option>
+                                        <option value="Completed">Yes</option> 
+                                        </select></div>
+
+                                    <!-- <div class="mainhead">Service 03 : <select class="input15" id="input15" name="Complete Status03" required>
+                                        
+                                        <option value="Not Completed">No</option>
+                                        <option value="Completed">Yes</option>
+                                        </select></div> -->
+
+                                    <!-- <div class="mainhead">Service 04 : <select class="input16" id="input16" name="Complete Status04" required>
+                                        
+                                        <option value="Not Completed">No</option>
+                                        <option value="Completed">Yes</option>
+                                        </select></div>
+
+                                    <div class="mainhead">Service 05 : <select class="input36" id="input36" name="Complete Status05" required>
+                                            
+                                            <option value="Not Completed">No</option>
+                                            <option value="Completed">Yes</option>
+                                        </select></div>
+
+                                    <div class="mainhead">Service 06 : <select class="input37" id="input37" name="Complete Status06" required>
+                                           
+                                            <option value="Not Completed">No</option>
+                                            <option value="Completed">Yes</option>
+                                        </select></div> -->
+
+                                </td>
+
+                                <td><input type="date" id="fdate" name="Date" class="input"/></td>\
+
+                                <td><input type="submit" class="submit04" id="submit04" value="Enter"></td>
+
+                                <td><div class="complete" id="complete53">Service 01 :<div id="op13" class="op13"></div></div>
+                                    <div class="complete" id="complete50">Service 02 :<div id="op14" class="op14"></div> </div>
+                                    <!-- <div class="complete" id="complete51">Service 03 :<div id="op15" class="op15"></div> </div> -->
+                                    <!-- <div class="complete" id="complete52">Service 04 :<div id="op16" class="op16"></div> </div>
+                                    <div class="complete" id="complete44">Service 05 :<div id="op36" class="op36"></div> </div>
+                                    <div class="complete" id="complete45">Service 06 :<div id="op37" class="op37"></div> </div> -->
+                                </td>
+
+                            </tr>
+                        </form>
+
+<!-- ------------------------------------------------------------------------------------------------------------ -->
+
+                        <form method="post" action="" name="contactform05" id="contactform05" autocomplete="off">
+                            <tr>
+                                <td><a href="https://docs.google.com/spreadsheets/d/1X2_SVHchJ1ch4jl3tVkTfOWcH2K-De7Yj0bMANnwiIw/edit?usp=sharing" target="_blank">Core Room 11</a></td>
+                                <td><div class="mainhead">Service 01 : <select class="input17" id="input17" name="Complete Status01" >
+                                    <!-- <option selected disabled></option> -->
+                                    <option value="Not Completed">No</option>
+                                    <option value="Completed">Yes</option>                                   
+                                    </select></div>
+
+                                    <div class="mainhead">Service 02 : <select class="input18" id="input18" name="Complete Status02" required>
+                                        <!-- <option selected disabled></option> -->
+                                        <option value="Not Completed">No</option>
+                                        <option value="Completed">Yes</option> 
+                                        </select></div>
+
+                                    <!-- <div class="mainhead">Service 03 : <select class="input19" id="input19" name="Complete Status03" required>
+                                        
+                                        <option value="Not Completed">No</option>
+                                        <option value="Completed">Yes</option>
+                                        </select></div> -->
+
+                                    <!-- <div class="mainhead">Service 04 : <select class="input20" id="input20" name="Complete Status04" required>
+                                        
+                                        <option value="Not Completed">No</option>
+                                        <option value="Completed">Yes</option>
+                                        </select></div>
+
+                                    <div class="mainhead">Service 05 : <select class="input38" id="input38" name="Complete Status05" required>
+                                           
+                                            <option value="Not Completed">No</option>
+                                            <option value="Completed">Yes</option>
+                                        </select></div>
+
+                                    <div class="mainhead">Service 06 : <select class="input39" id="input39" name="Complete Status06" required>
+                                           
+                                            <option value="Not Completed">No</option>
+                                            <option value="Completed">Yes</option>
+                                        </select></div> -->
+
+                                </td>
+                                <td><input type="date" id="fdate" name="Date" class="input"/></td>
+
+                                <td><input type="submit" class="submit05" id="submit05" value="Enter"></td>
+
+                                <td><div class="complete" id="complete63">Service 01 :<div id="op17" class="op17"></div></div>
+                                    <div class="complete" id="complete60">Service 02 :<div id="op18" class="op18"></div> </div>
+                                    <!-- <div class="complete" id="complete61">Service 03 :<div id="op19" class="op19"></div> </div> -->
+                                    <!-- <div class="complete" id="complete62">Service 04 :<div id="op20" class="op20"></div> </div>
+                                    <div class="complete" id="complete64">Service 05 :<div id="op38" class="op38"></div> </div>
+                                    <div class="complete" id="complete65">Service 06 :<div id="op39" class="op39"></div> </div> -->
+                                </td>
+
+                            </tr>
+                        </form>
+
+<!-- ------------------------------------------------------------------------------------------------------------ -->
+
+                        <form method="post" action="" name="contactform06" id="contactform06" autocomplete="off">
+                            <tr>
+                                <td><a href="https://docs.google.com/spreadsheets/d/1X36J_QdkjuW2kyeN-YCGZslLGELhRMh7PxCDXGKBRp8/edit?usp=sharing" target="_blank">Core Room 12</a></td>
+                                <td><div class="mainhead">Service 01 : <select class="input21" id="input21" name="Complete Status01" >
+                                    <!-- <option selected disabled></option> -->
+                                    <option value="Not Completed">No</option>
+                                    <option value="Completed">Yes</option>                                   
+                                    </select></div>
+
+                                    <div class="mainhead">Service 02 : <select class="input22" id="input22" name="Complete Status02" required>
+                                        <!-- <option selected disabled></option> -->
+                                        <option value="Not Completed">No</option>
+                                        <option value="Completed">Yes</option> 
+                                        </select></div>
+
+                                    <!-- <div class="mainhead">Service 03 : <select class="input23" id="input23" name="Complete Status03" required>
+                                       
+                                        <option value="Not Completed">No</option>
+                                        <option value="Completed">Yes</option>
+                                        </select></div> -->
+
+                                    <!-- <div class="mainhead">Service 04 : <select class="input24" id="input24" name="Complete Status04" required>
+                                        
+                                        <option value="Not Completed">No</option>
+                                        <option value="Completed">Yes</option>
+                                        </select></div>
+
+                                    <div class="mainhead">Service 05 : <select class="input40" id="input40" name="Complete Status05" required>
+                                           
+                                            <option value="Not Completed">No</option>
+                                            <option value="Completed">Yes</option>
+                                        </select></div>
+
+                                    <div class="mainhead">Service 06 : <select class="input41" id="input41" name="Complete Status06" required>
+                                           
+                                            <option value="Not Completed">No</option>
+                                            <option value="Completed">Yes</option>
+                                        </select></div> -->
+                                </td>
+
+                                <td><input type="date" id="fdate" name="Date" class="input"/></td>
+
+                                <td><input type="submit" class="submit06" id="submit06" value="Enter"></td>
+
+                                <td><div class="complete" id="complete73">Service 01 :<div id="op21" class="op21"></div></div>
+                                    <div class="complete" id="complete70">Service 02 :<div id="op22" class="op22"></div> </div>
+                                    <!-- <div class="complete" id="complete71">Service 03 :<div id="op23" class="op23"></div> </div> -->
+                                    <!-- <div class="complete" id="complete72">Service 04 :<div id="op24" class="op24"></div> </div>
+                                    <div class="complete" id="complete74">Service 05 :<div id="op40" class="op40"></div> </div>
+                                    <div class="complete" id="complete75">Service 06 :<div id="op41" class="op41"></div> </div> -->
+                                </td>
+
+                            </tr>
+                        </form>
+
+<!-- ----------------------------------------------------------------------------------------------------- -->
+
+                        <form method="post" action="" name="contactform07" id="contactform07" autocomplete="off">
+                            <tr>
+                                <td><a href="https://docs.google.com/spreadsheets/d/13MxktME9ghoStZ3SkQ09iskWsjtgZ4BgXc02grK4NSk/edit?usp=sharing" target="_blank">Core Room 14</a></td>
+                                <td><div class="mainhead">Service 01 : <select class="input25" id="input25" name="Complete Status01" >
+                                    
+                                    <option value="Not Completed">No</option>
+                                    <option value="Completed">Yes</option>                                   
+                                    </select></div>
+
+                                    <div class="mainhead">Service 02 : <select class="input26" id="input26" name="Complete Status02" required>
+                                      
+                                        <option value="Not Completed">No</option>
+                                        <option value="Completed">Yes</option> 
+                                        </select></div>
+
+                                    <!-- <div class="mainhead">Service 03 : <select class="input27" id="input27" name="Complete Status03" required>
+                                       
+                                        <option value="Not Completed">No</option>
+                                        <option value="Completed">Yes</option>
+                                        </select></div>
+
+                                    <div class="mainhead">Service 04 : <select class="input28" id="input28" name="Complete Status04" required>
+                                       
+                                        <option value="Not Completed">No</option>
+                                        <option value="Completed">Yes</option>
+                                        </select></div>
+
+                                    <div class="mainhead">Service 05 : <select class="input42" id="input42" name="Complete Status05" required>
+                                           
+                                            <option value="Not Completed">No</option>
+                                            <option value="Completed">Yes</option>
+                                        </select></div>
+
+                                    <div class="mainhead">Service 06 : <select class="input43" id="input43" name="Complete Status06" required>
+                                           
+                                            <option value="Not Completed">No</option>
+                                            <option value="Completed">Yes</option>
+                                        </select></div> -->
+                                </td>
+
+                                <td><input type="date" id="fdate" name="Date" class="input"/></td>
+
+                                <td><input type="submit" class="submit07" id="submit07" value="Enter"></td>
+
+                                <td><div class="complete" id="complete83">Service 01 :<div id="op25" class="op25"></div></div>
+                                    <div class="complete" id="complete80">Service 02 :<div id="op26" class="op26"></div> </div>
+                                    <!-- <div class="complete" id="complete81">Service 03 :<div id="op27" class="op27"></div> </div>
+                                    <div class="complete" id="complete82">Service 04 :<div id="op28" class="op28"></div> </div>
+                                    <div class="complete" id="complete84">Service 05 :<div id="op42" class="op42"></div> </div>
+                                    <div class="complete" id="complete85">Service 06 :<div id="op43" class="op43"></div> </div> -->
+                                </td>
+
+                            </tr>
+                        </form>
+
+
+
+
+                    </tbody>
+
+            </table>
+
+
+        </div>
+
+
+    <script>
+
+                    const toggleStyle = document.getElementById('checbox');
+                    const styledElement = document.getElementById('room01');
+                    const enableEdit = document.getElementById('enableEdit');
+                    styledElement.style.pointerEvents='none';
+                
+                    toggleStyle.addEventListener('change', function() {
+                    if (this.checked) {
+                        styledElement.style.pointerEvents='fill';
+                        enableEdit.style.color='green';
+                        
+                    } else {
+                        // styledElement.style.pointerEvents='none';
+                    }
+                    });
+
+
+
+            const scriptURL01 = 'https://script.google.com/macros/s/AKfycbzj0gkZfqMs-KmXg16HhLQXvlWw0I5Ugj6kaYWUbd7q3LMl1d13WJvVUVzJ1VBJ-IDPxQ/exec'
+		    const form = document.forms['contactform01']
+
+		  
+			form.addEventListener('submit', e => {
+			  e.preventDefault()
+			  fetch(scriptURL01, { method: 'POST', body: new FormData(form)})
+				.then(response => alert("Thank you! your form is submitted successfully." ))
+                .then(() => {  window.location = "Fire Service.html"; })				
+				.catch(error => console.error('Error!', error.message))
+                addRow();
+                // alredysubmit.classList.add("popup");
+			})
+
+
+            const scriptURL02 = 'https://script.google.com/macros/s/AKfycbwEkP5WVPHZ2Cvh7h-zDdJiK6_N5mHZOu6I13mOxaGZ7QMReviuDq3UP5LjhGEgkkJC/exec'
+		    const form02 = document.forms['contactform02']
+		  
+			form02.addEventListener('submit', e => {
+			  e.preventDefault()
+			  fetch(scriptURL02, { method: 'POST', body: new FormData(form02)})
+				.then(response => alert("Thank you! your form is submitted successfully." ))
+				.then(() => {  window.location = "Fire Service.html"; })
+				.catch(error => console.error('Error!', error.message))
+                addRow();
+                // alredysubmit.classList.add("popup");
+			})
+
+            const scriptURL03 = 'https://script.google.com/macros/s/AKfycbxzo6FIV8NjQurbX1Kh4hCJdxaq5drWr3B_LaNjh8E_u7LM8S0nEb1PN_4yMcqRcUas/exec'
+		    const form03 = document.forms['contactform03']
+		  
+			form03.addEventListener('submit', e => {
+			  e.preventDefault()
+			  fetch(scriptURL03, { method: 'POST', body: new FormData(form03)})
+				.then(response => alert("Thank you! your form is submitted successfully." ))
+				.then(() => {  window.location = "Fire Service.html"; })
+				.catch(error => console.error('Error!', error.message))
+                addRow();
+                // alredysubmit.classList.add("popup");
+			})
+
+            const scriptURL04 = 'https://script.google.com/macros/s/AKfycbwq066cTXB1_iFeegwjstCoIUDILdnEl00e2yRCsiazNQQgm_SI7rCvQGUgxxHp0zuT_A/exec'
+		    const form04 = document.forms['contactform04']
+		  
+			form04.addEventListener('submit', e => {
+			  e.preventDefault()
+			  fetch(scriptURL04, { method: 'POST', body: new FormData(form04)})
+				.then(response => alert("Thank you! your form is submitted successfully." ))
+				.then(() => {  window.location = "Fire Service.html"; })
+				.catch(error => console.error('Error!', error.message))
+                addRow();
+                // alredysubmit.classList.add("popup");
+			})
+
+            const scriptURL05 = 'https://script.google.com/macros/s/AKfycbzbZoCxLxIZ11pJEBZgrTKug0uIVlckSOAiFIgoZNzuqRE_GD3ki_eLGybl7v1stSEG/exec'
+		    const form05 = document.forms['contactform05']
+		  
+			form05.addEventListener('submit', e => {
+			  e.preventDefault()
+			  fetch(scriptURL05, { method: 'POST', body: new FormData(form05)})
+				.then(response => alert("Thank you! your form is submitted successfully." ))
+				.then(() => {  window.location = "Fire Service.html"; })
+				.catch(error => console.error('Error!', error.message))
+                addRow();
+                // alredysubmit.classList.add("popup");
+			})
+
+            const scriptURL06 = 'https://script.google.com/macros/s/AKfycbyLGFqN4bfywCKOGB9rI4t-FFwzqepqOvCKx4wX7uc4ELoCx4I8DtrdZ-iuRIwZyE-0/exec'
+		    const form06 = document.forms['contactform06']
+		  
+			form06.addEventListener('submit', e => {
+			  e.preventDefault()
+			  fetch(scriptURL06, { method: 'POST', body: new FormData(form06)})
+				.then(response => alert("Thank you! your form is submitted successfully." ))
+				.then(() => {  window.location = "Fire Service.html"; })
+				.catch(error => console.error('Error!', error.message))
+                addRow();
+                // alredysubmit.classList.add("popup");
+			})
+
+            const scriptURL07 = 'https://script.google.com/macros/s/AKfycbxYAWd6G_YGrPXdValCysejl3RtoQGuqe6sWU3oRCjVwr4aC0RUIvCrGAIYhAB_c1_Gjw/exec'
+		    const form07 = document.forms['contactform07']
+		  
+			form07.addEventListener('submit', e => {
+			  e.preventDefault()
+			  fetch(scriptURL07, { method: 'POST', body: new FormData(form07)})
+				.then(response => alert("Thank you! your form is submitted successfully." ))
+				.then(() => {  window.location = "Fire Service.html"; })
+				.catch(error => console.error('Error!', error.message))
+                addRow();
+                
+			})
+    </script>
+
+
+</body>
+</html>

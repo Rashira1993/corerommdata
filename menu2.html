@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Main Menu Page</title>
+
+        <link rel = "stylesheet" href="menu2.css"/>
+        <meta charset="utf-8">
+        <meta name="viweport" content="width=device-width, initial-scale=1.0">
+        <script src="loginpage.js"></script>
+
+
+    </head>
+
+    <body class ="bk" id="snow">
+        
+        <h3 class="abb">Core Room Data Checklist </h3>
+
+        <div class="container">
+            <ul>
+                <li class="l01" id="l01"> <div class="bottom"><a class="u1" id="u1" href = "new2.html" target="">CORE ROOM 01</a></div><div class="su1" id="su1">SUBMITED</div> </li>
+
+                <li class="l02" id="l02"> <div class="bottom"><a class="u2" id="u2" href = "new3.html" target="">CORE ROOM 02</a></div><div class="su2" id="su2">SUBMITED</div> </li>
+
+                <li class="l13" id="l13"> <div class="bottom"><a class="u13" id="u13" href = "Battery Room 02.html" target="">BATTERY ROOM 02</a></div><div class="su13" id="su13">SUBMITED</div> </li>
+
+                <li class="l03" id="l03"> <div class="bottom"><a class="u3" id="u3"  href = "new4.html" target="">CORE ROOM 04</a></div><div class="su3" id="su3">SUBMITED</div> </li>
+
+                <li class="l04" id="l04"> <div class="bottom"><a class="u4" id="u4"  href = "new5.html" target="">CORE ROOM 08</a></div><div class="su4" id="su4">SUBMITED</div> </li>
+
+                <li class="l05" id="l05"> <div class="bottom"><a class="u5" id="u5" href = "new6.html" target="">CORE ROOM 11</a></div><div class="su5" id="su5">SUBMITED</div> </li>
+
+                <li class="l10" id="l10"> <div class="bottom"><a class="u10" id="u10" href = "new battery room.html" target="">BATTERY ROOMS</a></div><div class="su10" id="su10">SUBMITED</div> </li>
+
+                <li class="l06" id="l06"> <div class="bottom"><a class="u6" id="u6" href = "new7.html" target="">CORE ROOM 12</a></div><div class="su6" id="su6">SUBMITED</div> </li>
+
+                <li class="l12" id="l12"> <div class="bottom"><a class="u12" id="u12" href = "Room12 battery.html" target="">12 BATTERY ROOM</a></div><div class="su12" id="su12">SUBMITED</div> </li>
+
+                <li class="l07" id="l07"> <div class="bottom"><a class="u7" id="u7" href = "new8.html" target="">CORE ROOM 14</a></div><div class="su7" id="su7">SUBMITED</div> </li>
+
+                <li class="l08" id="l08"> <div class="bottom"><a class="u8" id="u8" href = "power_room.html" target="">POWER ROOM </a></div><div class="su8" id="su8">SUBMITED</div> </li>
+
+                <li class="l09" id="l09"> <div class="bottom"><a class="u9" id="u9" href = "col.html" target="">COL 100 Tower</a></div><div class="su9" id="su9">SUBMITED</div> </li>
+
+                <li class="l11" id="l11"> <div class="bottom"><a class="u11" id="u11" href = "data_center.html" target="">IT DATA CENTER</a></div><div class="su11" id="su11">SUBMITED</div> </li>
+                
+            </ul>
+        </div>
+
+                <div class="button">
+
+                    <input type="button" class="button1" onclick="back()" value="Main Page"/>
+  
+                </div>
+                <script src="snow.js"></script>
+                <script>
+
+                    function preback(){window.history.forward();}
+                    setTimeout("preback()",0);
+                    window.onunload=function(){null};
+
+
+                    function back(){
+                        window.location = "Main page.html"
+                    }
+
+
+                //     let name=localStorage.getItem('name')?localStorage.getItem('name'):''
+                //     console.log(name);
+                //     if(name=='')
+                //     {
+                //         alert('U need to login first');
+                //         window.location.href="index.html";
+                //     }                
+    
+                // function logout(){
+                                
+                //     localStorage.removeItem('name');
+                //     localStorage.removeItem('email');
+                //     window.location.href="index.html";
+                    
+                //     // sessionStorage.setItem("pasw","admin1");
+                //     // sessionStorage.setItem("username1","admin1");
+                //     // var user = sessionStorage.getItem("username1");
+                //     // var password1 = sessionStorage.getItem("pasw");
+    
+                //     // if(user=="admin1" && password1=="admin1"){
+                //     //     sessionStorage.removeItem("username1");
+                //     //     sessionStorage.removeItem("pasw");
+                //     //     window.location= "index.html"
+                //     // }
+                    
+                // }
+
+                document.addEventListener('DOMContentLoaded', function() {
+                new Snow('#snow',{
+                    number:100,// number of particles
+                    r: 3.5,// with this You can Adjust Size of Snow Particles
+                    v: 2.0,// its Speed
+                });
+            });
+
+
+
+    
+    
+                const url='https://script.google.com/macros/s/AKfycbwMMUpV4ACNZ8KiS4axaEiETzBQCgG29wxOshrQ9lCFb29c66pDhL9iqQrE8miEY-MlHQ/exec'
+               
+                loadData();
+                function loadData(){
+                    fetch(url).then(rep=> rep.json())
+                    .then((data)=>{
+                        console.log(data);
+                        if (data == "correct"){
+                            l01.classList.add("ulul");
+                            u1.classList.add("uddd");
+                            su1.classList.add("suu");
+                              
+                        }
+                        else if(data == ""){
+                            
+                        }
+                        else if(data == "Incorrect"){
+                            
+                        }
+                    })              
+                }
+    
+                const url02='https://script.google.com/macros/s/AKfycby-3HUNHanSHz9sqT3KRsLFg-qRk1FpA7MCMwFiKA2W51mATP4SlX5vKdT12lkll6ty/exec'
+    
+                loadData02();
+                function loadData02(){
+                    fetch(url02).then(rep=> rep.json())
+                    .then((data)=>{
+                        console.log(data);
+                        if (data == "correct"){
+                            l02.classList.add("ulul");
+                            u2.classList.add("uddd");
+                            su2.classList.add("suu");
+                              
+                        }
+                        else if(data == ""){
+                            
+                        }
+                        else if(data == "Incorrect"){
+                            
+                        }
+                    })              
+                }
+
+                const url13='https://script.google.com/macros/s/AKfycbwHg3jY7tsrp8cLEw14MsqY4N_gtdorrHj6uJIBS5HQsVQpBSK06IVjcDXoqW15UJE-/exec'
+    
+                loadData13();
+                function loadData13(){
+                    fetch(url13).then(rep=> rep.json())
+                    .then((data)=>{
+                        console.log(data);
+                        if (data == "correct"){
+                            l13.classList.add("ulul");
+                            u13.classList.add("uddd");
+                            su13.classList.add("suu");
+                              
+                        }
+                        else if(data == ""){
+                            
+                        }
+                        else if(data == "Incorrect"){
+                            
+                        }
+                    })              
+                }
+
+
+    
+                const url03='https://script.google.com/macros/s/AKfycbwpgO223ikJUwetANQwIMiVGj2A4pGq5BUOD6zhrXHhNupUDfsAXlJ4dk1rGCRdo9G-1A/exec'
+    
+                loadData03();
+                function loadData03(){
+                    fetch(url03).then(rep=> rep.json())
+                    .then((data)=>{
+                        console.log(data);
+                        if (data == "correct"){
+                            l03.classList.add("ulul");
+                            u3.classList.add("uddd");
+                            su3.classList.add("suu");
+                             
+                        }
+                        else if(data == ""){
+                            
+                        }
+                        else if(data == "Incorrect"){
+                            
+                        }
+                    })              
+                }
+    
+                const url04='https://script.google.com/macros/s/AKfycbzcizC4kKvT9w-42CtQEIBi05Me_1TI055s2lOWooiyEVghK-82xJ_njojzI6bgO0I2/exec'
+    
+                loadData04();
+                function loadData04(){
+                    fetch(url04).then(rep=> rep.json())
+                    .then((data)=>{
+                        console.log(data);
+                        if (data == "correct"){
+                            l04.classList.add("ulul");
+                            u4.classList.add("uddd");
+                            su4.classList.add("suu");
+                               
+                        }
+                        else if(data == ""){
+                            
+                        }
+                        else if(data == "Incorrect"){
+                            
+                        }
+                    })              
+                }
+    
+                const url10='https://script.google.com/macros/s/AKfycbxG-FKbGkKIDaX-L70N0u1mHPNH4Px8y49KA8AZ4skG--FQjmt8pTlBOZiWhBpfw6_IOg/exec'
+    
+                loadData10();
+                function loadData10(){
+                    fetch(url10).then(rep=> rep.json())
+                    .then((data)=>{
+                        console.log(data);
+                        if (data == "correct"){
+                            l05.classList.add("ulul");
+                            u5.classList.add("uddd");
+                            su5.classList.add("suu");
+                              
+                        }
+                        else if(data == ""){
+                            
+                        }
+                        else if(data == "Incorrect"){
+                          
+                        }
+                    })              
+                }
+    
+                const url06='https://script.google.com/macros/s/AKfycbypTQzAcAz5cDHd1UA6ZiIJgEpYZVCXDUjK1KGLhSo5VpC89waTZZR-CrjC_ObeZkVW-A/exec'
+    
+                loadData06();
+                function loadData06(){
+                    fetch(url06).then(rep=> rep.json())
+                    .then((data)=>{
+                        console.log(data);
+                        if (data == "correct"){
+                            l06.classList.add("ulul");
+                            u6.classList.add("uddd");
+                            su6.classList.add("suu");
+                               
+                        }
+                        else if(data == ""){
+                            
+                        }
+                        else if(data == "Incorrect"){
+                            
+                        }
+                    })              
+                }
+    
+                const url07='https://script.google.com/macros/s/AKfycbz0hQr14JDq4ToMvZ-7cI30TUdJXfBfn3m788uFTbNm3NH6xla6ZkUgucBHBkhUFDCR/exec'
+    
+                loadData07();
+                function loadData07(){
+                    fetch(url07).then(rep=> rep.json())
+                    .then((data)=>{
+                        console.log(data);
+                        if (data == "correct"){
+                            l07.classList.add("ulul");
+                            u7.classList.add("uddd");
+                            su7.classList.add("suu");
+                               
+                        }
+                        else if(data == ""){
+                            // document.write("pending")
+                        }
+                        else if(data == "Incorrect"){
+                            
+                        }
+                    })              
+                }
+    
+                const url09='https://script.google.com/macros/s/AKfycbxvRTWPp_PzFH66ME_AVYeftGSS5P_e3xF3VqFiCl-oPI-WWB7pyzL473gSZqtqNO4OwA/exec'
+    
+                loadData09();
+                function loadData09(){
+                    fetch(url09).then(rep=> rep.json())
+                    .then((data)=>{
+                        console.log(data);
+                        if (data == "correct"){
+                            l09.classList.add("ulul");
+                            u9.classList.add("uddd");
+                            su9.classList.add("suu");
+                             
+                        }
+                        else if(data == ""){
+                            
+                        }
+                        else if(data == "Incorrect"){
+                            
+                        }
+                    })              
+                }
+
+                const url11='https://script.google.com/macros/s/AKfycbza0LUIAeuUBo6CTgm5EqFiEpqVdXjaU20d9Htb0syRmL1RfmHmsfXGzgy4WumalSl3/exec'
+    
+                loadData11();
+                function loadData11(){
+                    fetch(url11).then(rep=> rep.json())
+                    .then((data)=>{
+                        console.log(data);
+                        if (data == "correct"){
+                            l11.classList.add("ulul");
+                            u11.classList.add("uddd");
+                            su11.classList.add("suu");
+                             
+                        }
+                        else if(data == ""){
+                            
+                        }
+                        else if(data == "Incorrect"){
+                            
+                        }
+                    })              
+                }
+
+                const url30='https://script.google.com/macros/s/AKfycby1sfOfTXu421Pdhp8ntX57eJ325q3jgyow3hesCzUFAN9Dz2vFNHj-19NhDwJo8_R1/exec'
+    
+                loadData30();
+                function loadData30(){
+                    fetch(url30).then(rep=> rep.json())
+                    .then((data)=>{
+                        console.log(data);
+                        if (data == "correct"){
+                            l12.classList.add("ulul");
+                            u12.classList.add("uddd");
+                            su12.classList.add("suu");
+                             
+                        }
+                        else if(data == ""){
+                            
+                        }
+                        else if(data == "Incorrect"){
+                            
+                        }
+                    })              
+                }
+    
+    // --------------------------------------------------------------------------------------------------------------------
+                { const url11='https://script.google.com/macros/s/AKfycbyApDVanp1hwViKxSbQwYRiSYJYlTKajkeCrVq_wS-mmHb1nfNv0ticYNk_RQ3A9S8G/exec'
+               
+               loadData();
+               function loadData(){
+                   fetch(url11).then(rep=> rep.json())
+                   .then((data)=>{
+                       console.log(data);
+                       if (data == "correct"){
+                           localStorage.setItem("genarator","active"); 
+                       }
+                       else if(data == ""){
+                        localStorage.setItem("genarator","h");
+                       }
+                       else if(data == "Incorrect"){
+                            localStorage.setItem("genarator","a");
+                       }
+                   })              
+               }
+            }
+    
+            {const url12='https://script.google.com/macros/s/AKfycbwpHVQcq38UvXHIdYmnVCZEWPqlqgoJmKf6YqTZVTAZjhajiXaIYuowL9VREHE87bwu/exec'
+               
+               loadData();
+               function loadData(){
+                   fetch(url12).then(rep=> rep.json())
+                   .then((data)=>{
+                       console.log(data);
+                       if (data == "correct"){
+                           localStorage.setItem("MV1","active");     
+                       }
+                       else if(data == ""){
+                           localStorage.setItem("MV1","f");
+                       }
+                       else if(data == "Incorrect"){
+                        localStorage.setItem("MV1","b");
+                       }
+                   })              
+               }
+    
+            }
+    
+            {const url13='https://script.google.com/macros/s/AKfycbzfy13sUPpQdIvs_QgWRBqzRQ-x_z2dkQ5xiYczsyDxEHbQatgO1YDXcTSoOAXCBj77/exec'
+               
+               loadData();
+               function loadData(){
+                   fetch(url13).then(rep=> rep.json())
+                   .then((data)=>{
+                       console.log(data);
+                       if (data == "correct"){
+                           localStorage.setItem("MV2","active"); 
+                       }
+                       else if(data == ""){
+                        localStorage.setItem("MV2","g");
+                       }
+                       else if(data == "Incorrect"){
+                        localStorage.setItem("MV2","c");
+                       }
+                   })              
+               }
+    
+            }
+    
+            {const url15='https://script.google.com/macros/s/AKfycbwm9hXm_U0dpATkc2ep2y4XghTHVUNuxIjUbM0JqB1pxWW-6RBbVizOnx3HBMsegqau2A/exec'
+               
+               loadData();
+               function loadData(){
+                   fetch(url15).then(rep=> rep.json())
+                   .then((data)=>{
+                       console.log(data);
+                       if (data == "correct"){
+                           localStorage.setItem("LV","active");
+                       }
+                       else if(data == ""){
+                            localStorage.setItem("LV","e");
+                       }
+                       else if(data == "Incorrect"){
+                        localStorage.setItem("LV","d");
+                       }
+                   })              
+               }
+    
+            }
+    
+                var a = localStorage.getItem("genarator");
+                var b = localStorage.getItem("MV1");
+                // var c = localStorage.getItem("MV2");
+                var d = localStorage.getItem("LV");
+                if(a==b && b==d){
+                    l08.classList.add("ulul");
+                    u8.classList.add("uddd");
+                    su8.classList.add("suu");
+    
+                    // location.reload();
+                }
+    // ------------------------------------------------------------------------------------------------------------------------------------------------
+    
+    
+            // { const url21='https://script.googleusercontent.com/macros/echo?user_content_key=OqeV6lpsQGnv0vomMQTJ6xHcMDvdNZvzLJaaLL-Stn4IL32LeS82ydBkzwY5EhtKdDVALBptw2eZ6cYnBfoD6qwqnGRxBM6cm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnPE8HAJsQSgmdvE4niLU030r0PlaMHhFsfd0MmE-sQ-6D5uCHOH8jGqEQNPoZKu-29I8sLqNgX1BfEKL0srcBdCr5w2HoTIcdtz9Jw9Md8uu&lib=MSQe_c3xjkm2Yp7WD6tMSIxAf73fixrCU'
+               
+            //    loadData();
+            //    function loadData(){
+            //        fetch(url21).then(rep=> rep.json())
+            //        .then((data)=>{
+            //            console.log(data);
+            //            if (data == "correct"){
+            //             localStorage.setItem("R11","active"); 
+            //            }
+            //            else if(data == ""){
+            //             localStorage.setItem("R11","active1");
+            //            }
+            //            else if(data == "Incorrect"){
+            //             localStorage.setItem("R11","active2");
+            //            }
+            //        })              
+            //    }
+            // }
+    
+    
+            {const url22='https://script.google.com/macros/s/AKfycbx1ZQfSPrH9khXwJ1jmpS-UT1fbWkNX6Iupn2WXS_-GMqOhBDxt46x9iGQs3TNN_oNuyA/exec'
+               
+               loadData();
+               function loadData(){
+                   fetch(url22).then(rep=> rep.json())
+                   .then((data)=>{
+                       console.log(data);
+                       if (data == "correct"){
+                        localStorage.setItem("R11B","active"); 
+                       }
+                       else if(data == ""){
+                        localStorage.setItem("R11B","active3");
+                       }
+                       else if(data == "Incorrect"){
+                        localStorage.setItem("R11B","active4");
+                       }
+                   })              
+               }
+    
+            }
+    
+            {const url23='https://script.google.com/macros/s/AKfycbxpu0FgyZiML9dM73xbE2I1ffMQABlXyKYrU1U8pzj_okm7a2K9lrZ9HDqOaV_5QqGcEQ/exec'
+               
+               loadData();
+               function loadData(){
+                   fetch(url23).then(rep=> rep.json())
+                   .then((data)=>{
+                       console.log(data);
+                       if (data == "correct"){
+                        localStorage.setItem("R08B","active"); 
+                       }
+                       else if(data == ""){
+                        localStorage.setItem("R08B","active5");
+                       }
+                       else if(data == "Incorrect"){
+                        localStorage.setItem("R08B","active6");
+                       }
+                   })              
+               }
+    
+            }
+    
+            {const url24='https://script.google.com/macros/s/AKfycbyiHAmfQBwh9ec8F8J0-3ggR4LgPz2soBwJ2dsEwH1fcFILit6PZJRKdWN8xIaBu0el0A/exec'
+               
+               loadData();
+               function loadData(){
+                   fetch(url24).then(rep=> rep.json())
+                   .then((data)=>{
+                       console.log(data);
+                       if (data == "correct"){
+                        localStorage.setItem("R04B","active"); 
+                       }
+                       else if(data == ""){
+                        localStorage.setItem("R04B","active7");
+                       }
+                       else if(data == "Incorrect"){
+                        localStorage.setItem("R04B","active8");
+                       }
+                   })              
+               }
+    
+            }
+    
+            {const url25='https://script.google.com/macros/s/AKfycbykN5YxKZNpXH9f5d88-C_SCdwiP3UfeHg_T6mxQmsfXBCsa5GPwiRT7zW_tg9TgHST/exec'
+               
+               loadData();
+               function loadData(){
+                   fetch(url25).then(rep=> rep.json())
+                   .then((data)=>{
+                       console.log(data);
+                       if (data == "correct"){
+                        localStorage.setItem("SubLV","active"); 
+                       }
+                       else if(data == ""){
+                        localStorage.setItem("SubLV","active9");
+                       }
+                       else if(data == "Incorrect"){
+                        localStorage.setItem("SubLV","active10");
+                       }
+                   })              
+               }
+    
+            }
+    
+            // var e = localStorage.getItem("R11");
+            var f = localStorage.getItem("R11B");
+            var g = localStorage.getItem("R08B");
+            var h = localStorage.getItem("R04B");
+            var i = localStorage.getItem("SubLV");
+                if(i==f && g==h){
+                    // localStorage.setItem("dgdgd","hdhdh");
+                    l10.classList.add("ulul");
+                    u10.classList.add("uddd");
+                    su10.classList.add("suu");
+                }
+            
+            
+            </script> 
+
+
+        
+<script src="autologout.js"></script>
+
+
+            
+    </body>
+</html>
