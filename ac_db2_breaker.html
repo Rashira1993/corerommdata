@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            A/C DB-2 Breaker
+        </title>
+        <meta charset="utf-8">
+        <meta name="viweport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../panelservicebody.css">
+    </head>
+
+    <body id="body1" class="body1">
+        <div id="alredysubmit" class="alredysubmit">
+            <div class="bk">
+                <form method="post" action="" name="contactform" id="contactform" autocomplete="off"> 
+
+    <!-- ------------------------------------------Body Data -------------------------------------------------->
+                        
+                        <h3 class="topic">A/C DB-2 Breaker</h3>
+
+                        <div class="panel01">
+                            <div class="">
+                                <label class="select_the_name" for="col">Incoming Breaker</label>
+                                <div class="panel01-input1">
+                                    <input class="inputdetails" type="text" step ="any" min="0" max="1000000" id="col" placeholder="Load(A) - R/Y/B/N" value="" name="Incoming Breaker Load(A) - R/Y/B/N" required/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel01">
+                            <div class="">
+                                <label class="select_the_name" for="col">AC1</label>
+                                <div class="panel01-input1">
+                                    <input class="inputdetails" type="text" step ="any" min="0" max="1000000" id="col" placeholder="Load(A) - R/Y/B/N" value="" name="AC1 Load(A) - R/Y/B/N" required/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel01">
+                            <div class="">
+                                <label class="select_the_name" for="col">AC2</label>
+                                <div class="panel01-input1">
+                                    <input class="inputdetails" type="text" step ="any" min="0" max="1000000" id="col" placeholder="Load(A) - R/Y/B/N" value="" name="AC2 Load(A) - R/Y/B/N" required/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel01">
+                            <div class="">
+                                <label class="select_the_name" for="col">AC3</label>
+                                <div class="panel01-input1">
+                                    <input class="inputdetails" type="text" step ="any" min="0" max="1000000" id="col" placeholder="Load(A) - R/Y/B/N" value="" name="AC3 Load(A) - R/Y/B/N" required/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel01">
+                            <div class="">
+                                <label class="select_the_name" for="col">AC4</label>
+                                <div class="panel01-input1">
+                                    <input class="inputdetails" type="text" step ="any" min="0" max="1000000" id="col" placeholder="Load(A) - R/Y/B/N" value="" name="AC4 Load(A) - R/Y/B/N" required/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="panel01">
+                            <div class="">
+                                <label class="select_the_name" for="col">AC5</label>
+                                <div class="panel01-input1">
+                                    <input class="inputdetails" type="text" step ="any" min="0" max="1000000" id="col" placeholder="Load(A) - R/Y/B/N" value="" name="AC5 Load(A) - R/Y/B/N" required/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel01">
+                            <div class="">
+                                <label class="select_the_name" for="col">AC6</label>
+                                <div class="panel01-input1">
+                                    <input class="inputdetails" type="text" step ="any" min="0" max="1000000" id="col" placeholder="Load(A) - R/Y/B/N" value="" name="AC6 Load(A) - R/Y/B/N" required/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel01">
+                            <div class="">
+                                <label class="select_the_name" for="col">AC7</label>
+                                <div class="panel01-input1">
+                                    <input class="inputdetails" type="text" step ="any" min="0" max="1000000" id="col" placeholder="Load(A) - R/Y/B/N" value="" name="AC7 Load(A) - R/Y/B/N" required/>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <div class="y">
+                            <input class="y-01" type="text" id="col" placeholder="Special Note" name="Special Note">
+                        </div>
+
+
+
+
+
+
+                        <div class="select_the_name">
+                            <a href="c4B_panelservice.html">
+                                <input type="button" class="button" value="Back"/>
+                            </a>
+                            <input type="submit" class="submit" onclick="submited()" onclick="" id="submit" value="Submit"/>
+                            <a href="https://docs.google.com/spreadsheets/d/1HsZf_gUr8l-OS0jd3FS4C_CaKFDxc0Fvc0_QyOQSwm0/edit?usp=sharing" target="_blank">
+                                <input type="button" class="button" value="View Data"/>
+                            </a>
+                        </div>
+
+                        
+                    
+                </form>
+
+            </div>
+        </div>
+
+
+        
+        <script>
+
+            function preback(){window.history.forward();}
+            setTimeout("preback()",0);
+            window.onunload=function(){null};
+
+			const scriptURL = 'https://script.google.com/macros/s/AKfycbxoixPpj0e3EprcuyldK9VXZP7AVBd9uRQgorJk5WqKC6WH3VK6m5H8ofhTUwuWBHF1/exec'
+			const form = document.forms['contactform']
+
+		  
+			form.addEventListener('submit', e => {
+			  e.preventDefault()
+			  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+				.then(response => alert("Thank you! your form is submitted successfully." ))
+				.then(() => {  window.location = "c4B_panelservice.html"; })
+				.catch(error => console.error('Error!', error.message))
+                alredysubmit.classList.add("popup");
+			})
+
+        
+		</script>
+        
+
+    </body>
+
+</html>

@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Room1 Panel Service
+        </title>
+        <meta charset="utf-8">
+        <meta name="viweport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="">
+    </head>
+
+    <body id="body1" class="body1">
+        <div id="alredysubmit" class="alredysubmit">
+            <div class="bk">
+
+                <label class="select_the_name" for="room1">Select The Active Inspection Status</label>
+                    <div class="choose_name">
+                        <select class="input1" id="selection" name="Active Panel" onchange="selectPanel(this)" required>
+                            <option selected disabled></option>
+                            <option value="visual inspec">VISUAL INSPECTION STATUS</option>
+                            <option value="dust inspec">DUST CLEANING STATUS</option>
+                            <option value="connection inspec">TIGHTEN ALL CONNECTIONS STATUS</option>
+                            <option value="load inspec">LOAD CHECK STATUS</option>
+                            <option value="thermal inspec">THERMAL IMAGER INSPECTION STATUS</option>
+                        </select>
+                    </div>
+
+
+                <form method="post" action="" name="contactform01" id="contactform01" autocomplete="off"> 
+                    <fieldset id="demo1" class="dimo1" disabled="">
+                        <div class="choose_name1">
+                            <label class="select_the_name" for="fdate" >Select to the Date :</label>
+                            <div class="x">
+                                <input class="input2" id ="fdate" type="date" name = "Date" />
+                            </div>
+                        </div>
+
+
+                        <label class="select_the_name" for="room1">Select Officer 01:</label>
+                        <div class="choose_name">
+                            <select class="input1" name="Officer01">
+                                <option selected disabled>Your name </option>
+                                <option value="Rashira">Rashira</option>
+                                <option value="Ranaveera">Ranaveera</option>
+                                <option value="Duminda">Duminda</option>
+                                <option value="Eranga">Eranga</option>
+                                <option value="Nilesh">Nilesh</option>
+                                <option value="Baratha">Baratha</option>
+                                <option value="Chamara">Chamara</option>
+                                <option value="Sujith">Sujith</option>
+                                <option value="Yasath">Yasath</option>
+                            </select>
+                        </div>
+
+                        <label class="select_the_name" for="room1">Select Officer 02:</label>
+                        <div class="choose_name">
+                            <select class="input1" name="Officer02">
+                                <option selected disabled>Your name </option>
+                                <option value="Rashira">Rashira</option>
+                                <option value="Ranaveera">Ranaveera</option>
+                                <option value="Duminda">Duminda</option>
+                                <option value="Eranga">Eranga</option>
+                                <option value="Nilesh">Nilesh</option>
+                                <option value="Baratha">Baratha</option>
+                                <option value="Chamara">Chamara</option>
+                                <option value="Sujith">Sujith</option>
+                                <option value="Yasath">Yasath</option>
+                            </select>
+                        </div>
+
+                        <label class="select_the_name" for="room1">Select Officer 03:</label>
+                        <div class="choose_name">
+                            <select class="input1" name="Officer03">
+                                <option selected disabled>Your name</option>
+                                <option value="Rashira">Rashira</option>
+                                <option value="Ranaveera">Ranaveera</option>
+                                <option value="Duminda">Duminda</option>
+                                <option value="Eranga">Eranga</option>
+                                <option value="Nilesh">Nilesh</option>
+                                <option value="Baratha">Baratha</option>
+                                <option value="Chamara">Chamara</option>
+                                <option value="Sujith">Sujith</option>
+                                <option value="Yasath">Yasath</option>
+                            </select>
+                        </div>
+
+    <!-- ------------------------------------------Body Data -------------------------------------------------->
+                        
+                        <h3 class="topic">VISUAL INSPECTION STATUS</h3>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">PDF A00 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="PDF A00 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment1">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">PDF B00 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="PDF B00 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment2">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">PDF E00 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="PDF E00 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment3">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">PDF F00 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="PDF F00 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment4">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">PDF G00 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="PDF G00 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment5">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">ACDB 01 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="ACDB 01 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment6">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">REC 01-01 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="REC 01-01 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment7">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">REC 01-02 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="REC 01-02 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment8">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">DCDB 01-01 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="DCDB 01-01 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment9">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">ACDB 02 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="ACDB 02 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment10">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">REC 02-01 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="REC 02-01 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment11">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">DCDB 02-01 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="DCDB 02-01 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment12">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">DB 06(Left side A/C) Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="DB 06(left side A/C) Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment13">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">DB 07(Right side A/C) Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="DB 07(Right side A/C) Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment14">
+                            </div>
+                        </div>
+    <!-- ------------------------------------------------------submit--------------------------------------------------------- -->
+                        <div class="select_the_name">
+                            <a href="panel Service.html">
+                                <input type="button" class="button" value="Back"/>
+                            </a>
+                            <input type="submit" class="submit" onclick="submited()" id="submit01" value="Submit"/>
+                        </div>
+
+                    </fieldset>
+                </form>
+                
+
+<!-- -----------------------------------------------------------DUST CLEANING STATUS-------------------------------------- -->
+
+                <form method="post" action="" name="contactform02" id="contactform02" autocomplete="off" disabled=""> 
+                    <fieldset id="demo2" class="dimo1" disabled="">
+                        <h3 class="topic">DUST CLEANING STATUS</h3>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">PDF A00 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="PDF A00 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment1">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">PDF B00 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="PDF B00 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment2">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">PDF E00 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="PDF E00 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment3">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">PDF F00 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="PDF F00 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment4">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">PDF G00 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="PDF G00 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment5">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">ACDB 01 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="ACDB 01 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment6">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">REC 01-01 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="REC 01-01 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment7">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">REC 01-02 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="REC 01-02 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment8">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">DCDB 01-01 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="DCDB 01-01 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment9">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">ACDB 02 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="ACDB 02 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment10">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">REC 02-01 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="REC 02-01 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment11">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">DCDB 02-01 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="DCDB 02-01 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment12">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">DB 06(Left side A/C) Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="DB 06(left side A/C) Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment13">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">DB 07(Right side A/C) Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="DB 07(Right side A/C) Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment14">
+                            </div>
+                        </div>
+                    <!-- --------------------------------------------------------------------------------------------------------------- -->
+                        <div class="select_the_name">
+                            <a href="panel Service.html">
+                                <input type="button" class="button" value="Back"/>
+                            </a>
+                            <input type="submit" class="submit" onclick="submited()" id="submit02" value="Submit"/>
+                        </div>
+                    </fieldset>
+                </form>
+
+<!----------------------------------Tightnen all connection--------------------------------------------------------------------------->
+
+                <form method="post" action="" name="contactform03" id="contactform03" autocomplete="off"> 
+                    <fieldset id="demo3" class="dimo1" disabled="">
+                        <h3 class="topic">TIGHTEN ALL CONNECTIONS STATUS</h3>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">PDF A00 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="PDF A00 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment1">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">PDF B00 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="PDF B00 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment2">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">PDF E00 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="PDF E00 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment3">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">PDF F00 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="PDF F00 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment4">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">PDF G00 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="PDF G00 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment5">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">ACDB 01 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="ACDB 01 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment6">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">REC 01-01 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="REC 01-01 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment7">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">REC 01-02 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="REC 01-02 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment8">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">DCDB 01-01 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="DCDB 01-01 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment9">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">ACDB 02 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="ACDB 02 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment10">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">REC 02-01 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="REC 02-01 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment11">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">DCDB 02-01 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="DCDB 02-01 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment12">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">DB 06(Left side A/C) Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="DB 06(left side A/C) Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment13">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">DB 07(Right side A/C) Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="DB 07(Right side A/C) Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment14">
+                            </div>
+                        </div>
+                    <!-- --------------------------------------------------------------------------------------------------------------- -->
+                        <div class="select_the_name">
+                            <a href="panel Service.html">
+                                <input type="button" class="button" value="Back"/>
+                            </a>
+                            <input type="submit" class="submit" onclick="submited()" id="submit03" value="Submit"/>
+                        </div>
+                    </fieldset>
+                </form>
+
+<!--------------------------------------------load check--------------------------------------------------------------------------->
+
+                <form method="post" action="" name="contactform04" id="contactform04" autocomplete="off"> 
+                    <fieldset id="demo4" class="dimo1" disabled="">               
+                        <h3 class="topic">LOAD CHECK STATUS</h3>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">PDF A00 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="PDF A00 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment1">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">PDF B00 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="PDF B00 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment2">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">PDF E00 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="PDF E00 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment3">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">PDF F00 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="PDF F00 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment4">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">PDF G00 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="PDF G00 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment5">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">ACDB 01 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="ACDB 01 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment6">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">REC 01-01 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="REC 01-01 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment7">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">REC 01-02 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="REC 01-02 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment8">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">DCDB 01-01 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="DCDB 01-01 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment9">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">ACDB 02 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="ACDB 02 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment10">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">REC 02-01 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="REC 02-01 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment11">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">DCDB 02-01 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="DCDB 02-01 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment12">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">DB 06(Left side A/C) Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="DB 06(left side A/C) Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment13">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">DB 07(Right side A/C) Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="DB 07(Right side A/C) Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment14">
+                            </div>
+                        </div>
+                    <!-- --------------------------------------------------------------------------------------------------------------- -->
+                        <div class="select_the_name">
+                            <a href="panel Service.html">
+                                <input type="button" class="button" value="Back"/>
+                            </a>
+                            <input type="submit" class="submit" onclick="submited()" id="submit04" value="Submit"/>
+                        </div>
+                    </fieldset>
+                </form>
+
+<!--------------------------------------------thermal imager--------------------------------------------------------------------------->
+
+                <form method="post" action="" name="contactform05" id="contactform05" autocomplete="off"> 
+                    <fieldset id="demo5" class="dimo1" disabled="">               
+                        <h3 class="topic">THERMAL IMAGER INSPECTION STATUS</h3>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">PDF A00 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="PDF A00 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment1">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">PDF B00 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="PDF B00 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment2">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">PDF E00 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="PDF E00 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment3">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">PDF F00 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="PDF F00 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment4">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">PDF G00 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="PDF G00 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment5">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">ACDB 01 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="ACDB 01 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment6">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">REC 01-01 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="REC 01-01 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment7">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">REC 01-02 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="REC 01-02 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment8">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">DCDB 01-01 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="DCDB 01-01 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment9">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">ACDB 02 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="ACDB 02 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment10">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">REC 02-01 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="REC 02-01 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment11">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">DCDB 02-01 Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="DCDB 02-01 Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment12">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">DB 06(Left side A/C) Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="DB 06(left side A/C) Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment13">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="room1">DB 07(Right side A/C) Status</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="DB 07(Right side A/C) Status">
+                                    <option selected disabled>YES/NO</option>
+                                    <option value="Yes">YES</option>
+                                    <option value="No">NO</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="room1" name="Comment14">
+                            </div>
+                        </div>
+                    <!-- --------------------------------------------------------------------------------------------------------------- -->
+                        <div class="select_the_name">
+                            <a href="panel Service.html">
+                                <input type="button" class="button" value="Back"/>
+                            </a>
+                            <input type="submit" class="submit" onclick="submited()" id="submit05" value="Submit"/>
+                        </div>
+                    </fieldset> 
+                </form>
+
+            </div>
+        </div>
+
+
+        
+        <script>
+
+            function preback(){window.history.forward();}
+            setTimeout("preback()",0);
+            window.onunload=function(){null};
+
+			const scriptURL01 = 'https://script.google.com/macros/s/AKfycbznVk3L4PBHn4H_kEqBqqnSCrUKH1TZFNIG_gWDjmJpjhgebhPz471pN5kPnayMfkQaQg/exec'
+			const form01 = document.forms['contactform01']
+
+            const scriptURL02 = '#####'
+			const form02 = document.forms['contactform02']
+
+            const scriptURL03 = '#####'
+			const form03 = document.forms['contactform03']
+
+            const scriptURL04 = '#####'
+			const form04 = document.forms['contactform04']
+
+            const scriptURL05 = '#####'
+			const form05 = document.forms['contactform05']
+		  
+			form01.addEventListener('submit01', e => {
+			  e.preventDefault()
+			  fetch(scriptURL01, { method: 'POST', body: new FormData(form01)})
+				.then(response => alert("Thank you! your form is submitted successfully." ))
+				.then(() => {  window.location = "Room1_panel_Service.html"; })
+				.catch(error => console.error('Error!', error.message))
+                alredysubmit.classList.add("popup");
+			})
+
+            form02.addEventListener('submit02', e => {
+			  e.preventDefault()
+			  fetch(scriptURL02, { method: 'POST', body: new FormData(form02)})
+				.then(response => alert("Thank you! your form is submitted successfully." ))
+				.then(() => {  window.location = "Room1_panel_Service.html"; })
+				.catch(error => console.error('Error!', error.message))
+                // alredysubmit.classList.add("popup");
+			})
+
+            form03.addEventListener('submit03', e => {
+			  e.preventDefault()
+			  fetch(scriptURL03, { method: 'POST', body: new FormData(form03)})
+				.then(response => alert("Thank you! your form is submitted successfully." ))
+				.then(() => {  window.location = "Room1_panel_Service.html"; })
+				.catch(error => console.error('Error!', error.message))
+                // alredysubmit.classList.add("popup");
+			})
+
+            form04.addEventListener('submit04', e => {
+			  e.preventDefault()
+			  fetch(scriptURL04, { method: 'POST', body: new FormData(form04)})
+				.then(response => alert("Thank you! your form is submitted successfully." ))
+				.then(() => {  window.location = "Room1_panel_Service.html"; })
+				.catch(error => console.error('Error!', error.message))
+                // alredysubmit.classList.add("popup");
+			})
+
+            form05.addEventListener('submit05', e => {
+			  e.preventDefault()
+			  fetch(scriptURL05, { method: 'POST', body: new FormData(form05)})
+				.then(response => alert("Thank you! your form is submitted successfully." ))
+				.then(() => {  window.location = "Room1_panel_Service.html"; })
+				.catch(error => console.error('Error!', error.message))
+                // alredysubmit.classList.add("popup");
+			})
+
+
+            function selectPanel(panel){
+                console.log(panel.value)
+                if (panel.value == "visual inspec"){
+
+                    document.getElementById('demo1').disabled = false
+                    document.getElementById('demo2').disabled = true
+                    document.getElementById('demo3').disabled = true
+                    document.getElementById('demo4').disabled = true
+                    document.getElementById('demo5').disabled = true
+
+                }else if(panel.value == "dust inspec"){
+
+                    document.getElementById('demo1').disabled = true
+                    document.getElementById('demo2').disabled = false
+                    document.getElementById('demo3').disabled = true
+                    document.getElementById('demo4').disabled = true
+                    document.getElementById('demo5').disabled = true
+
+                }else if(panel.value == "connection inspec"){
+                    
+                    document.getElementById('demo1').disabled = true
+                    document.getElementById('demo2').disabled = true
+                    document.getElementById('demo3').disabled = false
+                    document.getElementById('demo4').disabled = true
+                    document.getElementById('demo5').disabled = true
+
+                }else if(panel.value == "load inspec"){
+
+                    document.getElementById('demo1').disabled = true
+                    document.getElementById('demo2').disabled = true
+                    document.getElementById('demo3').disabled = true
+                    document.getElementById('demo4').disabled = false
+                    document.getElementById('demo5').disabled = true
+
+                }else if(panel.value == "thermal inspec"){
+
+                    document.getElementById('demo1').disabled = true
+                    document.getElementById('demo2').disabled = true
+                    document.getElementById('demo3').disabled = true
+                    document.getElementById('demo4').disabled = true
+                    document.getElementById('demo5').disabled = false
+                }
+            }
+
+    
+
+		</script>
+        
+
+    </body>
+
+</html>

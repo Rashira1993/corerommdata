@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Battery Testing Routine</title>
+
+        <link rel = "stylesheet" href="battery testing.css"/>
+        <meta charset="utf-8">
+        <meta name="viweport" content="width=device-width, initial-scale=1.0">
+
+
+    </head>
+
+    <body class ="bk" id="snow">
+        
+        <h3 class="abb">Battery Testing Routine</h3>
+
+        <div class="container">
+            <ul>
+
+                <li class="l01" id="l01"> <div class="bottom"><a class="u1" id="u1" href = "Room 01 Battery Testing.html" target="">Core Room 01 Battery Testing</a></div></li>
+
+                <li class="l02" id="l02"> <div class="bottom"><a class="u2" id="u2" href = "Room 02 Battery Testing.html" target="">Core Room 02 Battery Testing</a></div></li>
+
+                <li class="l06" id="l06"> <div class="bottom"><a class="u6" id="u6" href = "Room04 Battery Testing.html" target="">Core Room 04 Battery Testing</a></div></li>
+
+                <li class="l03" id="l03"> <div class="bottom"><a class="u3" id="u3"  href = "Room 08 Battery Testing.html" target="">Core Room 08 Battery Testing</a></div></li>
+
+                <li class="l04" id="l04"> <div class="bottom"><a class="u4" id="u4"  href = "Room 11 Battery Testing.html" target="">Core Room 11 Battery Testing</a></div></li>
+
+                <li class="l05" id="l05"> <div class="bottom"><a class="u5" id="u5" href = "Room12 Battery Testing.html" target="">Core Room 12 Battery Testing</a></div></li>
+
+                <li class="l06" id="l06"> <div class="bottom"><a class="u6" id="u6" href = "COL 100 Battery Testing.html" target="">COL 100 Battery Testing</a></div></li>
+
+                <li class="l06" id="l06"> <div class="bottom"><a class="u6" id="u6" href = "COL 200 Battery Testing.html" target="">COL 200 Battery Testing</a></div></li>
+                
+            </ul>
+        </div>
+
+        <!-- <div class="button">
+
+            <input type="button" class="button1" onclick="back()" value="Main Page"/>
+  
+        </div> -->
+        <script src="snow.js"></script>
+        <script>
+
+            // function preback(){window.history.forward();}
+            // setTimeout("preback()",0);
+            // window.onunload=function(){null};
+
+
+            // function back(){
+            //     window.location = ""
+            // }
+
+
+            document.addEventListener('DOMContentLoaded', function() {
+            new Snow('#snow',{
+                number:100,// number of particles
+                r: 3.5,// with this You can Adjust Size of Snow Particles
+                v: 2.0,// its Speed
+            });
+            });
+
+
+        </script>
+    
+            
+    </body>
+</html>

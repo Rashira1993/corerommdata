@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            SRF DB BREAKER
+        </title>
+        <meta charset="utf-8">
+        <meta name="viweport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../panelservicebody.css">
+    </head>
+
+    <body id="body1" class="body1">
+        <div id="alredysubmit" class="alredysubmit">
+            <div class="bk">
+                <form method="post" action="" name="contactform" id="contactform" autocomplete="off"> 
+
+    <!-- ------------------------------------------Body Data -------------------------------------------------->
+                        
+                        <h3 class="topic">SRF DB BREAKER</h3>
+
+                        <div class="panel01">
+                            <div class="">
+                                <label class="select_the_name" for="col">Input Breaker(400A/4P)</label>
+                                <div class="panel01-input1">
+                                    <input class="inputdetails" type="text" step ="any" min="0" max="1000000" id="col" placeholder="Load(A) - R/Y/B/N" value="" name="Input Breaker(400A/4P) Load(A) - R/Y/B/N" required/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel01">
+                            <div class="">
+                                <label class="select_the_name" for="col">Rectifier 1-2 Huawei(160A/4P)</label>
+                                <div class="panel01-input1">
+                                    <input class="inputdetails" type="text" step ="any" min="0" max="1000000" id="col" placeholder="Load(A) - R/Y/B/N" value="" name="Rectifier 1-2 Huawei(160A/4P) Load(A) - R/Y/B/N" required/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel01">
+                            <div class="">
+                                <label class="select_the_name" for="col">UPS DB(250A/4P)</label>
+                                <div class="panel01-input1">
+                                    <input class="inputdetails" type="text" step ="any" min="0" max="1000000" id="col" placeholder="Load(A) - R/Y/B/N" value="" name="UPS DB(250A/4P) Load(A) - R/Y/B/N" required/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="panel01">
+                            <div class="">
+                                <label class="select_the_name" for="col">Room 1 Battery A/C & Lighting(250A/4P)</label>
+                                <div class="panel01-input1">
+                                    <input class="inputdetails" type="text" step ="any" min="0" max="1000000" id="col" placeholder="Load(A) - R/Y/B/N" value="" name="DB3 Load(A) - R/Y/B/N" required/>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <!-- <div class="panel01">
+                            <div class="">
+                                <label class="select_the_name" for="col">DB5</label>
+                                <div class="panel01-input1">
+                                    <input class="inputdetails" type="text" step ="any" min="0" max="1000000" id="col" placeholder="Load(A) - R/Y/B/N" value="" name="DB5 Load(A) - R/Y/B/N" required/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel01">
+                            <div class="">
+                                <label class="select_the_name" for="col">DB6</label>
+                                <div class="panel01-input1">
+                                    <input class="inputdetails" type="text" step ="any" min="0" max="1000000" id="col" placeholder="Load(A) - R/Y/B/N" value="" name="DB6 Load(A) - R/Y/B/N" required/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel01">
+                            <div class="">
+                                <label class="select_the_name" for="col">New Battery Bank (Huawei)</label>
+                                <div class="panel01-input1">
+                                    <input class="inputdetails" type="text" step ="any" min="0" max="1000000" id="col" placeholder="Load(A) - R/Y/B/N" value="" name="New Battery Bank (Huawei) Load(A) - R/Y/B/N" required/>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <div class="y">
+                            <input class="y-01" type="text" id="col" placeholder="Special Note" name="Special Note">
+                        </div>
+
+
+
+
+
+
+                        <div class="select_the_name">
+                            <a href="c1B_panelservice.html">
+                                <input type="button" class="button" value="Back"/>
+                            </a>
+                            <input type="submit" class="submit" onclick="submited()" onclick="" id="submit" value="Submit"/>
+                            <a href="https://docs.google.com/spreadsheets/d/1JWHqvsYNct9MjKZpAlvKvyAZ9v9bfv23mR2mCSFMg38/edit?usp=sharing" target="_blank">
+                                <input type="button" class="button" value="View Data"/>
+                            </a>
+                        </div>
+
+                        
+                    
+                </form>
+
+            </div>
+        </div>
+
+
+        
+        <script>
+
+            function preback(){window.history.forward();}
+            setTimeout("preback()",0);
+            window.onunload=function(){null};
+
+			const scriptURL = 'https://script.google.com/macros/s/AKfycbxZA9TFtlSqyA4zo9cad3HxdTRhGDkr_HJShJsO3R98u2NpKkSMY74MJhkCbiYbgzSF/exec'
+			const form = document.forms['contactform']
+
+		  
+			form.addEventListener('submit', e => {
+			  e.preventDefault()
+			  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+				.then(response => alert("Thank you! your form is submitted successfully." ))
+				.then(() => {  window.location = "c1B_panelservice.html"; })
+				.catch(error => console.error('Error!', error.message))
+                alredysubmit.classList.add("popup");
+			})
+
+        
+		</script>
+        
+
+    </body>
+
+</html>

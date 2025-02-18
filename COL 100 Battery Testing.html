@@ -1,0 +1,1975 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel = "stylesheet" href="room1testing.css"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COL 100 testing</title>
+    <style>
+        .viwesheet{
+            margin-left: 20px;
+            margin-top: -40px;
+            margin-bottom: 70px;
+        }
+        .viewthedatasheet{
+            border-radius: 10px;
+            padding: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            background-color: rgb(34, 250, 6);
+        }
+        .viewthedatasheet:hover{
+            transform: scale(1.1);
+            z-index: 2;
+        }
+    </style>
+</head>
+<body class="bgimage">
+    <div class="">
+
+        <h2 class="topic">COL 100 Battery Testing Data Input Sheet</h2>
+
+        <div class="details">
+            <label class="label">Total Battery Testing Per year  <div class="output1">4</div></label>
+            <label class="label">Pending Battery Testing Per year  <div class="output2">3</div></label>
+            <label class="label">Completed Battery Testing Per year  <div class="output3">1</div></label>
+        </div>
+    </div>
+
+    <hr class="hr">
+
+    <div class="enableEdit" id="enableEdit">
+        Enable Edit <input type="checkbox" id="checbox" class="checbox">
+    </div>
+
+    <form class="form" method="post" action="" name="contactform" id="contactform" autocomplete="off">
+        <div class="subinput" id="subinput">
+            <label class="label">Select Your Name :</label>
+            <div class="subinputtopic01">
+                <select class="name" id="name" name="Name" required>
+                    <option selected disabled></option>
+                    <option value="Rashira">Rashira</option>
+                    <option value="Ranaveera">Ranaveera</option>
+                    <option value="Duminda">Duminda</option>
+                    <option value="Eranga">Eranga</option>
+                    <option value="Nilesh">Nilesh</option>
+                    <option value="Baratha">Baratha</option>
+                    <option value="Chamara">Chamara</option>
+                    <option value="Sujith">Sujith</option>
+                    <option value="Yasath">Yasath</option>
+                    <option value="Padmasiri">Padmasiri</option>
+                    <option value="Chanaka">Chanaka</option>
+                    <option value="Gayan">Gayan</option>
+                </select>
+            </div>
+
+            <div class="date01">
+                <label class="" for="fdate" >Select the Date : </label>
+                <div class="date02">
+                    <input class="date" id ="date" type="date" name = "date"/>
+                </div>
+            </div>
+
+            <div class="submit">
+                <input type="submit" class="submit01" id="submit01">
+            </div>
+
+        </div>
+    </form>
+
+    <hr class="hr02">
+
+    <div class="rack1">
+        <label class="select_the_name" for="battery1">Select The Battery Bank</label>
+        <div class="choose_name" id="choose_name">
+            <select class="input1" id="selectDiv" name="rack">
+                <option selected disabled></option>
+                <option value="div1">Bank 01</option>
+                <option value="div2">Bank 02</option>
+                <option value="div3">Bank 03</option>
+                <!-- <option value="div4">Bank 04</option>
+                <option value="div5">Bank 05</option>
+                <option value="div6">Bank 06</option>
+                <option value="div7">Bank 07</option>
+                <option value="div8">Bank 08</option>
+                <option value="div9">Bank 09</option>
+                <option value="div10">Bank 10</option>
+                <option value="div11">Bank 11</option>
+                <option value="div12">Bank 12</option>
+                <option value="div13">Bank 13</option>
+                <option value="div14">Bank 14</option> -->
+            </select>
+        </div>
+    </div>
+    
+    <div class="viwesheet">
+        <a href="https://docs.google.com/spreadsheets/d/1h5eLrzddZUKpItYRiQ3DVhm-H9KYi95A8MN_rrs_yRU/edit#gid=37092250" target="_blank"><button class="viewthedatasheet">Data Sheet</button></a>
+    </div>
+
+    <hr class="hr01">
+
+    <div id="container" style="visibility: visible;" class="container">
+
+        <!-- //bank01 -->
+
+        <div id="div1" style="display: none;">
+            <div class="containerinput">
+                <form id="xy" onsubmit="event.preventDefault()">
+
+                    <label class="topic1" for="battery1">Battery Voltage : </label>
+                    <input type="number" id="todo1" class="todo" placeholder='V' maxlength="4" onkeyup="fn
+                    (this,'todo2')" required>
+
+                    <label class="topic1" for="battery1">Internal Resistance : </label>
+                    <input type="number" id="todo2" class="todo" placeholder='IR' maxlength="4" onkeyup="fn
+                    (this,'button')" required>
+            
+                    <button class="add" type="button" id="button" onclick="addData()">Enter</button>
+                    <button class="update" type="button">Update</button>
+                </form>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>V</th>
+                        <th>IR</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody"></tbody>
+            </table>
+        </div>
+
+        <!-- //bank02 -->
+
+        <div id="div2" style="display: none;">
+            <div class="containerinput02">
+                <form id="xy02" onsubmit="event.preventDefault()">
+
+                    <label class="topic1" for="battery1">Battery Voltage : </label>
+                    <input type="number" id="todo3" class="todo" placeholder='V' maxlength="4" onkeyup="fn
+                    (this,'todo4')" required>
+
+                    <label class="topic1" for="battery1">Internal Resistance : </label>
+                    <input type="number" id="todo4" class="todo" placeholder='IR' maxlength="4" onkeyup="fn
+                    (this,'button01')" required>
+            
+                    <button class="add01" type="button" id="button01" onclick="addData02()">Enter</button>
+                    <button class="update01" type="button">Update</button>
+                </form>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>V</th>
+                        <th>IR</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody02"></tbody>
+            </table>
+        </div>
+
+        <!-- //bank03 -->
+
+        <div id="div3" style="display: none;">
+            <div class="containerinput03">
+                <form id="xy03" onsubmit="event.preventDefault()">
+
+                    <label class="topic1" for="battery1">Battery Voltage : </label>
+                    <input type="number" id="todo5" class="todo" placeholder='V' maxlength="4" onkeyup="fn
+                    (this,'todo6')" required>
+
+                    <label class="topic1" for="battery1">Internal Resistance : </label>
+                    <input type="number" id="todo6" class="todo" placeholder='IR' maxlength="4" onkeyup="fn
+                    (this,'button02')" required>
+            
+                    <button class="add02" type="button" id="button02" onclick="addData03()">Enter</button>
+                    <button class="update02" type="button">Update</button>
+                </form>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>V</th>
+                        <th>IR</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody03"></tbody>
+            </table>
+        </div>
+
+<!-- //bank04 -->
+
+        <!-- <div id="div4" style="display: none;">
+            <div class="containerinput04">
+                <form id="xy04" onsubmit="event.preventDefault()">
+
+                    <label class="topic1" for="battery1">Battery Voltage : </label>
+                    <input type="number" id="todo7" class="todo" placeholder='V' maxlength="4" onkeyup="fn
+                    (this,'todo8')" required>
+
+                    <label class="topic1" for="battery1">Internal Resistance : </label>
+                    <input type="number" id="todo8" class="todo" placeholder='IR' maxlength="4" onkeyup="fn
+                    (this,'button03')" required>
+            
+                    <button class="add03" type="button" id="button03" onclick="addData04()">Enter</button>
+                    <button class="update03" type="button">Update</button>
+                </form>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>V</th>
+                        <th>IR</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody04"></tbody>
+            </table>
+        </div> -->
+
+<!-- //bank05 -->
+
+        <!-- <div id="div5" style="display: none;">
+            <div class="containerinput05">
+                <form id="xy05" onsubmit="event.preventDefault()">
+
+                    <label class="topic1" for="battery1">Battery Voltage : </label>
+                    <input type="number" id="todo9" class="todo" placeholder='V' maxlength="4" onkeyup="fn
+                    (this,'todo9')" required>
+
+                    <label class="topic1" for="battery1">Internal Resistance : </label>
+                    <input type="number" id="todo10" class="todo" placeholder='IR' maxlength="4" onkeyup="fn
+                    (this,'button04')" required>
+            
+                    <button class="add04" type="button" id="button04" onclick="addData05()">Enter</button>
+                    <button class="update04" type="button">Update</button>
+                </form>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>V</th>
+                        <th>IR</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody05"></tbody>
+            </table>
+        </div> -->
+
+<!-- //bank06 -->
+
+        <!-- <div id="div6" style="display: none;">
+            <div class="containerinput06">
+                <form id="xy06" onsubmit="event.preventDefault()">
+
+                    <label class="topic1" for="battery1">Battery Voltage : </label>
+                    <input type="number" id="todo11" class="todo" placeholder='V' maxlength="4" onkeyup="fn
+                    (this,'todo12')" required>
+
+                    <label class="topic1" for="battery1">Internal Resistance : </label>
+                    <input type="number" id="todo12" class="todo" placeholder='IR' maxlength="4" onkeyup="fn
+                    (this,'button05')" required>
+            
+                    <button class="add05" type="button" id="button05" onclick="addData06()">Enter</button>
+                    <button class="update05" type="button">Update</button>
+                </form>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>V</th>
+                        <th>IR</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody06"></tbody>
+            </table>
+        </div> -->
+
+<!-- //bank07 -->
+
+        <!-- <div id="div7" style="display: none;">
+            <div class="containerinput07">
+                <form id="xy07" onsubmit="event.preventDefault()">
+
+                    <label class="topic1" for="battery1">Battery Voltage : </label>
+                    <input type="number" id="todo13" class="todo" placeholder='V' maxlength="4" onkeyup="fn
+                    (this,'todo14')" required>
+
+                    <label class="topic1" for="battery1">Internal Resistance : </label>
+                    <input type="number" id="todo14" class="todo" placeholder='IR' maxlength="4" onkeyup="fn
+                    (this,'button06')" required>
+            
+                    <button class="add06" type="button" id="button06" onclick="addData07()">Enter</button>
+                    <button class="update06" type="button">Update</button>
+                </form>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>V</th>
+                        <th>IR</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody07"></tbody>
+            </table>
+        </div> -->
+
+        <!-- //bank08 -->
+
+        <!-- <div id="div8" style="display: none;">
+            <div class="containerinput08">
+                <form id="xy08" onsubmit="event.preventDefault()">
+
+                    <label class="topic1" for="battery1">Battery Voltage : </label>
+                    <input type="number" id="todo15" class="todo" placeholder='V' maxlength="4" onkeyup="fn
+                    (this,'todo16')" required>
+
+                    <label class="topic1" for="battery1">Internal Resistance : </label>
+                    <input type="number" id="todo16" class="todo" placeholder='IR' maxlength="4" onkeyup="fn
+                    (this,'button07')" required>
+            
+                    <button class="add07" type="button" id="button07" onclick="addData08()">Enter</button>
+                    <button class="update07" type="button">Update</button>
+                </form>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>V</th>
+                        <th>IR</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody08"></tbody>
+            </table>
+        </div> -->
+
+                <!-- //bank09 -->
+
+        <!-- <div id="div9" style="display: none;">
+            <div class="containerinput09">
+                <form id="xy09" onsubmit="event.preventDefault()">
+
+                    <label class="topic1" for="battery1">Battery Voltage : </label>
+                    <input type="number" id="todo17" class="todo" placeholder='V' maxlength="4" onkeyup="fn
+                    (this,'todo18')" required>
+
+                    <label class="topic1" for="battery1">Internal Resistance : </label>
+                    <input type="number" id="todo18" class="todo" placeholder='IR' maxlength="4" onkeyup="fn
+                    (this,'button08')" required>
+            
+                    <button class="add08" type="button" id="button08" onclick="addData09()">Enter</button>
+                    <button class="update08" type="button">Update</button>
+                </form>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>V</th>
+                        <th>IR</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody09"></tbody>
+            </table>
+        </div> -->
+
+    <!-- //bank10 -->
+
+        <!-- <div id="div10" style="display: none;">
+            <div class="containerinput10">
+                <form id="xy10" onsubmit="event.preventDefault()">
+
+                    <label class="topic1" for="battery1">Battery Voltage : </label>
+                    <input type="number" id="todo19" class="todo" placeholder='V' maxlength="4" onkeyup="fn
+                    (this,'todo20')" required>
+
+                    <label class="topic1" for="battery1">Internal Resistance : </label>
+                    <input type="number" id="todo20" class="todo" placeholder='IR' maxlength="4" onkeyup="fn
+                    (this,'button09')" required>
+            
+                    <button class="add09" type="button" id="button09" onclick="addData10()">Enter</button>
+                    <button class="update09" type="button">Update</button>
+                </form>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>V</th>
+                        <th>IR</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody10"></tbody>
+            </table>
+        </div> -->
+
+            <!-- //bank11-->
+
+        <!-- <div id="div11" style="display: none;">
+            <div class="containerinput11">
+                <form id="xy11" onsubmit="event.preventDefault()">
+
+                    <label class="topic1" for="battery1">Battery Voltage : </label>
+                    <input type="number" id="todo21" class="todo" placeholder='V' maxlength="4" onkeyup="fn
+                    (this,'todo22')" required>
+
+                    <label class="topic1" for="battery1">Internal Resistance : </label>
+                    <input type="number" id="todo22" class="todo" placeholder='IR' maxlength="4" onkeyup="fn
+                    (this,'button10')" required>
+            
+                    <button class="add10" type="button" id="button10" onclick="addData11()">Enter</button>
+                    <button class="update10" type="button">Update</button>
+                </form>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>V</th>
+                        <th>IR</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody11"></tbody>
+            </table>
+        </div> -->
+
+     <!-- //bank12-->
+
+        <!-- <div id="div12" style="display: none;">
+            <div class="containerinput12">
+                <form id="xy12" onsubmit="event.preventDefault()">
+
+                    <label class="topic1" for="battery1">Battery Voltage : </label>
+                    <input type="number" id="todo23" class="todo" placeholder='V' maxlength="4" onkeyup="fn
+                    (this,'todo24')" required>
+
+                    <label class="topic1" for="battery1">Internal Resistance : </label>
+                    <input type="number" id="todo24" class="todo" placeholder='IR' maxlength="4" onkeyup="fn
+                    (this,'button11')" required>
+            
+                    <button class="add11" type="button" id="button11" onclick="addData12()">Enter</button>
+                    <button class="update11" type="button">Update</button>
+                </form>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>V</th>
+                        <th>IR</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody12"></tbody>
+            </table>
+        </div> -->
+
+             <!-- //bank13-->
+
+        <!-- <div id="div13" style="display: none;">
+            <div class="containerinput13">
+                <form id="xy13" onsubmit="event.preventDefault()">
+
+                    <label class="topic1" for="battery1">Battery Voltage : </label>
+                    <input type="number" id="todo25" class="todo" placeholder='V' maxlength="4" onkeyup="fn
+                    (this,'todo26')" required>
+
+                    <label class="topic1" for="battery1">Internal Resistance : </label>
+                    <input type="number" id="todo26" class="todo" placeholder='IR' maxlength="4" onkeyup="fn
+                    (this,'button12')" required>
+            
+                    <button class="add12" type="button" id="button12" onclick="addData13()">Enter</button>
+                    <button class="update12" type="button">Update</button>
+                </form>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>V</th>
+                        <th>IR</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody13"></tbody>
+            </table>
+        </div> -->
+
+<!-- //bank14-->
+
+        <!-- <div id="div14" style="display: none;">
+            <div class="containerinput14">
+                <form id="xy14" onsubmit="event.preventDefault()">
+
+                    <label class="topic1" for="battery1">Battery Voltage : </label>
+                    <input type="number" id="todo27" class="todo" placeholder='V' maxlength="4" onkeyup="fn
+                    (this,'todo28')" required>
+
+                    <label class="topic1" for="battery1">Internal Resistance : </label>
+                    <input type="number" id="todo28" class="todo" placeholder='IR' maxlength="4" onkeyup="fn
+                    (this,'button13')" required>
+            
+                    <button class="add13" type="button" id="button13" onclick="addData14()">Enter</button>
+                    <button class="update13" type="button">Update</button>
+                </form>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>V</th>
+                        <th>IR</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody14"></tbody>
+            </table>
+        </div> -->
+
+    </div>
+
+
+    <script>
+
+                    const toggleStyle = document.getElementById('checbox');
+                    const styledElement = document.getElementById('subinput');
+                    const styledElement01 = document.getElementById('choose_name');
+                    const enableEdit = document.getElementById('enableEdit');
+                    styledElement.style.pointerEvents='none';
+                    styledElement01.style.pointerEvents='none';
+                
+                    toggleStyle.addEventListener('change', function() {
+                    if (this.checked) {
+                        styledElement.style.pointerEvents='fill';
+                        styledElement01.style.pointerEvents='fill';
+                        enableEdit.style.color='green';
+                        
+                    } else {
+                        styledElement.style.pointerEvents='none';
+                        styledElement01.style.pointerEvents='none';
+                        enableEdit.style.color='red';
+                    }
+                    });
+
+
+
+
+
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwju_zoMFQUP_VErYuzwOHb7LkPuaZSXwQASa49Uzo2Z6ql79xj3mIpGR6YNT6VrwPz/exec'
+			const form40 = document.forms['contactform']
+		  
+			form40.addEventListener('submit', e => {
+			  e.preventDefault()
+			  fetch(scriptURL, { method: 'POST', body: new FormData(form40)})
+				.then(response => alert("Thank you! your form is submitted successfully." ))
+				// .then(() => {  window.location = "COL 100 Battery Testing.html"; })
+				.catch(error => console.error('Error!', error.message))
+                addRow();
+                // alredysubmit.classList.add("popup");
+			})
+
+//only select bank visible
+        function showSelectedDiv() {
+        var selectedDivId = document.getElementById("selectDiv").value;
+        var containerDiv = document.getElementById("container");
+    
+        for (var i = 0; i < containerDiv.children.length; i++) {
+        var childDiv = containerDiv.children[i];
+        if (childDiv.id === selectedDivId) {
+            childDiv.style.display = "block";
+        } else {
+            childDiv.style.display = "none";
+        }
+        }
+        }
+
+        document.getElementById("selectDiv").addEventListener("change", showSelectedDiv);
+
+        //automatically cursor move next input
+
+        function fn(froo,too){
+            var len = froo.value.length;
+            var mx = froo.getAttribute("maxlength");
+            if(len==mx){
+                document.getElementById(too).focus();
+            }
+
+        }
+
+    </script>
+
+    <script>
+    {
+        let api = "https://script.google.com/macros/s/AKfycbxskMFHqc3z71RUrdAp07XR7HPWQKVuooz5-Ziw4H7PiE4tUXiMKjGPOq4chNCe5vla/exec";
+        let form = document.getElementById("xy");
+        let add = document.querySelector(".add");
+        let update = document.querySelector(".update");
+        let tbody = document.querySelector("tbody");
+        function addData() {
+            add.textContent="Adding.."
+
+            const input21 = document.getElementById("todo1").value;
+            const input22 = document.getElementById("todo2").value;
+
+
+            console.log(input21)
+
+            let obj = {  
+                todo1:input21,
+                todo2:input22
+            };
+
+            console.log(obj);
+
+            fetch(api,{
+                method:"POST",
+                body:JSON.stringify(obj)
+            })
+              .then(res => res.text())
+              .then(data => {
+                readData01()
+                // alert(data)
+                add.textContent="Enter"
+                form.reset();
+              });
+        }
+ 
+        function readData01(){
+            fetch(api)
+            .then(res=>res.json())
+            .then(data=>{
+                let todo1 = data.todo;
+                let trtd1 = todo1.map(each=>{
+                    return `
+                    <tr>
+                    <td class="id">${each[0]-1}</td>    
+                    <td class="data01" id="data01">${each[1]}</td>
+                    <td class="data02" id="data02">${each[2]}</td>
+                    <td class="edit"onclick="updateCall(this,${each[0]})">Edit</td>    
+                    <td class="delete"onclick="delData(${each[0]})">Delete</td>    
+                    </tr>
+                    
+                    `
+                })
+                tbody.innerHTML=trtd1.join("");
+            })
+        }
+        readData01()
+         
+        function delData(id){
+            fetch(api+`?del=true&id=${id}`)
+            .then(res=>res.text())
+            .then(data=>{
+                readData01()
+                alert(data)
+            })
+        }
+
+        function updateCall(elm,id){
+            add.style.display="none"
+            update.style.display="unset"
+            let todo = elm.parentElement.querySelector(".data01").textContent;
+            let todo01 = elm.parentElement.querySelector(".data02").textContent;
+
+            form[0].value=todo;
+            form[1].value=todo01;
+ 
+
+            console.log(form[0].value);
+            console.log(form[1].value);
+
+            update.setAttribute("onclick",`updateData(${id})`)
+        }
+
+        function updateData(id){
+            update.textContent="Updating.."
+            fetch(api+`?update=true&id=${id}&data01=${form[0].value}&data02=${form[1].value}`)
+            .then(res=>res.text())
+            .then(data=>{
+                console.log(data)
+                readData01()
+                alert(data)
+                form.reset()
+            update.textContent="Updated.."
+            add.style.display="unset"
+            update.style.display="none"
+            })
+        }
+    }
+    </script>
+
+<script>
+    let api02 = "https://script.google.com/macros/s/AKfycbxA84M0VfeoRX1LEW_7jqluLaDf6ukWOtw7r2OTfvuYkPyadH0gdpHgIPPfVV-8spvl/exec";
+    let form02 = document.getElementById("xy02");
+    let add02 = document.querySelector(".add01");
+    let update02 = document.querySelector(".update01");
+    let tbody02 = document.querySelector(".tbody02");
+    function addData02() {
+        add02.textContent="Adding.."
+
+        const input23 = document.getElementById("todo3").value;
+        const input24 = document.getElementById("todo4").value;
+
+
+        // console.log(input21)
+
+        let obj = {  
+            todo3:input23,
+            todo4:input24
+        };
+
+        console.log(obj);
+
+        fetch(api02,{
+            method:"POST",
+            body:JSON.stringify(obj)
+        })
+          .then(res => res.text())
+          .then(data => {
+            readData()
+            // alert(data)
+            add02.textContent="Enter"
+            form02.reset();
+          });
+    }
+
+    function readData(){
+        fetch(api02)
+        .then(res=>res.json())
+        .then(data=>{
+            let todo = data.todo;
+            let trtd = todo.map(each=>{
+                return `
+                <tr>
+                <td class="id">${each[0]-1}</td>    
+                <td class="data03" id="data03">${each[1]}</td>
+                <td class="data04" id="data04">${each[2]}</td>
+                <td class="edit"onclick="updateCall01(this,${each[0]})">Edit</td>    
+                <td class="delete"onclick="delData01(${each[0]})">Delete</td>    
+                </tr>
+                
+                `
+            })
+            tbody02.innerHTML=trtd.join("");
+        })
+    }
+    readData()
+     
+    function delData01(id){
+        fetch(api02+`?del=true&id=${id}`)
+        .then(res=>res.text())
+        .then(data=>{
+            readData()
+            alert(data)
+        })
+    }
+
+    function updateCall01(elm,id){
+        add02.style.display="none"
+        update02.style.display="unset"
+        let todo02 = elm.parentElement.querySelector(".data03").textContent;
+        let todo03 = elm.parentElement.querySelector(".data04").textContent;
+
+        form02[0].value=todo02;
+        form02[1].value=todo03;
+
+
+        console.log(form02[0].value);
+        console.log(form02[1].value);
+
+        update02.setAttribute("onclick",`updateData01(${id})`)
+    }
+
+    function updateData01(id){
+        update02.textContent="Updating.."
+        fetch(api02+`?update=true&id=${id}&data03=${form02[0].value}&data04=${form02[1].value}`)
+        .then(res=>res.text())
+        .then(data=>{
+            console.log(data)
+            readData()
+            alert(data)
+            form02.reset()
+        update02.textContent="Updated.."
+        add02.style.display="unset"
+        update02.style.display="none"
+        })
+    }
+</script>
+
+<script>
+    let api03 = "https://script.google.com/macros/s/AKfycbzwW2yD4I2CUMwrWLafSpyp1rztxPQcBMiLrX6zmutHDlrIZ1FG3dKwdqgSR2qe-yyY/exec";
+    let form03 = document.getElementById("xy03");
+    let add03 = document.querySelector(".add02");
+    let update03 = document.querySelector(".update02");
+    let tbody03 = document.querySelector(".tbody03");
+    function addData03() {
+        add03.textContent="Adding.."
+
+        const input25 = document.getElementById("todo5").value;
+        const input26 = document.getElementById("todo6").value;
+
+
+        // console.log(input21)
+
+        let obj = {  
+            todo5:input25,
+            todo6:input26
+        };
+
+        console.log(obj);
+
+        fetch(api03,{
+            method:"POST",
+            body:JSON.stringify(obj)
+        })
+          .then(res => res.text())
+          .then(data => {
+            readData03()
+            // alert(data)
+            add03.textContent="Enter"
+            form03.reset();
+          });
+    }
+
+    function readData03(){
+        fetch(api03)
+        .then(res=>res.json())
+        .then(data=>{
+            let todo3 = data.todo;
+            let trtd3 = todo3.map(each=>{
+                return `
+                <tr>
+                <td class="id">${each[0]-1}</td>    
+                <td class="data05" id="data05">${each[1]}</td>
+                <td class="data06" id="data06">${each[2]}</td>
+                <td class="edit"onclick="updateCall03(this,${each[0]})">Edit</td>    
+                <td class="delete"onclick="delData03(${each[0]})">Delete</td>    
+                </tr>
+                
+                `
+            })
+            tbody03.innerHTML=trtd3.join("");
+        })
+    }
+    readData03()
+     
+    function delData03(id){
+        fetch(api03+`?del=true&id=${id}`)
+        .then(res=>res.text())
+        .then(data=>{
+            readData03()
+            alert(data)
+        })
+    }
+
+    function updateCall03(elm,id){
+        add03.style.display="none"
+        update03.style.display="unset"
+        let todo04 = elm.parentElement.querySelector(".data05").textContent;
+        let todo05 = elm.parentElement.querySelector(".data06").textContent;
+
+        form03[0].value=todo04;
+        form03[1].value=todo05;
+
+
+        // console.log(form02[0].value);
+        // console.log(form02[1].value);
+
+        update03.setAttribute("onclick",`updateData03(${id})`)
+    }
+
+    function updateData03(id){
+        update03.textContent="Updating.."
+        fetch(api03+`?update=true&id=${id}&data05=${form03[0].value}&data06=${form03[1].value}`)
+        .then(res=>res.text())
+        .then(data=>{
+            console.log(data)
+            readData03()
+            alert(data)
+            form03.reset()
+        update03.textContent="Updated.."
+        add03.style.display="unset"
+        update03.style.display="none"
+        })
+    }
+
+
+    // let api04 = "";
+    // let form04 = document.getElementById("xy04");
+    // let add04 = document.querySelector(".add03");
+    // let update04 = document.querySelector(".update03");
+    // let tbody04 = document.querySelector(".tbody04");
+    // function addData04() {
+    //     add04.textContent="Adding.."
+
+    //     const input27 = document.getElementById("todo7").value;
+    //     const input28 = document.getElementById("todo8").value;
+
+
+    //     // console.log(input21)
+
+    //     let obj = {  
+    //         todo7:input27,
+    //         todo8:input28
+    //     };
+
+    //     console.log(obj);
+
+    //     fetch(api04,{
+    //         method:"POST",
+    //         body:JSON.stringify(obj)
+    //     })
+    //       .then(res => res.text())
+    //       .then(data => {
+    //         readData04()
+    //         // alert(data)
+    //         add04.textContent="Enter"
+    //         form04.reset();
+    //       });
+    // }
+
+    // function readData04(){
+    //     fetch(api04)
+    //     .then(res=>res.json())
+    //     .then(data=>{
+    //         let todo4 = data.todo;
+    //         let trtd4 = todo4.map(each=>{
+    //             return `
+    //             <tr>
+    //             <td class="id">${each[0]-1}</td>    
+    //             <td class="data07" id="data07">${each[1]}</td>
+    //             <td class="data08" id="data08">${each[2]}</td>
+    //             <td class="edit"onclick="updateCall04(this,${each[0]})">Edit</td>    
+    //             <td class="delete"onclick="delData04(${each[0]})">Delete</td>    
+    //             </tr>
+                
+    //             `
+    //         })
+    //         tbody04.innerHTML=trtd4.join("");
+    //     })
+    // }
+    // readData04()
+     
+    // function delData04(id){
+    //     fetch(api04+`?del=true&id=${id}`)
+    //     .then(res=>res.text())
+    //     .then(data=>{
+    //         readData04()
+    //         alert(data)
+    //     })
+    // }
+
+    // function updateCall04(elm,id){
+    //     add04.style.display="none"
+    //     update04.style.display="unset"
+    //     let todo06 = elm.parentElement.querySelector(".data07").textContent;
+    //     let todo07 = elm.parentElement.querySelector(".data08").textContent;
+
+    //     form04[0].value=todo06;
+    //     form04[1].value=todo07;
+
+    //     update04.setAttribute("onclick",`updateData04(${id})`)
+    // }
+
+    // function updateData04(id){
+    //     update04.textContent="Updating.."
+    //     fetch(api04+`?update=true&id=${id}&data07=${form04[0].value}&data08=${form04[1].value}`)
+    //     .then(res=>res.text())
+    //     .then(data=>{
+    //         console.log(data)
+    //         readData04()
+    //         alert(data)
+    //         form04.reset()
+    //     update04.textContent="Updated.."
+    //     add04.style.display="unset"
+    //     update04.style.display="none"
+    //     })
+    // }
+
+
+    // let api05 = "";
+    // let form05 = document.getElementById("xy05");
+    // let add05 = document.querySelector(".add04");
+    // let update05 = document.querySelector(".update04");
+    // let tbody05 = document.querySelector(".tbody05");
+    // function addData05() {
+    //     add05.textContent="Adding.."
+
+    //     const input29 = document.getElementById("todo9").value;
+    //     const input30 = document.getElementById("todo10").value;
+
+
+    //     // console.log(input21)
+
+    //     let obj = {  
+    //         todo9:input29,
+    //         todo10:input30
+    //     };
+
+    //     console.log(obj);
+
+    //     fetch(api05,{
+    //         method:"POST",
+    //         body:JSON.stringify(obj)
+    //     })
+    //       .then(res => res.text())
+    //       .then(data => {
+    //         readData05()
+    //         // alert(data)
+    //         add05.textContent="Enter"
+    //         form05.reset();
+    //       });
+    // }
+
+    // function readData05(){
+    //     fetch(api05)
+    //     .then(res=>res.json())
+    //     .then(data=>{
+    //         let todo5 = data.todo;
+    //         let trtd5 = todo5.map(each=>{
+    //             return `
+    //             <tr>
+    //             <td class="id">${each[0]-1}</td>    
+    //             <td class="data09" id="data09">${each[1]}</td>
+    //             <td class="data10" id="data10">${each[2]}</td>
+    //             <td class="edit"onclick="updateCall05(this,${each[0]})">Edit</td>    
+    //             <td class="delete"onclick="delData05(${each[0]})">Delete</td>    
+    //             </tr>
+                
+    //             `
+    //         })
+    //         tbody05.innerHTML=trtd5.join("");
+    //     })
+    // }
+    // readData05()
+     
+    // function delData05(id){
+    //     fetch(api05+`?del=true&id=${id}`)
+    //     .then(res=>res.text())
+    //     .then(data=>{
+    //         readData05()
+    //         alert(data)
+    //     })
+    // }
+
+    // function updateCall05(elm,id){
+    //     add05.style.display="none"
+    //     update05.style.display="unset"
+    //     let todo08 = elm.parentElement.querySelector(".data09").textContent;
+    //     let todo09 = elm.parentElement.querySelector(".data10").textContent;
+
+    //     form05[0].value=todo08;
+    //     form05[1].value=todo09;
+
+    //     update05.setAttribute("onclick",`updateData05(${id})`)
+    // }
+
+    // function updateData05(id){
+    //     update05.textContent="Updating.."
+    //     fetch(api05+`?update=true&id=${id}&data09=${form05[0].value}&data10=${form05[1].value}`)
+    //     .then(res=>res.text())
+    //     .then(data=>{
+    //         console.log(data)
+    //         readData05()
+    //         alert(data)
+    //         form05.reset()
+    //     update05.textContent="Updated.."
+    //     add05.style.display="unset"
+    //     update05.style.display="none"
+    //     })
+    // }
+
+
+    // let api06 = "";
+    // let form06 = document.getElementById("xy06");
+    // let add06 = document.querySelector(".add05");
+    // let update06 = document.querySelector(".update05");
+    // let tbody06 = document.querySelector(".tbody06");
+    // function addData06() {
+    //     add06.textContent="Adding.."
+
+    //     const input31 = document.getElementById("todo11").value;
+    //     const input32 = document.getElementById("todo12").value;
+
+
+    //     // console.log(input21)
+
+    //     let obj = {  
+    //         todo11:input31,
+    //         todo12:input32
+    //     };
+
+    //     console.log(obj);
+
+    //     fetch(api06,{
+    //         method:"POST",
+    //         body:JSON.stringify(obj)
+    //     })
+    //       .then(res => res.text())
+    //       .then(data => {
+    //         readData06()
+    //         // alert(data)
+    //         add06.textContent="Enter"
+    //         form06.reset();
+    //       });
+    // }
+
+    // function readData06(){
+    //     fetch(api06)
+    //     .then(res=>res.json())
+    //     .then(data=>{
+    //         let todo6 = data.todo;
+    //         let trtd6 = todo6.map(each=>{
+    //             return `
+    //             <tr>
+    //             <td class="id">${each[0]-1}</td>    
+    //             <td class="data11" id="data11">${each[1]}</td>
+    //             <td class="data12" id="data12">${each[2]}</td>
+    //             <td class="edit"onclick="updateCall06(this,${each[0]})">Edit</td>    
+    //             <td class="delete"onclick="delData06(${each[0]})">Delete</td>    
+    //             </tr>
+                
+    //             `
+    //         })
+    //         tbody06.innerHTML=trtd6.join("");
+    //     })
+    // }
+    // readData06()
+     
+    // function delData06(id){
+    //     fetch(api06+`?del=true&id=${id}`)
+    //     .then(res=>res.text())
+    //     .then(data=>{
+    //         readData06()
+    //         alert(data)
+    //     })
+    // }
+
+    // function updateCall06(elm,id){
+    //     add06.style.display="none"
+    //     update06.style.display="unset"
+    //     let todo10 = elm.parentElement.querySelector(".data11").textContent;
+    //     let todo11 = elm.parentElement.querySelector(".data12").textContent;
+
+    //     form06[0].value=todo10;
+    //     form06[1].value=todo11;
+
+
+
+    //     update06.setAttribute("onclick",`updateData06(${id})`)
+    // }
+
+    // function updateData06(id){
+    //     update06.textContent="Updating.."
+    //     fetch(api06+`?update=true&id=${id}&data11=${form06[0].value}&data12=${form06[1].value}`)
+    //     .then(res=>res.text())
+    //     .then(data=>{
+    //         console.log(data)
+    //         readData06()
+    //         alert(data)
+    //         form06.reset()
+    //     update06.textContent="Updated.."
+    //     add06.style.display="unset"
+    //     update06.style.display="none"
+    //     })
+    // }
+
+
+    // let api07 = "";
+    // let form07 = document.getElementById("xy07");
+    // let add07 = document.querySelector(".add06");
+    // let update07 = document.querySelector(".update06");
+    // let tbody07 = document.querySelector(".tbody07");
+    // function addData07() {
+    //     add07.textContent="Adding.."
+
+    //     const input33 = document.getElementById("todo13").value;
+    //     const input34 = document.getElementById("todo14").value;
+
+
+    //     // console.log(input21)
+
+    //     let obj = {  
+    //         todo13:input33,
+    //         todo14:input34
+    //     };
+
+    //     console.log(obj);
+
+    //     fetch(api07,{
+    //         method:"POST",
+    //         body:JSON.stringify(obj)
+    //     })
+    //       .then(res => res.text())
+    //       .then(data => {
+    //         readData07()
+    //         // alert(data)
+    //         add07.textContent="Enter"
+    //         form07.reset();
+    //       });
+    // }
+
+    // function readData07(){
+    //     fetch(api07)
+    //     .then(res=>res.json())
+    //     .then(data=>{
+    //         let todo7 = data.todo;
+    //         let trtd7 = todo7.map(each=>{
+    //             return `
+    //             <tr>
+    //             <td class="id">${each[0]-1}</td>    
+    //             <td class="data13" id="data13">${each[1]}</td>
+    //             <td class="data14" id="data14">${each[2]}</td>
+    //             <td class="edit"onclick="updateCall07(this,${each[0]})">Edit</td>    
+    //             <td class="delete"onclick="delData07(${each[0]})">Delete</td>    
+    //             </tr>
+                
+    //             `
+    //         })
+    //         tbody07.innerHTML=trtd7.join("");
+    //     })
+    // }
+    // readData07()
+     
+    // function delData07(id){
+    //     fetch(api07+`?del=true&id=${id}`)
+    //     .then(res=>res.text())
+    //     .then(data=>{
+    //         readData07()
+    //         alert(data)
+    //     })
+    // }
+
+    // function updateCall07(elm,id){
+    //     add07.style.display="none"
+    //     update07.style.display="unset"
+    //     let todo12 = elm.parentElement.querySelector(".data13").textContent;
+    //     let todo13 = elm.parentElement.querySelector(".data14").textContent;
+
+    //     form07[0].value=todo12;
+    //     form07[1].value=todo13;
+
+
+
+    //     update07.setAttribute("onclick",`updateData07(${id})`)
+    // }
+
+    // function updateData07(id){
+    //     update07.textContent="Updating.."
+    //     fetch(api07+`?update=true&id=${id}&data13=${form07[0].value}&data14=${form07[1].value}`)
+    //     .then(res=>res.text())
+    //     .then(data=>{
+    //         console.log(data)
+    //         readData07()
+    //         alert(data)
+    //         form07.reset()
+    //     update07.textContent="Updated.."
+    //     add07.style.display="unset"
+    //     update07.style.display="none"
+    //     })
+    // }
+
+    // let api08 = "";
+    // let form08 = document.getElementById("xy08");
+    // let add08 = document.querySelector(".add07");
+    // let update08 = document.querySelector(".update07");
+    // let tbody08 = document.querySelector(".tbody08");
+    // function addData08() {
+    //     add08.textContent="Adding.."
+
+    //     const input35 = document.getElementById("todo15").value;
+    //     const input36 = document.getElementById("todo16").value;
+
+
+    //     // console.log(input21)
+
+    //     let obj = {  
+    //         todo15:input35,
+    //         todo16:input36
+    //     };
+
+    //     console.log(obj);
+
+    //     fetch(api08,{
+    //         method:"POST",
+    //         body:JSON.stringify(obj)
+    //     })
+    //       .then(res => res.text())
+    //       .then(data => {
+    //         readData08()
+    //         // alert(data)
+    //         add08.textContent="Enter"
+    //         form08.reset();
+    //       });
+    // }
+
+    // function readData08(){
+    //     fetch(api08)
+    //     .then(res=>res.json())
+    //     .then(data=>{
+    //         let todo8 = data.todo;
+    //         let trtd8 = todo8.map(each=>{
+    //             return `
+    //             <tr>
+    //             <td class="id">${each[0]-1}</td>    
+    //             <td class="data15" id="data15">${each[1]}</td>
+    //             <td class="data16" id="data16">${each[2]}</td>
+    //             <td class="edit"onclick="updateCall08(this,${each[0]})">Edit</td>    
+    //             <td class="delete"onclick="delData08(${each[0]})">Delete</td>    
+    //             </tr>
+                
+    //             `
+    //         })
+    //         tbody08.innerHTML=trtd8.join("");
+    //     })
+    // }
+    // readData08()
+     
+    // function delData08(id){
+    //     fetch(api08+`?del=true&id=${id}`)
+    //     .then(res=>res.text())
+    //     .then(data=>{
+    //         readData08()
+    //         alert(data)
+    //     })
+    // }
+
+    // function updateCall08(elm,id){
+    //     add08.style.display="none"
+    //     update08.style.display="unset"
+    //     let todo14 = elm.parentElement.querySelector(".data15").textContent;
+    //     let todo15 = elm.parentElement.querySelector(".data16").textContent;
+
+    //     form08[0].value=todo14;
+    //     form08[1].value=todo15;
+
+
+
+    //     update08.setAttribute("onclick",`updateData08(${id})`)
+    // }
+
+    // function updateData08(id){
+    //     update08.textContent="Updating.."
+    //     fetch(api08+`?update=true&id=${id}&data15=${form08[0].value}&data16=${form08[1].value}`)
+    //     .then(res=>res.text())
+    //     .then(data=>{
+    //         console.log(data)
+    //         readData08()
+    //         alert(data)
+    //         form08.reset()
+    //     update08.textContent="Updated.."
+    //     add08.style.display="unset"
+    //     update08.style.display="none"
+    //     })
+    // }
+
+
+    // let api09 = "";
+    // let form09 = document.getElementById("xy09");
+    // let add09 = document.querySelector(".add08");
+    // let update09 = document.querySelector(".update08");
+    // let tbody09 = document.querySelector(".tbody09");
+    // function addData09() {
+    //     add09.textContent="Adding.."
+
+    //     const input37 = document.getElementById("todo17").value;
+    //     const input38 = document.getElementById("todo18").value;
+
+
+    //     // console.log(input21)
+
+    //     let obj = {  
+    //         todo17:input37,
+    //         todo18:input38
+    //     };
+
+    //     console.log(obj);
+
+    //     fetch(api09,{
+    //         method:"POST",
+    //         body:JSON.stringify(obj)
+    //     })
+    //       .then(res => res.text())
+    //       .then(data => {
+    //         readData09()
+    //         // alert(data)
+    //         add09.textContent="Enter"
+    //         form09.reset();
+    //       });
+    // }
+
+    // function readData09(){
+    //     fetch(api09)
+    //     .then(res=>res.json())
+    //     .then(data=>{
+    //         let todo9 = data.todo;
+    //         let trtd9 = todo9.map(each=>{
+    //             return `
+    //             <tr>
+    //             <td class="id">${each[0]-1}</td>    
+    //             <td class="data17" id="data17">${each[1]}</td>
+    //             <td class="data18" id="data18">${each[2]}</td>
+    //             <td class="edit"onclick="updateCall09(this,${each[0]})">Edit</td>    
+    //             <td class="delete"onclick="delData09(${each[0]})">Delete</td>    
+    //             </tr>
+                
+    //             `
+    //         })
+    //         tbody09.innerHTML=trtd9.join("");
+    //     })
+    // }
+    // readData09()
+     
+    // function delData09(id){
+    //     fetch(api09+`?del=true&id=${id}`)
+    //     .then(res=>res.text())
+    //     .then(data=>{
+    //         readData09()
+    //         alert(data)
+    //     })
+    // }
+
+    // function updateCall09(elm,id){
+    //     add09.style.display="none"
+    //     update09.style.display="unset"
+    //     let todo16 = elm.parentElement.querySelector(".data17").textContent;
+    //     let todo17 = elm.parentElement.querySelector(".data18").textContent;
+
+    //     form09[0].value=todo16;
+    //     form09[1].value=todo17;
+
+
+    //     update09.setAttribute("onclick",`updateData09(${id})`)
+    // }
+
+    // function updateData09(id){
+    //     update09.textContent="Updating.."
+    //     fetch(api09+`?update=true&id=${id}&data17=${form09[0].value}&data18=${form09[1].value}`)
+    //     .then(res=>res.text())
+    //     .then(data=>{
+    //         console.log(data)
+    //         readData09()
+    //         alert(data)
+    //         form09.reset()
+    //     update09.textContent="Updated.."
+    //     add09.style.display="unset"
+    //     update09.style.display="none"
+    //     })
+    // }
+
+    // let api10 = "";
+    // let form10 = document.getElementById("xy10");
+    // let add10 = document.querySelector(".add09");
+    // let update10 = document.querySelector(".update09");
+    // let tbody10 = document.querySelector(".tbody10");
+    // function addData10() {
+    //     add10.textContent="Adding.."
+
+    //     const input39 = document.getElementById("todo19").value;
+    //     const input40 = document.getElementById("todo20").value;
+
+
+    //     // console.log(input21)
+
+    //     let obj = {  
+    //         todo19:input39,
+    //         todo20:input40
+    //     };
+
+    //     console.log(obj);
+
+    //     fetch(api10,{
+    //         method:"POST",
+    //         body:JSON.stringify(obj)
+    //     })
+    //       .then(res => res.text())
+    //       .then(data => {
+    //         readData10()
+    //         // alert(data)
+    //         add10.textContent="Enter"
+    //         form10.reset();
+    //       });
+    // }
+
+    // function readData10(){
+    //     fetch(api10)
+    //     .then(res=>res.json())
+    //     .then(data=>{
+    //         let todo10 = data.todo;
+    //         let trtd10 = todo10.map(each=>{
+    //             return `
+    //             <tr>
+    //             <td class="id">${each[0]-1}</td>    
+    //             <td class="data19" id="data19">${each[1]}</td>
+    //             <td class="data20" id="data20">${each[2]}</td>
+    //             <td class="edit"onclick="updateCall10(this,${each[0]})">Edit</td>    
+    //             <td class="delete"onclick="delData10(${each[0]})">Delete</td>    
+    //             </tr>
+                
+    //             `
+    //         })
+    //         tbody10.innerHTML=trtd10.join("");
+    //     })
+    // }
+    // readData10()
+     
+    // function delData10(id){
+    //     fetch(api10+`?del=true&id=${id}`)
+    //     .then(res=>res.text())
+    //     .then(data=>{
+    //         readData10()
+    //         alert(data)
+    //     })
+    // }
+
+    // function updateCall10(elm,id){
+    //     add10.style.display="none"
+    //     update10.style.display="unset"
+    //     let todo18 = elm.parentElement.querySelector(".data19").textContent;
+    //     let todo19 = elm.parentElement.querySelector(".data20").textContent;
+
+    //     form10[0].value=todo18;
+    //     form10[1].value=todo19;
+
+
+    //     update10.setAttribute("onclick",`updateData10(${id})`)
+    // }
+
+    // function updateData10(id){
+    //     update10.textContent="Updating.."
+    //     fetch(api10+`?update=true&id=${id}&data19=${form10[0].value}&data20=${form10[1].value}`)
+    //     .then(res=>res.text())
+    //     .then(data=>{
+    //         console.log(data)
+    //         readData10()
+    //         alert(data)
+    //         form10.reset()
+    //     update10.textContent="Updated.."
+    //     add10.style.display="unset"
+    //     update10.style.display="none"
+    //     })
+    // }
+
+
+    // let api11 = "";
+    // let form11 = document.getElementById("xy11");
+    // let add11 = document.querySelector(".add10");
+    // let update11 = document.querySelector(".update10");
+    // let tbody11 = document.querySelector(".tbody11");
+    // function addData11() {
+    //     add11.textContent="Adding.."
+
+    //     const input41 = document.getElementById("todo21").value;
+    //     const input42 = document.getElementById("todo22").value;
+
+
+    //     // console.log(input21)
+
+    //     let obj = {  
+    //         todo21:input41,
+    //         todo22:input42
+    //     };
+
+    //     console.log(obj);
+
+    //     fetch(api11,{
+    //         method:"POST",
+    //         body:JSON.stringify(obj)
+    //     })
+    //       .then(res => res.text())
+    //       .then(data => {
+    //         readData11()
+    //         // alert(data)
+    //         add11.textContent="Enter"
+    //         form11.reset();
+    //       });
+    // }
+
+    // function readData11(){
+    //     fetch(api11)
+    //     .then(res=>res.json())
+    //     .then(data=>{
+    //         let todo11 = data.todo;
+    //         let trtd11 = todo11.map(each=>{
+    //             return `
+    //             <tr>
+    //             <td class="id">${each[0]-1}</td>    
+    //             <td class="data21" id="data21">${each[1]}</td>
+    //             <td class="data22" id="data22">${each[2]}</td>
+    //             <td class="edit"onclick="updateCall11(this,${each[0]})">Edit</td>    
+    //             <td class="delete"onclick="delData11(${each[0]})">Delete</td>    
+    //             </tr>
+                
+    //             `
+    //         })
+    //         tbody11.innerHTML=trtd11.join("");
+    //     })
+    // }
+    // readData11()
+     
+    // function delData11(id){
+    //     fetch(api11+`?del=true&id=${id}`)
+    //     .then(res=>res.text())
+    //     .then(data=>{
+    //         readData11()
+    //         alert(data)
+    //     })
+    // }
+
+    // function updateCall11(elm,id){
+    //     add11.style.display="none"
+    //     update11.style.display="unset"
+    //     let todo20 = elm.parentElement.querySelector(".data21").textContent;
+    //     let todo21 = elm.parentElement.querySelector(".data22").textContent;
+
+    //     form11[0].value=todo20;
+    //     form11[1].value=todo21;
+
+
+
+    //     update11.setAttribute("onclick",`updateData11(${id})`)
+    // }
+
+    // function updateData11(id){
+    //     update11.textContent="Updating.."
+    //     fetch(api11+`?update=true&id=${id}&data21=${form11[0].value}&data22=${form11[1].value}`)
+    //     .then(res=>res.text())
+    //     .then(data=>{
+    //         console.log(data)
+    //         readData11()
+    //         alert(data)
+    //         form11.reset()
+    //     update11.textContent="Updated.."
+    //     add11.style.display="unset"
+    //     update11.style.display="none"
+    //     })
+    // }
+
+    // let api12 = "";
+    // let form12 = document.getElementById("xy12");
+    // let add12 = document.querySelector(".add11");
+    // let update12 = document.querySelector(".update11");
+    // let tbody12 = document.querySelector(".tbody12");
+    // function addData12() {
+    //     add12.textContent="Adding.."
+
+    //     const input43 = document.getElementById("todo23").value;
+    //     const input44 = document.getElementById("todo24").value;
+
+
+    //     // console.log(input21)
+
+    //     let obj = {  
+    //         todo23:input43,
+    //         todo24:input44
+    //     };
+
+    //     console.log(obj);
+
+    //     fetch(api12,{
+    //         method:"POST",
+    //         body:JSON.stringify(obj)
+    //     })
+    //       .then(res => res.text())
+    //       .then(data => {
+    //         readData12()
+    //         // alert(data)
+    //         add12.textContent="Enter"
+    //         form12.reset();
+    //       });
+    // }
+
+    // function readData12(){
+    //     fetch(api12)
+    //     .then(res=>res.json())
+    //     .then(data=>{
+    //         let todo12 = data.todo;
+    //         let trtd12 = todo12.map(each=>{
+    //             return `
+    //             <tr>
+    //             <td class="id">${each[0]-1}</td>    
+    //             <td class="data23" id="data23">${each[1]}</td>
+    //             <td class="data24" id="data24">${each[2]}</td>
+    //             <td class="edit"onclick="updateCall12(this,${each[0]})">Edit</td>    
+    //             <td class="delete"onclick="delData12(${each[0]})">Delete</td>    
+    //             </tr>
+                
+    //             `
+    //         })
+    //         tbody12.innerHTML=trtd12.join("");
+    //     })
+    // }
+    // readData12()
+     
+    // function delData12(id){
+    //     fetch(api12+`?del=true&id=${id}`)
+    //     .then(res=>res.text())
+    //     .then(data=>{
+    //         readData12()
+    //         alert(data)
+    //     })
+    // }
+
+    // function updateCall12(elm,id){
+    //     add12.style.display="none"
+    //     update12.style.display="unset"
+    //     let todo22 = elm.parentElement.querySelector(".data23").textContent;
+    //     let todo23 = elm.parentElement.querySelector(".data24").textContent;
+
+    //     form12[0].value=todo22;
+    //     form12[1].value=todo23;
+
+    //     update12.setAttribute("onclick",`updateData12(${id})`)
+    // }
+
+    // function updateData12(id){
+    //     update12.textContent="Updating.."
+    //     fetch(api12+`?update=true&id=${id}&data23=${form12[0].value}&data24=${form12[1].value}`)
+    //     .then(res=>res.text())
+    //     .then(data=>{
+    //         console.log(data)
+    //         readData12()
+    //         alert(data)
+    //         form12.reset()
+    //     update12.textContent="Updated.."
+    //     add12.style.display="unset"
+    //     update12.style.display="none"
+    //     })
+    // }
+
+    // let api13 = "";
+    // let form13 = document.getElementById("xy13");
+    // let add13 = document.querySelector(".add12");
+    // let update13 = document.querySelector(".update12");
+    // let tbody13 = document.querySelector(".tbody13");
+    // function addData13() {
+    //     add13.textContent="Adding.."
+
+    //     const input45 = document.getElementById("todo25").value;
+    //     const input46 = document.getElementById("todo26").value;
+
+
+
+    //     let obj = {  
+    //         todo25:input45,
+    //         todo26:input46
+    //     };
+
+    //     console.log(obj);
+
+    //     fetch(api13,{
+    //         method:"POST",
+    //         body:JSON.stringify(obj)
+    //     })
+    //       .then(res => res.text())
+    //       .then(data => {
+    //         readData13()
+    //         // alert(data)
+    //         add13.textContent="Enter"
+    //         form13.reset();
+    //       });
+    // }
+
+    // function readData13(){
+    //     fetch(api13)
+    //     .then(res=>res.json())
+    //     .then(data=>{
+    //         let todo13 = data.todo;
+    //         let trtd13 = todo13.map(each=>{
+    //             return `
+    //             <tr>
+    //             <td class="id">${each[0]-1}</td>    
+    //             <td class="data25" id="data25">${each[1]}</td>
+    //             <td class="data26" id="data26">${each[2]}</td>
+    //             <td class="edit"onclick="updateCall13(this,${each[0]})">Edit</td>    
+    //             <td class="delete"onclick="delData13(${each[0]})">Delete</td>    
+    //             </tr>
+                
+    //             `
+    //         })
+    //         tbody13.innerHTML=trtd13.join("");
+    //     })
+    // }
+    // readData13()
+     
+    // function delData13(id){
+    //     fetch(api13+`?del=true&id=${id}`)
+    //     .then(res=>res.text())
+    //     .then(data=>{
+    //         readData13()
+    //         alert(data)
+    //     })
+    // }
+
+    // function updateCall13(elm,id){
+    //     add13.style.display="none"
+    //     update13.style.display="unset"
+    //     let todo24 = elm.parentElement.querySelector(".data25").textContent;
+    //     let todo25 = elm.parentElement.querySelector(".data26").textContent;
+
+    //     form13[0].value=todo24;
+    //     form13[1].value=todo25;
+
+    //     update13.setAttribute("onclick",`updateData13(${id})`)
+    // }
+
+    // function updateData13(id){
+    //     update13.textContent="Updating.."
+    //     fetch(api13+`?update=true&id=${id}&data25=${form13[0].value}&data26=${form13[1].value}`)
+    //     .then(res=>res.text())
+    //     .then(data=>{
+    //         console.log(data)
+    //         readData13()
+    //         alert(data)
+    //         form13.reset()
+    //     update13.textContent="Updated.."
+    //     add13.style.display="unset"
+    //     update13.style.display="none"
+    //     })
+    // }
+
+    // let api14 = "";
+    // let form14 = document.getElementById("xy14");
+    // let add14 = document.querySelector(".add13");
+    // let update14 = document.querySelector(".update13");
+    // let tbody14 = document.querySelector(".tbody14");
+    // function addData14() {
+    //     add14.textContent="Adding.."
+
+    //     const input47 = document.getElementById("todo27").value;
+    //     const input48 = document.getElementById("todo28").value;
+
+
+    //     let obj = {  
+    //         todo27:input47,
+    //         todo28:input48
+    //     };
+
+    //     console.log(obj);
+
+    //     fetch(api14,{
+    //         method:"POST",
+    //         body:JSON.stringify(obj)
+    //     })
+    //       .then(res => res.text())
+    //       .then(data => {
+    //         readData14()
+    //         // alert(data)
+    //         add14.textContent="Enter"
+    //         form14.reset();
+    //       });
+    // }
+
+    // function readData14(){
+    //     fetch(api14)
+    //     .then(res=>res.json())
+    //     .then(data=>{
+    //         let todo14 = data.todo;
+    //         let trtd14 = todo14.map(each=>{
+    //             return `
+    //             <tr>
+    //             <td class="id">${each[0]-1}</td>    
+    //             <td class="data27" id="data27">${each[1]}</td>
+    //             <td class="data28" id="data28">${each[2]}</td>
+    //             <td class="edit"onclick="updateCall14(this,${each[0]})">Edit</td>    
+    //             <td class="delete"onclick="delData14(${each[0]})">Delete</td>    
+    //             </tr>
+                
+    //             `
+    //         })
+    //         tbody14.innerHTML=trtd14.join("");
+    //     })
+    // }
+    // readData14()
+     
+    // function delData14(id){
+    //     fetch(api14+`?del=true&id=${id}`)
+    //     .then(res=>res.text())
+    //     .then(data=>{
+    //         readData14()
+    //         alert(data)
+    //     })
+    // }
+
+    // function updateCall14(elm,id){
+    //     add14.style.display="none"
+    //     update14.style.display="unset"
+    //     let todo26 = elm.parentElement.querySelector(".data27").textContent;
+    //     let todo27 = elm.parentElement.querySelector(".data28").textContent;
+
+    //     form14[0].value=todo26;
+    //     form14[1].value=todo27;
+
+    //     update14.setAttribute("onclick",`updateData14(${id})`)
+    // }
+
+    // function updateData14(id){
+    //     update14.textContent="Updating.."
+    //     fetch(api14+`?update=true&id=${id}&data27=${form14[0].value}&data28=${form14[1].value}`)
+    //     .then(res=>res.text())
+    //     .then(data=>{
+    //         console.log(data)
+    //         readData14()
+    //         alert(data)
+    //         form14.reset()
+    //     update14.textContent="Updated.."
+    //     add14.style.display="unset"
+    //     update14.style.display="none"
+    //     })
+    // }
+
+
+
+
+
+</script>
+
+</body>
+</html>

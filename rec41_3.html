@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            REC 41-3
+        </title>
+        <meta charset="utf-8">
+        <meta name="viweport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../panelservicebody.css">
+    </head>
+
+    <body id="body1" class="body1">
+        <div id="alredysubmit" class="alredysubmit">
+            <div class="bk">
+                <form method="post" action="" name="contactform" id="contactform" autocomplete="off"> 
+
+                        
+    <!-- ------------------------------------------Body Data -------------------------------------------------->
+                        
+                        <h3 class="topic">REC 41-3</h3>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="col">Visual inspection</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="Visual inspection" required>
+                                    <option selected disabled></option>
+                                    <option value="Ok">OK</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="col">Dust cleaning</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="Dust cleaning" required>
+                                    <option selected disabled></option>
+                                    <option value="cleaned">Cleaned</option>
+                                    <option value="not">Not</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="col">Tighten all connections</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="Tighten all connections" required>
+                                    <option selected disabled></option>
+                                    <option value="Ok">OK</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="col">Load Check</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="Load Check" required>
+                                    <option selected disabled></option>
+                                    <option value="Ok">OK</option> 
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                            <div class="y">
+                                <input class="y-01" type="text" id="col" placeholder="Load(V & I(U/V/W))" name="Load(V & I(U/V/W))">
+                            </div>
+                        </div>
+
+                        <div class="alrm">
+                            <label class="select_the_name" for="col">Thermal imager inspection</label>
+                            <div class = "alram2">
+                                <select class="alrm2-1" name="Thermal imager inspection" required>
+                                    <option selected disabled></option>
+                                    <option value="Ok">OK</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+
+                            <div class="y">
+                                <input class="y-01" type="text" id="col" placeholder="Tempeture Value" name="Tempeture Value">
+                            </div>
+                        </div>
+
+                        <div class="y">
+                            <input class="y-01" type="text" id="col" placeholder="Special Note" name="Special Note">
+                        </div>
+
+
+
+
+                        <div class="select_the_name">
+                            <a href="c4_panelservice.html">
+                                <input type="button" class="button" value="Back"/>
+                            </a>
+                            <input type="submit" class="submit" onclick="submited()" onclick="" id="submit" value="Submit"/>
+                            <a href="https://docs.google.com/spreadsheets/d/1IkGnY5WxW2huBHCGHRQzPcffM_WOcOFxAiVnb3_9o4Q/edit?usp=sharing">
+                                <input type="button" class="button" value="View Data"/>
+                            </a>
+                        </div>
+
+                        
+                    
+                </form>
+
+            </div>
+        </div>
+
+
+        
+        <script>
+
+            // function preback(){window.history.forward();}
+            // setTimeout("preback()",0);
+            // window.onunload=function(){null};
+
+			const scriptURL = 'https://script.google.com/macros/s/AKfycbyYw6GGPAx7ZVe2IhP_QmepkrCKVGd0s-wfEPj_WPuTBgZRP3It0ynmyOU8EAKrRco8/exec'
+			const form = document.forms['contactform']
+
+		  
+			form.addEventListener('submit', e => {
+			  e.preventDefault()
+			  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+				.then(response => alert("Thank you! your form is submitted successfully." ))
+				.then(() => {  window.location = "c4_panelservice.html"; })
+				.catch(error => console.error('Error!', error.message))
+                alredysubmit.classList.add("popup");
+			})
+
+        
+		</script>
+        
+
+    </body>
+
+</html>
